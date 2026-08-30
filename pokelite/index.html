@@ -101,6 +101,9 @@
   <!-- ===== TELA: Mapa (Modo Roguelike) ===== -->
   <section id="tela-mapa" class="tela" hidden>
     <h2 class="subtitulo">Rota</h2>
+    <div class="mapa-acoes">
+      <button class="botao botao-secundario" type="button" data-acao="abrir-menu-time">👥 Meu Time</button>
+    </div>
     <p class="mensagem-mapa" id="mensagem-mapa" hidden></p>
 
     <div class="mapa-camadas" id="mapa-camadas"></div>
@@ -299,6 +302,14 @@
           <span>Voltar aos Modos</span>
         </button>
       </div>
+      <div class="botoes-fim-batalha" id="botoes-fim-multiplayer" hidden>
+        <button class="botao botao-play" type="button" data-acao="mp-revanche">
+          <span>Revanche</span>
+        </button>
+        <button class="botao botao-secundario" type="button" data-acao="mp-sair-batalha">
+          <span>Sair</span>
+        </button>
+      </div>
       <div class="botoes-fim-batalha" id="botoes-fim-roguelike" hidden>
         <button class="botao botao-play" type="button" data-acao="roguelike-continuar">
           <span>Continuar</span>
@@ -315,6 +326,17 @@
         <button class="modal-fechar" type="button" data-fechar-modal-troca aria-label="Fechar">&times;</button>
       </div>
       <div class="lista-troca" id="lista-troca"></div>
+    </div>
+  </div>
+
+  <!-- ===== Modal: Meu Time (Roguelike) ===== -->
+  <div class="modal-fundo" data-modal="time" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-time-mapa">
+      <div class="modal-cabecalho">
+        <h2 id="titulo-time-mapa">Meu Time</h2>
+        <button class="modal-fechar" type="button" data-fechar-modal-time aria-label="Fechar">&times;</button>
+      </div>
+      <div class="lista-time-mapa" id="lista-time-mapa"></div>
     </div>
   </div>
 

@@ -269,3 +269,51 @@
   text-transform: uppercase;
 }
 .no-mapa[data-id*="fim"] .no-nome { font-weight: 900; }
+
+
+/* ---------- Meu Time no mapa ---------- */
+.mapa-acoes {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+.lista-time-mapa {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.card-time-mapa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(238,243,248,.16);
+  border-radius: 10px;
+  background: rgba(10,16,30,.45);
+}
+.thumb-time-mapa {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,.06);
+}
+.thumb-time-mapa.vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(238,243,248,.45);
+}
+.info-time-mapa {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: .75rem;
+}
+.info-time-mapa strong {
+  color: var(--ouro-suave);
+}
+@media (max-width: 560px) {
+  .lista-time-mapa { grid-template-columns: 1fr; }
+}

@@ -75,24 +75,26 @@ function gerarMapaRun() {
       camadas.push(camada);
     });
 
-    // Após as 7 linhas: Loja + Hospital garantidos (pra poder se preparar),
-    // depois Ginásio nas Partes 1–8. Na Parte 9 vai direto pro Everton.
+    // Após as 7 linhas, Loja e Hospital ficam lado a lado na MESMA linha.
+    // Assim o jogador escolhe um ou outro caminho antes do Ginásio.
     if (parte.parte !== 9) {
       const nivelPrep = parte.niveis[6];
-      camadas.push([{
-        id: `p${parte.parte}loja`,
-        tipo: "loja",
-        parte: parte.parte,
-        nivelMin: nivelPrep[0],
-        nivelMax: nivelPrep[1],
-      }]);
-      camadas.push([{
-        id: `p${parte.parte}hospital`,
-        tipo: "hospital",
-        parte: parte.parte,
-        nivelMin: nivelPrep[0],
-        nivelMax: nivelPrep[1],
-      }]);
+      camadas.push([
+        {
+          id: `p${parte.parte}loja`,
+          tipo: "loja",
+          parte: parte.parte,
+          nivelMin: nivelPrep[0],
+          nivelMax: nivelPrep[1],
+        },
+        {
+          id: `p${parte.parte}hospital`,
+          tipo: "hospital",
+          parte: parte.parte,
+          nivelMin: nivelPrep[0],
+          nivelMax: nivelPrep[1],
+        },
+      ]);
     }
 
     camadas.push([{
@@ -191,11 +193,18 @@ function subirNivelTime(quantidade) {
   estadoRun.time.forEach((m) => {
     m.nivel = Math.min(NIVEL_MAXIMO, m.nivel + quantidade);
     const base = DADOS_MONSTROS.find((x) => x.numero === m.numero);
-    m.golpesConhecidos = (base.golpes || [])
-      .filter((g) => g.nivel <= m.nivel)
-      .map((g) => g.codigo);
-    m.status = calcularStatus(base, m.nivel);
-    m.hpAtual = m.status.hpMax;
+    if (base) {
+      m.golpesConhecidos = (base.golpes || [])
+        .filter((g) => g.nivel <= m.nivel)
+        .map((g) => g.codigo);
+    }
+    if (typeof recalcularStatusDaInstancia === "function") {
+      recalcularStatusDaInstancia(m, false);
+    } else {
+      m.status = calcularStatus(base, m.nivel);
+      m.hpAtual = m.status.hpMax;
+    }
+    m.statusAlterado = null;
   });
 }
 
@@ -209,11 +218,86 @@ const POOL_ITENS = [
   "B001","B002","B003","B004","B005","B006","B007","B008","B009","B010","B011",
   "B012","B013","B014","B015","B016","B017","B018","B019","B020","B021","B022"
 ];
+// Evento é realmente aleatório: pode virar treinador, captura, raro, matinho,
+// item, cura ou simplesmente não acontecer nada.
 const EVENTOS_ALEATORIOS = [
-  "Você encontrou uma fonte misteriosa, mas nada acontece.",
-  "Um vento estranho passa... nada muda por enquanto.",
-  "Você ouve um rugido ao longe, mas nada aparece.",
+  { tipo: "nada", texto: "O evento não deu em nada... talvez na próxima." },
+  { tipo: "treinador", texto: "Um treinador apareceu de repente!" },
+  { tipo: "captura", texto: "Uma Pokébola misteriosa apareceu! Você pode capturar um monstro." },
+  { tipo: "raro", texto: "Um monstro raro apareceu!" },
+  { tipo: "matinho", texto: "O matinho começou a se mexer..." },
+  { tipo: "itens", texto: "Você encontrou uma pequena bolsa de itens!" },
+  { tipo: "cura", texto: "Uma energia restauradora envolveu seu time!" },
 ];
+
+function gerarMonstroRaroNivel(nivelMin, nivelMax) {
+  const pool = DADOS_MONSTROS.filter((m) => m.raridade === "Mítico" || m.raridade === "Lendário" || m.raridade === "Raro");
+  if (!pool.length) return gerarMonstroSelvagemNivel(nivelMin, nivelMax);
+  const min = Math.max(1, Number(nivelMin) || 1);
+  const max = Math.max(min, Number(nivelMax) || min);
+  const nivel = Math.floor(Math.random() * (max - min + 1)) + min;
+  return criarInstanciaMonstro(pool[Math.floor(Math.random() * pool.length)].numero, nivel);
+}
+
+function executarEventoAleatorio(no) {
+  const evento = EVENTOS_ALEATORIOS[Math.floor(Math.random() * EVENTOS_ALEATORIOS.length)];
+  mostrarMensagemMapa(evento.texto);
+
+  switch (evento.tipo) {
+    case "treinador": {
+      const qtd = no.parte === 9 ? 3 : Math.min(2 + Math.floor((no.parte - 1) / 4), 3);
+      const timeTreinador = Array.from({ length: qtd }, () => gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax));
+      prepararTimeParaNovaBatalha();
+      recompensaNivelPendente = no.parte === 9 ? 3 : 2;
+      contextoBatalhaAtual = "roguelike";
+      mostrarTela("tela-batalha");
+      iniciarBatalha(estadoRun.time, timeTreinador, false, false, evento.texto);
+      break;
+    }
+    case "captura":
+      abrirEscolhaCaptura();
+      break;
+    case "raro": {
+      if (estadoRun.time.length >= TAMANHO_MAX_TIME_ROGUELIKE) {
+        mostrarMensagemMapa("O monstro raro apareceu, mas seu time está cheio.");
+        break;
+      }
+      const raro = gerarMonstroRaroNivel(no.nivelMin, no.nivelMax);
+      const modal = document.querySelector('[data-modal="captura"]');
+      const lista = document.getElementById("opcoes-captura");
+      lista.innerHTML = "";
+      [raro, gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax)].forEach((c) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "card-captura";
+        const imgHtml = c.png ? `<img class="thumb" src="PNG/${c.png}" alt="${c.nome}">` : `<div class="thumb thumb-vazio">?</div>`;
+        btn.innerHTML = `${imgHtml}<span class="nome-captura">${c.nome}</span><span class="nivel-captura">Nv.${c.nivel}</span>`;
+        btn.addEventListener("click", () => { estadoRun.time.push(c); modal.hidden = true; mostrarMensagemMapa(`${c.nome} se juntou ao seu time!`); });
+        lista.appendChild(btn);
+      });
+      modal.hidden = false;
+      break;
+    }
+    case "matinho": {
+      const selvagem = gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax);
+      prepararTimeParaNovaBatalha();
+      recompensaNivelPendente = 1;
+      contextoBatalhaAtual = "roguelike";
+      mostrarTela("tela-batalha");
+      iniciarBatalha(estadoRun.time, [selvagem], false, false, evento.texto);
+      break;
+    }
+    case "itens":
+      abrirEscolhaItens();
+      break;
+    case "cura":
+      estadoRun.time.forEach((m) => { m.hpAtual = m.status.hpMax; m.statusAlterado = null; });
+      break;
+    case "nada":
+    default:
+      break;
+  }
+}
 
 function aplicarEfeitoNo(no) {
   switch (no.tipo) {
@@ -223,6 +307,7 @@ function aplicarEfeitoNo(no) {
       if (no.tipo === "captura") { abrirEscolhaCaptura(); break; }
       if (no.tipo === "capturaRara") { abrirEscolhaCaptura(); break; }
       const selvagem = gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax);
+      prepararTimeParaNovaBatalha();
       recompensaNivelPendente = 1;
       contextoBatalhaAtual = "roguelike";
       mostrarTela("tela-batalha");
@@ -233,6 +318,7 @@ function aplicarEfeitoNo(no) {
     case "treinador": {
       const qtd = no.parte === 9 ? 3 : Math.min(2 + Math.floor((no.parte - 1) / 4), 3);
       const timeTreinador = Array.from({length: qtd}, () => gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax));
+      prepararTimeParaNovaBatalha();
       recompensaNivelPendente = no.parte === 9 ? 3 : 2;
       contextoBatalhaAtual = "roguelike";
       mostrarTela("tela-batalha");
@@ -258,7 +344,7 @@ function aplicarEfeitoNo(no) {
       break;
 
     case "evento":
-      mostrarMensagemMapa(EVENTOS_ALEATORIOS[Math.floor(Math.random() * EVENTOS_ALEATORIOS.length)]);
+      executarEventoAleatorio(no);
       break;
 
     case "loja": {
@@ -462,6 +548,25 @@ function abrirSelecaoAlvoItem(codigo, evolucao) {
   modal.hidden = false;
 }
 
+// ---------- Menu do time ----------
+function abrirMenuTime() {
+  const modal = document.querySelector('[data-modal="time"]');
+  const lista = document.getElementById("lista-time-mapa");
+  if (!modal || !lista) return;
+  lista.innerHTML = "";
+  (estadoRun?.time || []).forEach((m, i) => {
+    const item = typeof itemDe === "function" ? itemDe(m) : null;
+    const hp = Math.max(0, m.hpAtual || 0);
+    const hpMax = Math.max(1, m.status?.hpMax || 1);
+    const img = m.png ? `<img class="thumb-time-mapa" src="PNG/${m.png}" alt="${m.nome}">` : `<div class="thumb-time-mapa vazio">?</div>`;
+    const card = document.createElement("div");
+    card.className = "card-time-mapa";
+    card.innerHTML = `${img}<div class="info-time-mapa"><strong>${i + 1}. ${m.nome}</strong><span>Nv. ${m.nivel} · ${m.tipo}</span><span>HP ${hp}/${hpMax}</span><span>${item ? "🎒 " + item.nome : "Sem item"}</span></div>`;
+    lista.appendChild(card);
+  });
+  modal.hidden = false;
+}
+
 // ---------- Mensagens ----------
 function mostrarMensagemMapa(texto) {
   const el = document.getElementById("mensagem-mapa");
@@ -528,6 +633,17 @@ function renderizarMapa() {
   const alvo = container.querySelector(".no-atual, .no-disponivel");
   if (alvo) alvo.scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
+document.addEventListener("click", (e) => {
+  const fechar = e.target.closest("[data-fechar-modal-time]");
+  if (!fechar) return;
+  const modal = document.querySelector('[data-modal="time"]');
+  if (modal) modal.hidden = true;
+});
+document.addEventListener("click", (e) => {
+  const modal = document.querySelector('[data-modal="time"]');
+  if (modal && e.target === modal) modal.hidden = true;
+});
 
 document.addEventListener("nexoria:tela-mudou", (e) => {
   if (e.detail.tela === "tela-mapa" && !mapaAtual) iniciarMapa();

@@ -36,14 +36,65 @@ const NIVEL_MAXIMO = 105;
 function recalcularStatusDaInstancia(monstro) {
   const base = DADOS_MONSTROS.find((m) => m.numero === monstro.numero);
   if (!base) return;
-  const hpAnterior = monstro.hpAtual ?? 0;
-  const hpMaxAnterior = monstro.status?.hpMax || hpAnterior || 1;
+
+  // HP é persistente entre batalhas: ao subir de nível ou equipar item,
+  // preservamos o HP absoluto em que o monstro terminou, apenas limitando
+  // ao novo HP máximo. Não convertemos para porcentagem.
+  const hpAnterior = Number.isFinite(Number(monstro.hpAtual)) ? Number(monstro.hpAtual) : 0;
   let status = calcularStatus(base, monstro.nivel);
   if (typeof aplicarMultiplicadoresItem === "function") status = aplicarMultiplicadoresItem(monstro, status);
   monstro.status = status;
   monstro.statusOriginal = { ...status };
-  const proporcao = hpAnterior / hpMaxAnterior;
-  monstro.hpAtual = hpAnterior <= 0 ? 0 : Math.min(status.hpMax, Math.max(1, Math.floor(status.hpMax * proporcao)));
+  monstro.hpAtual = Math.max(0, Math.min(status.hpMax, Math.floor(hpAnterior)));
+}
+
+// Prepara o time para uma NOVA batalha do Roguelike.
+// Mantém exatamente o HP restante da batalha anterior, mas remove tudo que
+// pertence apenas àquela batalha: buffs/nerfs, status alterados, contadores
+// de habilidades e transformações temporárias (BattleForm/Boto Rosa).
+function prepararTimeParaNovaBatalha() {
+  if (!estadoRun?.time) return;
+
+  estadoRun.time.forEach((monstro) => {
+    const hpPersistente = Number.isFinite(Number(monstro.hpAtual)) ? Number(monstro.hpAtual) : 0;
+    const base = DADOS_MONSTROS.find((m) => m.numero === monstro.numero);
+    if (!base) return;
+
+    // Restaura identidade original para evitar que uma transformação de uma
+    // batalha contamine a próxima.
+    monstro.nome = base.nome;
+    monstro.tipo = base.tipo;
+    monstro.png = base.png;
+    monstro.habilidade = base.habilidade || null;
+    monstro.statusBase = base.statusBase;
+    monstro.golpesConhecidos = (base.golpes || [])
+      .filter((g) => g.nivel <= monstro.nivel)
+      .map((g) => g.codigo);
+
+    let status = calcularStatus(base, monstro.nivel);
+    if (typeof aplicarMultiplicadoresItem === "function") {
+      status = aplicarMultiplicadoresItem(monstro, status);
+    }
+    monstro.status = status;
+    monstro.statusOriginal = { ...status };
+    monstro.hpAtual = Math.max(0, Math.min(status.hpMax, Math.floor(hpPersistente)));
+
+    // Efeitos temporários de batalha.
+    monstro.statusAlterado = null;
+    delete monstro._starPlatinum;
+    delete monstro._despertou;
+    delete monstro._vidasUsadas;
+    delete monstro._estadoLunar;
+    delete monstro._turnosInvencivel;
+    delete monstro._invencivelAtivado;
+    delete monstro._itemAgamotoUsado;
+    delete monstro._lastDanceUsado;
+    delete monstro._battleForm;
+    delete monstro._contraAtaqueNocaute;
+    delete monstro._brechaNocaute;
+    delete monstro.formaAnterior;
+    delete monstro.formaAnteriorNome;
+  });
 }
 
 function criarInstanciaMonstro(numero, nivel) {

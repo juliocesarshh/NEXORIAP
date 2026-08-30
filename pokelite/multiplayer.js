@@ -184,6 +184,32 @@ function escolherMonstroMultiplayer(numero) {
   }
 }
 
+function solicitarRevancheMultiplayer() {
+  if (!mpSalaId) return;
+  // Volta à seleção imediatamente para permitir escolher outros monstros.
+  estadoBatalha = null;
+  mpTimeEscolhido = [];
+  document.getElementById("painel-fim-batalha")?.setAttribute("hidden", "");
+  mostrarTela("tela-multiplayer");
+  document.getElementById("multiplayer-menu").hidden = true;
+  document.getElementById("mp-criar-painel").hidden = true;
+  document.getElementById("mp-procurar-painel").hidden = true;
+  document.getElementById("mp-sala-painel").hidden = true;
+  document.getElementById("mp-selecao-painel").hidden = false;
+  document.getElementById("mp-config-resumo").textContent =
+    `Revanche · Sala ${mpSalaId} · ${mpNivel} Nv. · ${mpTamanho}×${mpTamanho}`;
+  document.getElementById("mp-selecao-titulo").textContent =
+    `Escolha seu time (1 de ${mpTamanho})`;
+  mpStatus("mp-selecao-status", "Escolha novamente seu time. O adversário também precisa confirmar a revanche.");
+  renderizarGridMultiplayer();
+  mpEnviar("rematch-ready");
+}
+
+function sairDaBatalhaMultiplayer() {
+  sairDaSalaMultiplayer();
+  mostrarTela("tela-modos");
+}
+
 function tratarMensagemMultiplayer(msg) {
   switch (msg.tipo) {
     case "room-created":
@@ -222,6 +248,14 @@ function tratarMensagemMultiplayer(msg) {
 
     case "battle-start":
       iniciarBatalhaMultiplayer(msg.hostTeam, msg.guestTeam);
+      break;
+
+    case "rematch-ready":
+      mpStatus("mp-selecao-status", "O adversário também aceitou a revanche! Escolha seu time.");
+      break;
+
+    case "rematch-waiting":
+      mpStatus("mp-selecao-status", "Time enviado. Aguardando o adversário aceitar a revanche...");
       break;
 
     case "battle-state":

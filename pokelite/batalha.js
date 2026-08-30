@@ -170,6 +170,14 @@ function tratarDesmaio(alvo, ladoAlvo) {
 
 // ---------- Início da batalha ----------
 function iniciarBatalha(timeJogador, timeOponente, multiplayer = false, multiplayerHost = false, mensagemAbertura = null) {
+  // No Roguelike, o HP é persistente entre encontros, mas buffs/nerfs,
+  // status alterados e transformações são exclusivos da batalha anterior.
+  // A limpeza aqui é uma segunda camada de segurança para nenhum tipo de nó
+  // (inclusive Ginásio/Chefe) esquecer de preparar o time.
+  if (contextoBatalhaAtual === "roguelike" && typeof prepararTimeParaNovaBatalha === "function") {
+    prepararTimeParaNovaBatalha();
+  }
+
   estadoBatalha = {
     timeJogador,
     timeOponente,
@@ -606,9 +614,12 @@ function renderizarBatalha() {
       "resultado-batalha " + (vencedor === "jogador" ? "vitoria" : "derrota");
 
     ultimoVencedorRoguelike = vencedor;
-    document.getElementById("botoes-fim-pratica").hidden = contextoBatalhaAtual === "roguelike";
+    const botoesPratica = document.getElementById("botoes-fim-pratica");
     const botoesRoguelike = document.getElementById("botoes-fim-roguelike");
+    const botoesMultiplayer = document.getElementById("botoes-fim-multiplayer");
+    botoesPratica.hidden = contextoBatalhaAtual !== "pratica";
     botoesRoguelike.hidden = contextoBatalhaAtual !== "roguelike";
+    if (botoesMultiplayer) botoesMultiplayer.hidden = contextoBatalhaAtual !== "multiplayer";
     if (contextoBatalhaAtual === "roguelike") {
       botoesRoguelike.querySelector("span").textContent =
         vencedor === "jogador" ? "Continuar a Rota" : "Encerrar Run";

@@ -133,6 +133,18 @@ document.addEventListener("click", (e) => {
       sairDaSalaMultiplayer();
       break;
 
+    case "mp-revanche":
+      solicitarRevancheMultiplayer();
+      break;
+
+    case "mp-sair-batalha":
+      sairDaBatalhaMultiplayer();
+      break;
+
+    case "abrir-menu-time":
+      abrirMenuTime();
+      break;
+
     case "modo-pratica":
       mostrarTela("tela-tamanho-time");
       break;
