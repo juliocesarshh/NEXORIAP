@@ -1,0 +1,119 @@
+.status-msg {
+  margin: 0 0 14px 0;
+  font-size: 0.9em;
+  color: rgba(238, 243, 248, 0.6);
+}
+
+.paineis-monsterpedia {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.painel {
+  background: rgba(10, 16, 30, 0.6);
+  border: 1px solid rgba(255, 203, 5, 0.18);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 16px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.painel h3 {
+  margin-top: 0;
+  font-family: "Cinzel", "Georgia", serif;
+  color: var(--ouro-suave);
+  font-size: 1.05rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.card-monstro {
+  background: rgba(238, 243, 248, 0.06);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.card-monstro:hover {
+  border-color: var(--ouro);
+}
+
+.card-monstro.selecionado {
+  border-color: var(--musgo);
+}
+
+.card-monstro .thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.thumb-vazio {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(238, 243, 248, 0.35);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.thumb-detalhe {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.card-monstro .num {
+  font-size: 0.75em;
+  color: rgba(238, 243, 248, 0.55);
+}
+
+.card-monstro .nome {
+  font-weight: bold;
+}
+
+.card-monstro .tipo {
+  font-size: 0.75em;
+  color: var(--ouro);
+}
+
+.vazio {
+  color: rgba(238, 243, 248, 0.4);
+}
+
+table.status {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table.status td {
+  padding: 4px 8px;
+  border-bottom: 1px solid rgba(238, 243, 248, 0.12);
+}
+
+table.status td:first-child {
+  color: rgba(238, 243, 248, 0.55);
+}

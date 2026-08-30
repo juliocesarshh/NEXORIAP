@@ -1,0 +1,3788 @@
+[
+  {
+    "numero": 1,
+    "nome": "Folkim",
+    "tipo": "Planta/Inseto",
+    "png": "Folkim.jpeg",
+    "descricao": "Um pequeno monstro cheio de energia, curioso e sempre pronto para explorar.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G067",
+        "nivel": 12
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G069",
+        "nivel": 28
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 65,
+      "defesa": 45,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 45,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 2
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 2,
+    "nome": "Lokim",
+    "tipo": "Planta/Lutador",
+    "png": "",
+    "descricao": "Uma criatura mais madura, com uma força que começa a despertar.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 85,
+      "defesa": 55,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 55,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": 1,
+      "evoluiPara": 3
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 3,
+    "nome": "Louvador",
+    "tipo": "Planta/Lutador",
+    "png": "",
+    "descricao": "Um poderoso monstro que domina seu estilo de combate e protege seu território.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 70,
+      "ataque": 105,
+      "defesa": 75,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 75,
+      "velocidade": 120
+    },
+    "evolucao": {
+      "evoluiDe": 2,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 4,
+    "nome": "Kaidin",
+    "tipo": "Fogo",
+    "png": "Kaidin.jpeg",
+    "descricao": "Um jovem monstro de fogo que começa a desenvolver sua verdadeira força.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 40,
+      "defesa": 50,
+      "ataqueEspecial": 65,
+      "defesaEspecial": 50,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 5
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 5,
+    "nome": "Kaidor",
+    "tipo": "Fogo",
+    "png": "",
+    "descricao": "Um monstro resistente e agressivo, preparado para enfrentar adversários maiores.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 55,
+      "defesa": 65,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 65,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": 4,
+      "evoluiPara": 6
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 6,
+    "nome": "Kaizor",
+    "tipo": "Fogo/Terra",
+    "png": "",
+    "descricao": "Um guerreiro de Fogo e Terra que combina força física com ataques devastadores.",
+    "habilidade": "H001",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G050",
+        "nivel": 12
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G052",
+        "nivel": 28
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 105,
+      "ataque": 75,
+      "defesa": 90,
+      "ataqueEspecial": 105,
+      "defesaEspecial": 90,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": 5,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Ao entrar em campo, causa um pequeno terremoto que retira 10% do HP do inimigo.",
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 7,
+    "nome": "Maki",
+    "tipo": "Água",
+    "png": "Maki.jpeg",
+    "descricao": "Um pequeno tubarão quadrúpede cujo focinho possui um disco semelhante a uma Maquita.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 41,
+      "ataque": 56,
+      "defesa": 40,
+      "ataqueEspecial": 62,
+      "defesaEspecial": 44,
+      "velocidade": 71
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 8
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 8,
+    "nome": "Tukitar",
+    "tipo": "Água",
+    "png": "",
+    "descricao": "Um tubarão que agora fica de pé e luta usando pequenos discos nos braços.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 54,
+      "ataque": 63,
+      "defesa": 52,
+      "ataqueEspecial": 83,
+      "defesaEspecial": 56,
+      "velocidade": 97
+    },
+    "evolucao": {
+      "evoluiDe": 7,
+      "evoluiPara": 9
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 9,
+    "nome": "Makitor",
+    "tipo": "Água/Aço",
+    "png": "",
+    "descricao": "Um grande guerreiro tubarão de Água e Metal, capaz de dilacerar seus adversários.",
+    "habilidade": "",
+    "golpeAssinatura": "Dilacera",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G098",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G100",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G102",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 72,
+      "ataque": 95,
+      "defesa": 67,
+      "ataqueEspecial": 103,
+      "defesaEspecial": 71,
+      "velocidade": 122
+    },
+    "evolucao": {
+      "evoluiDe": 8,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Inicial"
+  },
+  {
+    "numero": 10,
+    "nome": "Kragor",
+    "tipo": "Lutador",
+    "png": "",
+    "descricao": "Um poderoso guerreiro inspirado em um deus da guerra, conhecido por sua força.",
+    "habilidade": "H024",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G039",
+        "nivel": 20
+      },
+      {
+        "codigo": "G041",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 120,
+      "defesa": 80,
+      "ataqueEspecial": 80,
+      "defesaEspecial": 80,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Raro",
+    "habilidadeInfo": "Transforma o campo em Campo de Batalha e concede +10% em um status aleatório."
+  },
+  {
+    "numero": 11,
+    "nome": "Lingard",
+    "tipo": "Inseto",
+    "png": "",
+    "descricao": "Uma pequena lagarta aparentemente comum que possui um potencial extraordinário.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
+        "codigo": "G069",
+        "nivel": 20
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 30,
+      "defesa": 35,
+      "ataqueEspecial": 20,
+      "defesaEspecial": 20,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 12
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 12,
+    "nome": "Brascasulo",
+    "tipo": "Inseto",
+    "png": "",
+    "descricao": "Um casulo onde sua energia se transforma para revelar seu verdadeiro destino.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
+        "codigo": "G070",
+        "nivel": 20
+      },
+      {
+        "codigo": "G072",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 20,
+      "defesa": 55,
+      "ataqueEspecial": 25,
+      "defesaEspecial": 25,
+      "velocidade": 30
+    },
+    "evolucao": {
+      "evoluiDe": 11,
+      "evoluiPara": "13 ou 14"
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 13,
+    "nome": "Inciderar",
+    "tipo": "Inseto/Fogo",
+    "png": "",
+    "descricao": "Uma magnífica borboleta de fogo cujas asas irradiam calor e chamas.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
+        "codigo": "G008",
+        "nivel": 12
+      },
+      {
+        "codigo": "G070",
+        "nivel": 20
+      },
+      {
+        "codigo": "G010",
+        "nivel": 28
+      },
+      {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "G012",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 45,
+      "defesa": 50,
+      "ataqueEspecial": 90,
+      "defesaEspecial": 85,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": 12,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 14,
+    "nome": "Maripositi",
+    "tipo": "Inseto/Dark",
+    "png": "",
+    "descricao": "Uma mariposa sombria que se move silenciosamente durante a noite.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
+        "codigo": "G092",
+        "nivel": 12
+      },
+      {
+        "codigo": "G070",
+        "nivel": 20
+      },
+      {
+        "codigo": "G094",
+        "nivel": 28
+      },
+      {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "G096",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 45,
+      "defesa": 50,
+      "ataqueEspecial": 90,
+      "defesaEspecial": 80,
+      "velocidade": 75
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 15,
+    "nome": "Scorpk",
+    "tipo": "Inseto/Venenoso",
+    "png": "",
+    "descricao": "Um pequeno escorpião venenoso que surpreende adversários com sua agilidade.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
+        "codigo": "G043",
+        "nivel": 12
+      },
+      {
+        "codigo": "G069",
+        "nivel": 20
+      },
+      {
+        "codigo": "G045",
+        "nivel": 28
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
+      },
+      {
+        "codigo": "G047",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 55,
+      "defesa": 45,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 45,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 16
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 16,
+    "nome": "Scorpon",
+    "tipo": "Venenoso/Fogo",
+    "png": "",
+    "descricao": "Um enorme escorpião vermelho enfurecido, envolto em calor e veneno.",
+    "habilidade": "H002",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G043",
+        "nivel": 1
+      },
+      {
+        "codigo": "G007",
+        "nivel": 12
+      },
+      {
+        "codigo": "G045",
+        "nivel": 20
+      },
+      {
+        "codigo": "G009",
+        "nivel": 28
+      },
+      {
+        "codigo": "G047",
+        "nivel": 33
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 90,
+      "defesa": 60,
+      "ataqueEspecial": 50,
+      "defesaEspecial": 65,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": 15,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 17,
+    "nome": "Sabrito",
+    "tipo": "Gelo",
+    "png": "",
+    "descricao": "Um pequeno dente-de-sabre corajoso que não recua diante de inimigos maiores.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
+        "codigo": "G033",
+        "nivel": 20
+      },
+      {
+        "codigo": "G035",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 45,
+      "defesa": 55,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 60,
+      "velocidade": 40
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 18
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 18,
+    "nome": "Sabor",
+    "tipo": "Gelo",
+    "png": "",
+    "descricao": "Um dente-de-sabre intermediário com presas e garras mais resistentes.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
+        "codigo": "G033",
+        "nivel": 20
+      },
+      {
+        "codigo": "G035",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 60,
+      "defesa": 70,
+      "ataqueEspecial": 50,
+      "defesaEspecial": 75,
+      "velocidade": 50
+    },
+    "evolucao": {
+      "evoluiDe": 17,
+      "evoluiPara": 19
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 19,
+    "nome": "Saber",
+    "tipo": "Gelo",
+    "png": "",
+    "descricao": "Um poderoso dente-de-sabre de gelo, especialista em ataques físicos congelantes.",
+    "habilidade": "",
+    "golpeAssinatura": "Garras de Gelo",
+    "golpes": [
+      {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
+        "codigo": "G033",
+        "nivel": 20
+      },
+      {
+        "codigo": "G035",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 80,
+      "defesa": 85,
+      "ataqueEspecial": 60,
+      "defesaEspecial": 90,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": 18,
+      "evoluiPara": 20
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 20,
+    "nome": "Sabot",
+    "tipo": "Fantasma/Dark",
+    "png": "",
+    "descricao": "Uma forma espectral que surge após a queda de Saber para continuar sua caçada.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G079",
+        "nivel": 1
+      },
+      {
+        "codigo": "G091",
+        "nivel": 12
+      },
+      {
+        "codigo": "G081",
+        "nivel": 20
+      },
+      {
+        "codigo": "G093",
+        "nivel": 28
+      },
+      {
+        "codigo": "G083",
+        "nivel": 33
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 100,
+      "defesa": 85,
+      "ataqueEspecial": 80,
+      "defesaEspecial": 95,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": 19,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 21,
+    "nome": "Cleitin",
+    "tipo": "Água/Voador",
+    "png": "",
+    "descricao": "Uma pequena ave aquática curiosa e veloz que atravessa rios e lagos.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 35,
+      "defesa": 40,
+      "ataqueEspecial": 45,
+      "defesaEspecial": 45,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 22
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 22,
+    "nome": "Cleitora",
+    "tipo": "Água/Voador",
+    "png": "",
+    "descricao": "Uma ave aquática maior e mais forte, capaz de voar por longas distâncias.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 50,
+      "defesa": 55,
+      "ataqueEspecial": 65,
+      "defesaEspecial": 60,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": 21,
+      "evoluiPara": 23
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 23,
+    "nome": "Cleifor",
+    "tipo": "Água/Voador",
+    "png": "",
+    "descricao": "Uma poderosa ave aquática que traz a chuva consigo.",
+    "habilidade": "H003",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 70,
+      "defesa": 70,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 80,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": 22,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 24,
+    "nome": "Folhi",
+    "tipo": "Planta/Voador",
+    "png": "",
+    "descricao": "Um pequeno pássaro semelhante a uma arara verde que vive nas copas das árvores.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G022",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 35,
+      "defesa": 40,
+      "ataqueEspecial": 50,
+      "defesaEspecial": 45,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 25
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 25,
+    "nome": "Folharára",
+    "tipo": "Planta/Voador",
+    "png": "",
+    "descricao": "Uma ave de plumagem exuberante que usa folhas e sementes como armas.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G022",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 50,
+      "defesa": 55,
+      "ataqueEspecial": 70,
+      "defesaEspecial": 60,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": 24,
+      "evoluiPara": 26
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 26,
+    "nome": "Noctflora",
+    "tipo": "Planta/Voador",
+    "png": "",
+    "descricao": "Uma enorme ave da floresta que domina seu território e fortalece seus ataques de Planta.",
+    "habilidade": "H004",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G022",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 75,
+      "defesa": 70,
+      "ataqueEspecial": 105,
+      "defesaEspecial": 90,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 25,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 27,
+    "nome": "Tati",
+    "tipo": "Aço",
+    "png": "",
+    "descricao": "Um pequeno tatu-bola protegido por uma carapaça metálica resistente.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G097",
+        "nivel": 1
+      },
+      {
+        "codigo": "G099",
+        "nivel": 20
+      },
+      {
+        "codigo": "G101",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 45,
+      "defesa": 70,
+      "ataqueEspecial": 30,
+      "defesaEspecial": 60,
+      "velocidade": 35
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 28
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 28,
+    "nome": "Tatugor",
+    "tipo": "Aço",
+    "png": "",
+    "descricao": "Um tatu-bola robusto cuja defesa suporta golpes muito fortes.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G097",
+        "nivel": 1
+      },
+      {
+        "codigo": "G099",
+        "nivel": 20
+      },
+      {
+        "codigo": "G101",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 70,
+      "ataque": 65,
+      "defesa": 90,
+      "ataqueEspecial": 40,
+      "defesaEspecial": 80,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": 27,
+      "evoluiPara": 29
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 29,
+    "nome": "Ferragão",
+    "tipo": "Aço/Dragão",
+    "png": "",
+    "descricao": "Um verdadeiro dragão de aço com corpo inspirado em um gigantesco tatu-bola.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G097",
+        "nivel": 1
+      },
+      {
+        "codigo": "G085",
+        "nivel": 12
+      },
+      {
+        "codigo": "G099",
+        "nivel": 20
+      },
+      {
+        "codigo": "G087",
+        "nivel": 28
+      },
+      {
+        "codigo": "G101",
+        "nivel": 33
+      },
+      {
+        "codigo": "G089",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 95,
+      "ataque": 120,
+      "defesa": 120,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 105,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": 28,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 30,
+    "nome": "Lutanguinho",
+    "tipo": "Normal/Lutador",
+    "png": "",
+    "descricao": "Um pequeno canguru que sonha em se tornar um grande campeão de boxe.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G003",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 55,
+      "ataque": 60,
+      "defesa": 45,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 45,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 31
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 31,
+    "nome": "Kanguringue",
+    "tipo": "Lutador",
+    "png": "",
+    "descricao": "Um verdadeiro campeão dos ringues, famoso por golpes surpreendentes.",
+    "habilidade": "H005",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G039",
+        "nivel": 20
+      },
+      {
+        "codigo": "G041",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 95,
+      "ataque": 110,
+      "defesa": 75,
+      "ataqueEspecial": 50,
+      "defesaEspecial": 80,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": 30,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "5% de chance de dar um golpe que desmaia o inimigo.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 32,
+    "nome": "Lofor",
+    "tipo": "Planta",
+    "png": "",
+    "descricao": "Um pequeno lobo de Planta cujos chifres lembram galhos de madeira.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 45,
+      "defesa": 40,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 45,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 33
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 33,
+    "nome": "Lobomato",
+    "tipo": "Planta",
+    "png": "",
+    "descricao": "Um lobo maior que protege seu território com força e chifres de madeira.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 65,
+      "defesa": 55,
+      "ataqueEspecial": 50,
+      "defesaEspecial": 60,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": 32,
+      "evoluiPara": 34
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 34,
+    "nome": "Lobosselva",
+    "tipo": "Planta",
+    "png": "",
+    "descricao": "Um grande lobo que domina a selva e é respeitado pelas criaturas da floresta.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 95,
+      "defesa": 80,
+      "ataqueEspecial": 75,
+      "defesaEspecial": 85,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": 33,
+      "evoluiPara": 35
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 35,
+    "nome": "Loflame",
+    "tipo": "Fogo",
+    "png": "",
+    "descricao": "Um lobo lendário de fogo, considerado uma criatura mitológica de poder divino.",
+    "habilidade": "H006",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
+        "codigo": "G009",
+        "nivel": 20
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 100,
+      "ataque": 120,
+      "defesa": 90,
+      "ataqueEspecial": 105,
+      "defesaEspecial": 95,
+      "velocidade": 100
+    },
+    "evolucao": {
+      "evoluiDe": 34,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Todo ataque é Super-efetivo, exceto contra os tipos definidos como não atingidos pela regra.",
+    "levelevo": null,
+    "raridade": "Lendário"
+  },
+  {
+    "numero": 36,
+    "nome": "Aracnix",
+    "tipo": "Inseto",
+    "png": "",
+    "descricao": "Uma pequena aranha vermelha e azul que se movimenta rapidamente.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
+        "codigo": "G069",
+        "nivel": 20
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 45,
+      "defesa": 40,
+      "ataqueEspecial": 40,
+      "defesaEspecial": 45,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 37
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 37,
+    "nome": "Lutaranha",
+    "tipo": "Inseto/Lutador",
+    "png": "",
+    "descricao": "Uma aranha brava e forte que combina agilidade com golpes físicos.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G069",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 75,
+      "defesa": 55,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 60,
+      "velocidade": 85
+    },
+    "evolucao": {
+      "evoluiDe": 36,
+      "evoluiPara": 38
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 38,
+    "nome": "Venaranha",
+    "tipo": "Dark/Lutador",
+    "png": "",
+    "descricao": "Uma aranha transformada pelo Coração Sombrio, agora muito mais poderosa.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G091",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G093",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G095",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 110,
+      "defesa": 70,
+      "ataqueEspecial": 80,
+      "defesaEspecial": 80,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 37,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 39,
+    "nome": "Capi",
+    "tipo": "Água/Normal",
+    "png": "",
+    "descricao": "Uma pequena capivara tranquila que vive próxima à água.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 12
+      },
+      {
+        "codigo": "G015",
+        "nivel": 20
+      },
+      {
+        "codigo": "G003",
+        "nivel": 28
+      },
+      {
+        "codigo": "G017",
+        "nivel": 33
+      },
+      {
+        "codigo": "G005",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 50,
+      "defesa": 55,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 55,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 40
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 40,
+    "nome": "Capiberá",
+    "tipo": "Água",
+    "png": "",
+    "descricao": "Uma poderosa capivara especialista em ambientes aquáticos.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
+        "codigo": "G015",
+        "nivel": 20
+      },
+      {
+        "codigo": "G017",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 95,
+      "ataque": 90,
+      "defesa": 85,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 85,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": 39,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 41,
+    "nome": "Manbi",
+    "tipo": "Venenoso",
+    "png": "",
+    "descricao": "Uma pequena mamba negra extremamente ágil e veloz.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G044",
+        "nivel": 1
+      },
+      {
+        "codigo": "G046",
+        "nivel": 20
+      },
+      {
+        "codigo": "G048",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 45,
+      "defesa": 45,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 50,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 42
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 42,
+    "nome": "Black-Manbi",
+    "tipo": "Venenoso/Dark",
+    "png": "",
+    "descricao": "Uma mamba negra fortalecida pelo Coração Sombrio, ainda mais perigosa.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G043",
+        "nivel": 1
+      },
+      {
+        "codigo": "G091",
+        "nivel": 12
+      },
+      {
+        "codigo": "G045",
+        "nivel": 20
+      },
+      {
+        "codigo": "G093",
+        "nivel": 28
+      },
+      {
+        "codigo": "G047",
+        "nivel": 33
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 100,
+      "defesa": 75,
+      "ataqueEspecial": 90,
+      "defesaEspecial": 85,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": 41,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 43,
+    "nome": "Dormingo",
+    "tipo": "Normal/Voador",
+    "png": "",
+    "descricao": "Um pequeno flamingo que sonha em se tornar o rei.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G055",
+        "nivel": 12
+      },
+      {
+        "codigo": "G003",
+        "nivel": 20
+      },
+      {
+        "codigo": "G057",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 40,
+      "defesa": 45,
+      "ataqueEspecial": 40,
+      "defesaEspecial": 45,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 44
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 44,
+    "nome": "DoKing",
+    "tipo": "Voador/Fogo",
+    "png": "",
+    "descricao": "Um rei absoluto dos céus, conhecido por seu visual extravagante e presença intimidadora.",
+    "habilidade": "H007",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G055",
+        "nivel": 1
+      },
+      {
+        "codigo": "G007",
+        "nivel": 12
+      },
+      {
+        "codigo": "G057",
+        "nivel": 20
+      },
+      {
+        "codigo": "G009",
+        "nivel": 28
+      },
+      {
+        "codigo": "G059",
+        "nivel": 33
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 95,
+      "defesa": 75,
+      "ataqueEspecial": 80,
+      "defesaEspecial": 80,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 43,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Intimida o adversário, reduzindo seu Ataque em 35%.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 45,
+    "nome": "Morcigo",
+    "tipo": "Normal/Voador",
+    "png": "",
+    "descricao": "Um pequeno morcego que voa silenciosamente durante a noite.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G055",
+        "nivel": 12
+      },
+      {
+        "codigo": "G003",
+        "nivel": 20
+      },
+      {
+        "codigo": "G057",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 55,
+      "ataque": 45,
+      "defesa": 45,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 50,
+      "velocidade": 75
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 46
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 46,
+    "nome": "Morgar",
+    "tipo": "Voador/Dark",
+    "png": "",
+    "descricao": "Um morcego poderoso capaz de cobrir seus adversários com escuridão.",
+    "habilidade": "H008",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G055",
+        "nivel": 1
+      },
+      {
+        "codigo": "G091",
+        "nivel": 12
+      },
+      {
+        "codigo": "G057",
+        "nivel": 20
+      },
+      {
+        "codigo": "G093",
+        "nivel": 28
+      },
+      {
+        "codigo": "G059",
+        "nivel": 33
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 75,
+      "ataque": 70,
+      "defesa": 65,
+      "ataqueEspecial": 60,
+      "defesaEspecial": 75,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": 45,
+      "evoluiPara": 47
+    },
+    "habilidadeInfo": "Deixa o oponente cego por 2 rounds; ele tem 50% de chance de acertar o golpe.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 47,
+    "nome": "Dracur",
+    "tipo": "Dark",
+    "png": "",
+    "descricao": "Um vampiro semelhante a Drácula que caça na escuridão e drena seus adversários.",
+    "habilidade": "H008",
+    "golpeAssinatura": "Sugar",
+    "golpes": [
+      {
+        "codigo": "G091",
+        "nivel": 1
+      },
+      {
+        "codigo": "G093",
+        "nivel": 20
+      },
+      {
+        "codigo": "G095",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 100,
+      "ataque": 115,
+      "defesa": 85,
+      "ataqueEspecial": 95,
+      "defesaEspecial": 95,
+      "velocidade": 110
+    },
+    "evolucao": {
+      "evoluiDe": 46,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Cegueira. Sugar tem 115 de Poder, é Dark e recupera 15% do dano causado em HP.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 48,
+    "nome": "Bombarder",
+    "tipo": "Inseto",
+    "png": "",
+    "descricao": "Um besouro-bombardeiro especializado em lançar uma poderosa explosão.",
+    "habilidade": "",
+    "golpeAssinatura": "Bomba",
+    "golpes": [
+      {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
+        "codigo": "G069",
+        "nivel": 20
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 70,
+      "ataque": 115,
+      "defesa": 70,
+      "ataqueEspecial": 70,
+      "defesaEspecial": 70,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 49,
+    "nome": "Sabic",
+    "tipo": "Fada/Voador",
+    "png": "",
+    "descricao": "Uma sábia lendária e rainha das florestas, responsável pelos animais da mata.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G104",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G106",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G108",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 75,
+      "ataque": 60,
+      "defesa": 65,
+      "ataqueEspecial": 90,
+      "defesaEspecial": 90,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "habilidadeInfo": "No primeiro turno, 80% de chance de o adversário não atacar por ficar encantado.",
+    "raridade": "Comum"
+  },
+  {
+    "numero": 50,
+    "nome": "Shalung",
+    "tipo": "Dragão",
+    "png": "",
+    "descricao": "O Deus Dragão, considerado um dos Monstros mais poderosos de todos.",
+    "habilidade": "H007",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G086",
+        "nivel": 1
+      },
+      {
+        "codigo": "G088",
+        "nivel": 20
+      },
+      {
+        "codigo": "G090",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 105,
+      "ataque": 110,
+      "defesa": 100,
+      "ataqueEspecial": 115,
+      "defesaEspecial": 105,
+      "velocidade": 115
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Intimida o adversário, reduzindo seu Ataque em 35%.",
+    "levelevo": null,
+    "raridade": "Lendário"
+  },
+  {
+    "numero": 51,
+    "nome": "Tempester",
+    "tipo": "Água/Elétrico",
+    "png": "",
+    "descricao": "A Deusa da Tempestade, capaz de comandar chuva e eletricidade.",
+    "habilidade": "H003",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G026",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G028",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G030",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 100,
+      "ataque": 90,
+      "defesa": 100,
+      "ataqueEspecial": 125,
+      "defesaEspecial": 110,
+      "velocidade": 115
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Lendário"
+  },
+  {
+    "numero": 52,
+    "nome": "Tocaí",
+    "tipo": "Terra/Normal",
+    "png": "",
+    "descricao": "Um pequeno monstro terrestre que ainda está aprendendo a sobreviver.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 12
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G003",
+        "nivel": 28
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      },
+      {
+        "codigo": "G005",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 45,
+      "defesa": 55,
+      "ataqueEspecial": 25,
+      "defesaEspecial": 40,
+      "velocidade": 50
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 53
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 53,
+    "nome": "Terruja",
+    "tipo": "Terra/Voador",
+    "png": "",
+    "descricao": "A evolução de Tocaí, uma criatura vigilante capaz de enxergar perigos à noite.",
+    "habilidade": "H010",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G055",
+        "nivel": 12
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G057",
+        "nivel": 28
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 75,
+      "ataque": 70,
+      "defesa": 80,
+      "ataqueEspecial": 40,
+      "defesaEspecial": 65,
+      "velocidade": 80
+    },
+    "evolucao": {
+      "evoluiDe": 52,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Não é afetado por Cegueira e aumenta a Defesa em 50% ao entrar em campo.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 54,
+    "nome": "Komodim",
+    "tipo": "Terra",
+    "png": "",
+    "descricao": "Um pequeno dragão-de-komodo ágil que ainda está aprendendo a caçar.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 60,
+      "defesa": 55,
+      "ataqueEspecial": 30,
+      "defesaEspecial": 45,
+      "velocidade": 40
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 55
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 55,
+    "nome": "Komodor",
+    "tipo": "Terra",
+    "png": "",
+    "descricao": "Um dragão-de-komodo maior e mais agressivo, com uma cauda pesada.",
+    "habilidade": "H011",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 70,
+      "ataque": 80,
+      "defesa": 70,
+      "ataqueEspecial": 45,
+      "defesaEspecial": 60,
+      "velocidade": 50
+    },
+    "evolucao": {
+      "evoluiDe": 54,
+      "evoluiPara": 56
+    },
+    "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 56,
+    "nome": "Komodonte",
+    "tipo": "Terra",
+    "png": "",
+    "descricao": "Um enorme lagarto territorial extremamente resistente.",
+    "habilidade": "H011",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 105,
+      "defesa": 90,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 75,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": 55,
+      "evoluiPara": 57
+    },
+    "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 57,
+    "nome": "Komodraco",
+    "tipo": "Terra/Dragão",
+    "png": "",
+    "descricao": "A verdadeira forma dracônica de Komodim, com escamas duras e mordida devastadora.",
+    "habilidade": "H012",
+    "golpeAssinatura": "Mordida Dracônica",
+    "golpes": [
+      {
+        "codigo": "G049",
+        "nivel": 1
+      },
+      {
+        "codigo": "G085",
+        "nivel": 12
+      },
+      {
+        "codigo": "G051",
+        "nivel": 20
+      },
+      {
+        "codigo": "G087",
+        "nivel": 28
+      },
+      {
+        "codigo": "G053",
+        "nivel": 33
+      },
+      {
+        "codigo": "G089",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 110,
+      "ataque": 130,
+      "defesa": 105,
+      "ataqueEspecial": 80,
+      "defesaEspecial": 95,
+      "velocidade": 100
+    },
+    "evolucao": {
+      "evoluiDe": 56,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Com pouco HP, aumenta Ataque e Defesa; ao derrotar um inimigo, o Ataque aumenta em 35%.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 58,
+    "nome": "Oraculo",
+    "tipo": "Psíquico",
+    "png": "",
+    "descricao": "Uma água-viva com um enorme olho central que medita nas profundezas.",
+    "habilidade": "H013",
+    "golpeAssinatura": "Ilusão",
+    "golpes": [
+      {
+        "codigo": "G062",
+        "nivel": 1
+      },
+      {
+        "codigo": "G064",
+        "nivel": 20
+      },
+      {
+        "codigo": "G066",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 45,
+      "defesa": 65,
+      "ataqueEspecial": 125,
+      "defesaEspecial": 105,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Não recebe dano de golpes de Água.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 59,
+    "nome": "Gartic",
+    "tipo": "Elétrico",
+    "png": "",
+    "descricao": "Um pequeno gato elétrico extremamente rápido e ágil.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G026",
+        "nivel": 1
+      },
+      {
+        "codigo": "G028",
+        "nivel": 20
+      },
+      {
+        "codigo": "G030",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 35,
+      "defesa": 40,
+      "ataqueEspecial": 55,
+      "defesaEspecial": 45,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": "60 ou 61"
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 60,
+    "nome": "Galacto",
+    "tipo": "Elétrico/Psíquico",
+    "png": "",
+    "descricao": "Um gato elétrico e psíquico maior, capaz de combinar velocidade e poderes mentais.",
+    "habilidade": "H011",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G026",
+        "nivel": 1
+      },
+      {
+        "codigo": "G062",
+        "nivel": 12
+      },
+      {
+        "codigo": "G028",
+        "nivel": 20
+      },
+      {
+        "codigo": "G064",
+        "nivel": 28
+      },
+      {
+        "codigo": "G030",
+        "nivel": 33
+      },
+      {
+        "codigo": "G066",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 50,
+      "defesa": 55,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 70,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": 59,
+      "evoluiPara": 61
+    },
+    "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 61,
+    "nome": "El Galactor",
+    "tipo": "Elétrico/Lutador",
+    "png": "",
+    "descricao": "Uma versão rara inspirada em um gato de botas elétrico, famosa por sobreviver ao impossível.",
+    "habilidade": "H014",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G026",
+        "nivel": 1
+      },
+      {
+        "codigo": "G038",
+        "nivel": 12
+      },
+      {
+        "codigo": "G028",
+        "nivel": 20
+      },
+      {
+        "codigo": "G040",
+        "nivel": 28
+      },
+      {
+        "codigo": "G030",
+        "nivel": 33
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 105,
+      "defesa": 80,
+      "ataqueEspecial": 110,
+      "defesaEspecial": 85,
+      "velocidade": 100
+    },
+    "evolucao": {
+      "evoluiDe": 60,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "50% de chance de voltar com 1 HP quando seria derrotado, até 9 vezes.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 62,
+    "nome": "Konguim",
+    "tipo": "Normal",
+    "png": "",
+    "descricao": "Um pequeno gorila de espécie rara que começa a descobrir sua força.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G003",
+        "nivel": 20
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 60,
+      "ataque": 55,
+      "defesa": 50,
+      "ataqueEspecial": 30,
+      "defesaEspecial": 45,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 63
+    },
+    "levelevo": 25,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 63,
+    "nome": "Kongor",
+    "tipo": "Lutador",
+    "png": "",
+    "descricao": "Um gorila enorme e poderoso que usa punhos e peito para intimidar.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G039",
+        "nivel": 20
+      },
+      {
+        "codigo": "G041",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 90,
+      "defesa": 70,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 55,
+      "velocidade": 65
+    },
+    "evolucao": {
+      "evoluiDe": 62,
+      "evoluiPara": "64 ou 65"
+    },
+    "levelevo": 45,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 64,
+    "nome": "Kongarok",
+    "tipo": "Lutador/Terra",
+    "png": "",
+    "descricao": "Um gigantesco gorila que domina seu território como um rei.",
+    "habilidade": "H015",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G049",
+        "nivel": 12
+      },
+      {
+        "codigo": "G039",
+        "nivel": 20
+      },
+      {
+        "codigo": "G051",
+        "nivel": 28
+      },
+      {
+        "codigo": "G041",
+        "nivel": 33
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 95,
+      "ataque": 115,
+      "defesa": 90,
+      "ataqueEspecial": 45,
+      "defesaEspecial": 70,
+      "velocidade": 75
+    },
+    "evolucao": {
+      "evoluiDe": 63,
+      "evoluiPara": 65
+    },
+    "habilidadeInfo": "Quanto menor o HP, maior o Ataque; o bônus é limitado a 100%.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 65,
+    "nome": "Ozaru",
+    "tipo": "Lutador/Dark",
+    "png": "",
+    "descricao": "Uma versão rara e feroz de Kongor, transformada em guerreiro das sombras.",
+    "habilidade": "H015",
+    "golpeAssinatura": "Rajada Dark",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G091",
+        "nivel": 12
+      },
+      {
+        "codigo": "G039",
+        "nivel": 20
+      },
+      {
+        "codigo": "G093",
+        "nivel": 28
+      },
+      {
+        "codigo": "G041",
+        "nivel": 33
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 45
+      }
+    ],
+    "statusBase": {
+      "hp": 110,
+      "ataque": 130,
+      "defesa": 95,
+      "ataqueEspecial": 70,
+      "defesaEspecial": 90,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 64,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Fúria Colossal; quanto menor o HP, maior o Ataque, limitada a 100%. Rajada Dark tem 120 de Poder.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 66,
+    "nome": "Lunita",
+    "tipo": "Pedra/Psíquico",
+    "png": "",
+    "descricao": "Uma pedra vinda da Lua que ganhou consciência e poderes psíquicos.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G074",
+        "nivel": 1
+      },
+      {
+        "codigo": "G062",
+        "nivel": 12
+      },
+      {
+        "codigo": "G076",
+        "nivel": 20
+      },
+      {
+        "codigo": "G064",
+        "nivel": 28
+      },
+      {
+        "codigo": "G078",
+        "nivel": 33
+      },
+      {
+        "codigo": "G066",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 55,
+      "ataque": 35,
+      "defesa": 60,
+      "ataqueEspecial": 60,
+      "defesaEspecial": 65,
+      "velocidade": 45
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 67
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 67,
+    "nome": "Lunora",
+    "tipo": "Pedra/Dark",
+    "png": "",
+    "descricao": "Uma pedra lunar maior e brilhante que absorveu a escuridão da noite.",
+    "habilidade": "H016",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G074",
+        "nivel": 1
+      },
+      {
+        "codigo": "G092",
+        "nivel": 12
+      },
+      {
+        "codigo": "G076",
+        "nivel": 20
+      },
+      {
+        "codigo": "G094",
+        "nivel": 28
+      },
+      {
+        "codigo": "G078",
+        "nivel": 33
+      },
+      {
+        "codigo": "G096",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 70,
+      "defesa": 90,
+      "ataqueEspecial": 90,
+      "defesaEspecial": 100,
+      "velocidade": 70
+    },
+    "evolucao": {
+      "evoluiDe": 66,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Transforma o campo em Noite e deixa golpes Dark 50% mais fortes.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 68,
+    "nome": "Nevuru",
+    "tipo": "Gelo",
+    "png": "",
+    "descricao": "Uma pequena coruja branca que se esconde na neve.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
+        "codigo": "G034",
+        "nivel": 20
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 45,
+      "ataque": 35,
+      "defesa": 50,
+      "ataqueEspecial": 45,
+      "defesaEspecial": 55,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 69
+    },
+    "levelevo": 25,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 69,
+    "nome": "Glacuru",
+    "tipo": "Gelo/Voador",
+    "png": "",
+    "descricao": "Uma coruja cujas asas cresceram e cujas penas começaram a formar gelo.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G034",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 65,
+      "ataque": 50,
+      "defesa": 65,
+      "ataqueEspecial": 70,
+      "defesaEspecial": 75,
+      "velocidade": 75
+    },
+    "evolucao": {
+      "evoluiDe": 68,
+      "evoluiPara": 70
+    },
+    "levelevo": 42,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 70,
+    "nome": "Glaciruja",
+    "tipo": "Gelo/Voador",
+    "png": "",
+    "descricao": "Uma enorme coruja-das-neves considerada guardiã das regiões congeladas.",
+    "habilidade": "H017",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
+        "codigo": "G056",
+        "nivel": 12
+      },
+      {
+        "codigo": "G034",
+        "nivel": 20
+      },
+      {
+        "codigo": "G058",
+        "nivel": 28
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 80,
+      "defesa": 85,
+      "ataqueEspecial": 105,
+      "defesaEspecial": 100,
+      "velocidade": 95
+    },
+    "evolucao": {
+      "evoluiDe": 69,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Ao entrar em batalha, cria neve por alguns turnos.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 71,
+    "nome": "Curupim",
+    "tipo": "Planta",
+    "png": "",
+    "descricao": "Um pequeno guardião da mata que protege animais menores.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 45,
+      "defesa": 45,
+      "ataqueEspecial": 45,
+      "defesaEspecial": 45,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 72
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 72,
+    "nome": "Curupira",
+    "tipo": "Planta/Fogo",
+    "png": "",
+    "descricao": "Um lendário guardião da mata que confunde caçadores e transforma a floresta em armadilha.",
+    "habilidade": "H004",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
+        "codigo": "G007",
+        "nivel": 12
+      },
+      {
+        "codigo": "G021",
+        "nivel": 20
+      },
+      {
+        "codigo": "G009",
+        "nivel": 28
+      },
+      {
+        "codigo": "G023",
+        "nivel": 33
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 95,
+      "defesa": 75,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 75,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": 71,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 73,
+    "nome": "Fogaréu",
+    "tipo": "Fogo",
+    "png": "",
+    "descricao": "Uma pequena serpente flamejante que mantém uma chama constante ao redor do corpo.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 55,
+      "defesa": 40,
+      "ataqueEspecial": 60,
+      "defesaEspecial": 40,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 74
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 74,
+    "nome": "Boitatá",
+    "tipo": "Fogo/Dragão",
+    "png": "",
+    "descricao": "Uma enorme serpente lendária de chamas que percorre a escuridão.",
+    "habilidade": "H018",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G086",
+        "nivel": 12
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G088",
+        "nivel": 28
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G090",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 110,
+      "defesa": 85,
+      "ataqueEspecial": 120,
+      "defesaEspecial": 85,
+      "velocidade": 100
+    },
+    "evolucao": {
+      "evoluiDe": 73,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Golpes têm chance de queimar o adversário.",
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 75,
+    "nome": "Mulabrasa",
+    "tipo": "Fogo",
+    "png": "",
+    "descricao": "Um pequeno potro amaldiçoado cujos cascos produzem brasas.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
+        "codigo": "G009",
+        "nivel": 20
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 55,
+      "ataque": 65,
+      "defesa": 45,
+      "ataqueEspecial": 60,
+      "defesaEspecial": 45,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 76
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 76,
+    "nome": "Brasamula",
+    "tipo": "Fogo/Fantasma",
+    "png": "",
+    "descricao": "Uma criatura envolta em chamas que galopa durante noites sem lua.",
+    "habilidade": "H019",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
+        "codigo": "G080",
+        "nivel": 12
+      },
+      {
+        "codigo": "G010",
+        "nivel": 20
+      },
+      {
+        "codigo": "G082",
+        "nivel": 28
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G084",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 100,
+      "ataque": 105,
+      "defesa": 90,
+      "ataqueEspecial": 110,
+      "defesaEspecial": 95,
+      "velocidade": 100
+    },
+    "evolucao": {
+      "evoluiDe": 75,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Se atacar primeiro e o adversário estiver com menos de 50% de HP, aumenta o poder de ataque.",
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 77,
+    "nome": "Lobito",
+    "tipo": "Dark",
+    "png": "",
+    "descricao": "Um jovem lobo que fica mais agressivo durante a noite.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G091",
+        "nivel": 1
+      },
+      {
+        "codigo": "G093",
+        "nivel": 20
+      },
+      {
+        "codigo": "G095",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 85,
+      "ataque": 85,
+      "defesa": 75,
+      "ataqueEspecial": 70,
+      "defesaEspecial": 75,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 78
+    },
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 78,
+    "nome": "Lubryon",
+    "tipo": "Dark/Lutador",
+    "png": "",
+    "descricao": "Um lendário licantropo que desperta seu verdadeiro poder sob a Lua.",
+    "habilidade": "H020",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G091",
+        "nivel": 1
+      },
+      {
+        "codigo": "G037",
+        "nivel": 12
+      },
+      {
+        "codigo": "G093",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G095",
+        "nivel": 33
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 105,
+      "ataque": 120,
+      "defesa": 90,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 100,
+      "velocidade": 110
+    },
+    "evolucao": {
+      "evoluiDe": 77,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Abaixo de 25% de HP, entra no Estado Lunar: +100% de Ataque e -90% de Defesa.",
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 79,
+    "nome": "Botim",
+    "tipo": "Água",
+    "png": "",
+    "descricao": "Um pequeno boto curioso que vive nos rios e segue barcos.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      }
+    ],
+    "statusBase": {
+      "hp": 80,
+      "ataque": 70,
+      "defesa": 75,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 80,
+      "velocidade": 90
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": 80
+    },
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 80,
+    "nome": "Botamar",
+    "tipo": "Água/Psíquico",
+    "png": "",
+    "descricao": "Um boto lendário capaz de assumir aparência humanoide e encantar viajantes.",
+    "habilidade": "H029",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
+        "codigo": "G062",
+        "nivel": 12
+      },
+      {
+        "codigo": "G016",
+        "nivel": 20
+      },
+      {
+        "codigo": "G064",
+        "nivel": 28
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "G066",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 105,
+      "ataque": 90,
+      "defesa": 95,
+      "ataqueEspecial": 120,
+      "defesaEspecial": 110,
+      "velocidade": 110
+    },
+    "evolucao": {
+      "evoluiDe": 79,
+      "evoluiPara": ""
+    },
+    "habilidadeInfo": "Ao derrotar um adversário, transforma-se nele, herdando aparência e tipagem, mas mantém seus próprios golpes.",
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 81,
+    "nome": "Cuca",
+    "tipo": "Psíquico/Dark",
+    "png": "Cuca.jpeg",
+    "descricao": "Uma criatura mítica envolta em mistério, capaz de dominar a mente e as sombras.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G033",
+        "nivel": 1
+      },
+      {
+        "codigo": "G035",
+        "nivel": 12
+      },
+      {
+        "codigo": "G061",
+        "nivel": 20
+      },
+      {
+        "codigo": "G063",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G006",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 105,
+      "ataque": 90,
+      "defesa": 95,
+      "ataqueEspecial": 120,
+      "defesaEspecial": 110,
+      "velocidade": 110
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 82,
+    "nome": "Saci",
+    "tipo": "Vento/Lutador",
+    "png": "Saci.jpeg",
+    "descricao": "Um espírito mítico veloz e travesso que domina os ventos e luta com força surpreendente.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G115",
+        "nivel": 1
+      },
+      {
+        "codigo": "G117",
+        "nivel": 12
+      },
+      {
+        "codigo": "G037",
+        "nivel": 20
+      },
+      {
+        "codigo": "G039",
+        "nivel": 28
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
+      },
+      {
+        "codigo": "G005",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 100,
+      "ataque": 120,
+      "defesa": 90,
+      "ataqueEspecial": 100,
+      "defesaEspecial": 90,
+      "velocidade": 130
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Mítico"
+  },
+  {
+    "numero": 83,
+    "nome": "Cabrito",
+    "tipo": "Normal",
+    "png": "Cabrito.jpeg",
+    "descricao": "Um cabrito comum que pode seguir um de dois caminhos de evolução diferentes.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G003",
+        "nivel": 12
+      },
+      {
+        "codigo": "G005",
+        "nivel": 20
+      },
+      {
+        "codigo": "G002",
+        "nivel": 28
+      },
+      {
+        "codigo": "G004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G006",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 50,
+      "ataque": 55,
+      "defesa": 50,
+      "ataqueEspecial": 35,
+      "defesaEspecial": 45,
+      "velocidade": 55
+    },
+    "evolucao": {
+      "evoluiDe": "",
+      "evoluiPara": "",
+      "evolucoesPossiveis": [
+        84,
+        85
+      ],
+      "chanceCada": 0.5
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 84,
+    "nome": "La Pulga",
+    "tipo": "Psíquico/Dark",
+    "png": "La Pulga.jpeg",
+    "descricao": "A forma final psíquica e sombria de Cabrito, extremamente poderosa e veloz.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G033",
+        "nivel": 1
+      },
+      {
+        "codigo": "G035",
+        "nivel": 12
+      },
+      {
+        "codigo": "G061",
+        "nivel": 20
+      },
+      {
+        "codigo": "G063",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G006",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 85,
+      "defesa": 80,
+      "ataqueEspecial": 125,
+      "defesaEspecial": 90,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 83,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  },
+  {
+    "numero": 85,
+    "nome": "El Bicho",
+    "tipo": "Lutador/Aço",
+    "png": "El Bicho.jpeg",
+    "descricao": "Uma forma final brutal de Cabrito que concentra seu poder no ataque físico.",
+    "habilidade": "",
+    "golpeAssinatura": "Nil",
+    "golpes": [
+      {
+        "codigo": "G037",
+        "nivel": 1
+      },
+      {
+        "codigo": "G039",
+        "nivel": 12
+      },
+      {
+        "codigo": "G067",
+        "nivel": 20
+      },
+      {
+        "codigo": "G069",
+        "nivel": 28
+      },
+      {
+        "codigo": "G005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      }
+    ],
+    "statusBase": {
+      "hp": 90,
+      "ataque": 125,
+      "defesa": 80,
+      "ataqueEspecial": 85,
+      "defesaEspecial": 90,
+      "velocidade": 105
+    },
+    "evolucao": {
+      "evoluiDe": 83,
+      "evoluiPara": ""
+    },
+    "levelevo": null,
+    "raridade": "Comum"
+  }
+]

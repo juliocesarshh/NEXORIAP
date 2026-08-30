@@ -1,0 +1,291 @@
+[
+  {
+    "codigo": "B001",
+    "nome": "Pedra Do Desejo",
+    "categoria": "Evolução",
+    "descricao": "Permite que monstros específicos evoluam por meio deste item.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "evolucao_especifica"
+    },
+    "evolucoes": [
+      {
+        "de": "Lingard",
+        "para": "Sharlong"
+      }
+    ],
+    "png": "Pedra Do Desejo.png"
+  },
+  {
+    "codigo": "B002",
+    "nome": "Pedra da evolução",
+    "categoria": "Evolução",
+    "descricao": "Faz qualquer monstro elegível evoluir para sua próxima forma.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "evolucao_proxima"
+    },
+    "png": "Pedra da evolução.png"
+  },
+  {
+    "codigo": "B003",
+    "nome": "Coração Sombrio",
+    "categoria": "Evolução",
+    "descricao": "Permite que monstros específicos evoluam por meio deste item.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "evolucao_especifica"
+    },
+    "evolucoes": [
+      {
+        "de": "Lutaranha",
+        "para": "Venaranha"
+      }
+    ],
+    "png": "Coração Sombrio.png"
+  },
+  {
+    "codigo": "B004",
+    "nome": "Flame essence",
+    "categoria": "Tipo",
+    "descricao": "20% de chance de queimar o adversário ao acertar um golpe. Funciona apenas em Fogo.",
+    "tipo": "Fogo",
+    "efeito": {
+      "tipo": "chance_status",
+      "status": "queimado",
+      "chance": 0.2
+    },
+    "png": "Flame essence.png"
+  },
+  {
+    "codigo": "B005",
+    "nome": "Grass seed",
+    "categoria": "Tipo",
+    "descricao": "+10% de dano. Funciona apenas em Planta.",
+    "tipo": "Planta",
+    "efeito": {
+      "tipo": "dano",
+      "valor": 0.1
+    },
+    "png": "Grass seed.png"
+  },
+  {
+    "codigo": "B006",
+    "nome": "SteelWings",
+    "categoria": "Tipo",
+    "descricao": "+5% de Defesa e Defesa Especial. Funciona apenas em Voador.",
+    "tipo": "Voador",
+    "efeito": {
+      "tipo": "status",
+      "valores": {
+        "defesa": 0.05,
+        "defesaEspecial": 0.05
+      }
+    },
+    "png": "SteelWings.png"
+  },
+  {
+    "codigo": "B007",
+    "nome": "Walter Pearl",
+    "categoria": "Tipo",
+    "descricao": "+10% de dano. Funciona apenas em Água.",
+    "tipo": "Água",
+    "efeito": {
+      "tipo": "dano",
+      "valor": 0.1
+    },
+    "png": "Walter Pearl.png"
+  },
+  {
+    "codigo": "B008",
+    "nome": "Kimono",
+    "categoria": "Tipo",
+    "descricao": "12% de chance de fazer o adversário Flinchar ao acertar. Funciona apenas em Lutador.",
+    "tipo": "Lutador",
+    "efeito": {
+      "tipo": "chance_status",
+      "status": "flinchar",
+      "chance": 0.12
+    },
+    "png": "Kimono.png"
+  },
+  {
+    "codigo": "B009",
+    "nome": "Agamoto",
+    "categoria": "Tipo",
+    "descricao": "20% de chance de Confundir o adversário no primeiro turno. Funciona apenas em Psíquico.",
+    "tipo": "Psíquico",
+    "efeito": {
+      "tipo": "confundir_primeiro_turno",
+      "chance": 0.2
+    },
+    "png": "Agamoto.png"
+  },
+  {
+    "codigo": "B010",
+    "nome": "Armon",
+    "categoria": "Tipo",
+    "descricao": "+20% de Defesa e Defesa Especial. Funciona apenas em Pedra.",
+    "tipo": "Pedra",
+    "efeito": {
+      "tipo": "status",
+      "valores": {
+        "defesa": 0.2,
+        "defesaEspecial": 0.2
+      }
+    },
+    "png": "Armon.png"
+  },
+  {
+    "codigo": "B011",
+    "nome": "Golden Experience",
+    "categoria": "Tipo",
+    "descricao": "+10% em todos os status. Funciona apenas em Metal/Aço.",
+    "tipo": "Aço",
+    "efeito": {
+      "tipo": "todos_status",
+      "valor": 0.1
+    },
+    "png": "Golden Experience.png"
+  },
+  {
+    "codigo": "B012",
+    "nome": "Piripimpim",
+    "categoria": "Tipo",
+    "descricao": "+15% de Ataque Especial. Funciona apenas em Fada.",
+    "tipo": "Fada",
+    "efeito": {
+      "tipo": "status",
+      "valores": {
+        "ataqueEspecial": 0.15
+      }
+    },
+    "png": "Piripimpim.png"
+  },
+  {
+    "codigo": "B013",
+    "nome": "DragonHeart",
+    "categoria": "Tipo",
+    "descricao": "+10% em todos os status. Funciona apenas em Dragão.",
+    "tipo": "Dragão",
+    "efeito": {
+      "tipo": "todos_status",
+      "valor": 0.1
+    },
+    "png": "DragonHeart.png"
+  },
+  {
+    "codigo": "B014",
+    "nome": "51",
+    "categoria": "Tipo",
+    "descricao": "+10% de dano. Funciona apenas em Vento.",
+    "tipo": "Vento",
+    "efeito": {
+      "tipo": "dano",
+      "valor": 0.1
+    },
+    "png": "51.png"
+  },
+  {
+    "codigo": "B015",
+    "nome": "Exoskeleton",
+    "categoria": "Tipo",
+    "descricao": "+10% de Ataque e Velocidade. Funciona apenas em Inseto.",
+    "tipo": "Inseto",
+    "efeito": {
+      "tipo": "status",
+      "valores": {
+        "ataque": 0.1,
+        "velocidade": 0.1
+      }
+    },
+    "png": "Exoskeleton.png"
+  },
+  {
+    "codigo": "B016",
+    "nome": "StopLightning",
+    "categoria": "Tipo",
+    "descricao": "+15% de dano e Velocidade. Funciona apenas em Elétrico.",
+    "tipo": "Elétrico",
+    "efeito": {
+      "tipo": "dano_status",
+      "dano": 0.15,
+      "status": {
+        "velocidade": 0.15
+      }
+    },
+    "png": "StopLightning.png"
+  },
+  {
+    "codigo": "B017",
+    "nome": "Dark Essence",
+    "categoria": "Tipo",
+    "descricao": "+15% de dano. Funciona apenas em Dark.",
+    "tipo": "Dark",
+    "efeito": {
+      "tipo": "dano",
+      "valor": 0.15
+    },
+    "png": "Dark Essence.png"
+  },
+  {
+    "codigo": "B018",
+    "nome": "Ice Cube",
+    "categoria": "Tipo",
+    "descricao": "+15% de dano. Funciona apenas em Gelo.",
+    "tipo": "Gelo",
+    "efeito": {
+      "tipo": "dano",
+      "valor": 0.15
+    },
+    "png": "Ice Cube.png"
+  },
+  {
+    "codigo": "B019",
+    "nome": "Normal Dna",
+    "categoria": "Tipo",
+    "descricao": "+10% em todos os status. Funciona apenas em Normal.",
+    "tipo": "Normal",
+    "efeito": {
+      "tipo": "todos_status",
+      "valor": 0.1
+    },
+    "png": "Normal Dna.png"
+  },
+  {
+    "codigo": "B020",
+    "nome": "AcidToxic",
+    "categoria": "Tipo",
+    "descricao": "+10% em todos os status. Funciona apenas em Veneno.",
+    "tipo": "Veneno",
+    "efeito": {
+      "tipo": "todos_status",
+      "valor": 0.1
+    },
+    "png": "AcidToxic.png"
+  },
+  {
+    "codigo": "B021",
+    "nome": "Last Dance",
+    "categoria": "Cura",
+    "descricao": "10% de chance de sobreviver com 1 HP ao receber um golpe que o faria desmaiar.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "sobreviver_1hp",
+      "chance": 0.1
+    },
+    "png": "Last Dance.png"
+  },
+  {
+    "codigo": "B022",
+    "nome": "Give me",
+    "categoria": "Cura",
+    "descricao": "Se o adversário estiver usando item, recupera 10% do HP máximo a cada turno.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "cura_por_item_adversario",
+      "valor": 0.1
+    },
+    "png": "Give me.png"
+  }
+]
