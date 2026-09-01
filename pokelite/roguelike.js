@@ -19,7 +19,7 @@ function calcularStatus(base, nivel) {
   const s = base.statusBase;
   const porNivel = (valorBase) => Math.floor((2 * valorBase * nivel) / 100) + 5;
 
-  return {
+  const status = {
     hpMax: Math.floor((2 * s.hp * nivel) / 100) + nivel + 10,
     ataque: porNivel(s.ataque),
     defesa: porNivel(s.defesa),
@@ -27,9 +27,34 @@ function calcularStatus(base, nivel) {
     defesaEspecial: porNivel(s.defesaEspecial),
     velocidade: porNivel(s.velocidade),
   };
+  return status;
 }
 
 const NIVEL_MAXIMO = 105;
+
+
+function selecionarQuatroGolpes(codigos, base) {
+  const unicos=[...new Set((codigos||[]).filter(Boolean))];
+  if(unicos.length<=4) return unicos;
+  const tipos=String(base?.tipo||"").split("/").map(x=>x.trim());
+  const dados=unicos.map((codigo,ordem)=>{
+    const g=buscarGolpe(codigo); if(!g) return {codigo,score:-999,ordem};
+    const stab=tipos.includes(String(g.tipo||"").trim())?35:0;
+    const poder=Number(g.poder)||0;
+    const variedade=g.categoria==="Especial"?8:g.categoria==="Físico"?6:4;
+    const assinatura=base?.golpeAssinatura===codigo?50:0;
+    return {codigo,score:assinatura+stab+poder+variedade,ordem};
+  });
+  const escolhidos=[];
+  for(const cat of ["Físico","Especial"]){
+    const x=dados.filter(d=>buscarGolpe(d.codigo)?.categoria===cat).sort((a,b)=>b.score-a.score||b.ordem-a.ordem)[0];
+    if(x) escolhidos.push(x);
+  }
+  dados.sort((a,b)=>b.score-a.score||b.ordem-a.ordem);
+  for(const x of dados){if(escolhidos.length>=4)break;if(!escolhidos.some(y=>y.codigo===x.codigo))escolhidos.push(x);}
+  return escolhidos.slice(0,4).map(x=>x.codigo);
+}
+window.selecionarQuatroGolpes=selecionarQuatroGolpes;
 
 // Monta uma "instância de batalha" de um monstro: nível atual, status calculado,
 // HP atual e quais golpes ele já sabe nesse nível.
@@ -42,6 +67,7 @@ function recalcularStatusDaInstancia(monstro) {
   // ao novo HP máximo. Não convertemos para porcentagem.
   const hpAnterior = Number.isFinite(Number(monstro.hpAtual)) ? Number(monstro.hpAtual) : 0;
   let status = calcularStatus(base, monstro.nivel);
+  if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(status, monstro.natureza);
   if (typeof aplicarMultiplicadoresItem === "function") status = aplicarMultiplicadoresItem(monstro, status);
   monstro.status = status;
   monstro.statusOriginal = { ...status };
@@ -67,11 +93,11 @@ function prepararTimeParaNovaBatalha() {
     monstro.png = base.png;
     monstro.habilidade = base.habilidade || null;
     monstro.statusBase = base.statusBase;
-    monstro.golpesConhecidos = (base.golpes || [])
-      .filter((g) => g.nivel <= monstro.nivel)
-      .map((g) => g.codigo);
+    monstro.golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
+      .filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo), base);
 
     let status = calcularStatus(base, monstro.nivel);
+    if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(status, monstro.natureza);
     if (typeof aplicarMultiplicadoresItem === "function") {
       status = aplicarMultiplicadoresItem(monstro, status);
     }
@@ -97,17 +123,18 @@ function prepararTimeParaNovaBatalha() {
   });
 }
 
-function criarInstanciaMonstro(numero, nivel) {
+function criarInstanciaMonstro(numero, nivel, natureza = null) {
   const base = DADOS_MONSTROS.find((m) => m.numero === numero);
   if (!base) return null;
 
   const nivelFinal = Math.max(1, Math.min(NIVEL_MAXIMO, nivel));
+  const naturezaFinal = natureza || (typeof naturezaAleatoria === "function" ? naturezaAleatoria().id : null);
 
-  const golpesConhecidos = (base.golpes || [])
-    .filter((g) => g.nivel <= nivelFinal)
-    .map((g) => g.codigo);
+  const golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
+    .filter((g) => g.nivel <= nivelFinal).map((g) => g.codigo), base);
 
-  const status = calcularStatus(base, nivelFinal);
+  let status = calcularStatus(base, nivelFinal);
+  if (typeof aplicarNatureza === "function") aplicarNatureza(status, naturezaFinal);
 
   const instancia = {
     numero: base.numero,
@@ -117,6 +144,7 @@ function criarInstanciaMonstro(numero, nivel) {
     habilidade: base.habilidade || null,
     item: base.item || null,
     nivel: nivelFinal,
+    natureza: naturezaFinal,
     statusBase: base.statusBase,
     status,
     statusOriginal: { ...status },
@@ -232,11 +260,12 @@ function renderizarSelecaoStarters() {
       .join("");
 
     const linhasStat = [
-      ["SP.A", s.ataqueEspecial],
-      ["SPE", s.velocidade],
-      ["HP", s.hpMax],
-      ["DEF", s.defesa],
-      ["SP.D", s.defesaEspecial],
+      ["Hp", s.hpMax],
+      ["Ata", s.ataque],
+      ["Def", s.defesa],
+      ["Sp.A", s.ataqueEspecial],
+      ["Sp.D", s.defesaEspecial],
+      ["Vel", s.velocidade],
     ]
       .map(
         ([label, valor]) => `
@@ -267,7 +296,7 @@ function renderizarSelecaoStarters() {
     card.innerHTML = `
       ${imgHtml}
       <span class="starter-nome">${m.nome}</span>
-      <span class="starter-nivel">Lv. ${instancia.nivel}</span>
+      <span class="starter-nivel">Lv. ${instancia.nivel} · ${m.raridade||"Normal"}</span>
       <div class="starter-tipos">${badgesTipo}</div>
       <div class="stats-starter">${linhasStat}</div>
       <div class="barra-hp"><div class="hp-fundo"><div class="hp-preenchimento" style="width:100%"></div></div></div>
@@ -280,22 +309,11 @@ function renderizarSelecaoStarters() {
 }
 
 function mostrarConfirmacaoStarter(inicial) {
-  const grid = document.getElementById("grade-starters");
-  const confirmacao = document.getElementById("confirmacao-starter");
-  grid.hidden = true;
-
-  const imgHtml = inicial.png
-    ? `<img class="starter-imagem" src="PNG/${inicial.png}" alt="${inicial.nome}">`
-    : `<div class="starter-imagem starter-imagem-vazia">?</div>`;
-
-  confirmacao.innerHTML = `
-    ${imgHtml}
-    <p>Você escolheu <strong>${inicial.nome}</strong> (nível ${inicial.nivel})!</p>
-    <button class="botao botao-play" type="button" data-acao="ir-para-mapa">
-      <span>Continuar</span>
-    </button>
-  `;
-  confirmacao.hidden = false;
+  abrirTelaGerenciamentoTime([inicial], {
+    modo: "roguelike",
+    titulo: "Prepare seu Monstro",
+    texto: "Revise status, ataques e itens compatíveis antes de começar."
+  });
 }
 
 async function iniciarTelaSelecaoStarter() {

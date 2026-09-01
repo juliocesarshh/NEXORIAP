@@ -13,3 +13,13 @@ const FAIXAS_SOM = [
 // Precisa ficar explícito em "window" — uma const no topo do arquivo não vira
 // propriedade de window sozinha, e trilha.js/tela-inicial.js leem window.FAIXAS_SOM.
 window.FAIXAS_SOM = FAIXAS_SOM;
+
+// Faixas usadas automaticamente durante batalhas. Elas não entram na playlist
+// normal de exploração/configurações.
+const FAIXAS_BATALHA = {
+  selvagem: "Som/batalha/selvagem.mp3",
+  treinador: "Som/batalha/treinador.mp3",
+  campeao: "Som/batalha/campeao.mp3",
+};
+window.FAIXAS_BATALHA = FAIXAS_BATALHA;
+

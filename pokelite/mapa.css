@@ -317,3 +317,83 @@
 @media (max-width: 560px) {
   .lista-time-mapa { grid-template-columns: 1fr; }
 }
+
+
+/* ---------- Visual da rota em pixel art ---------- */
+.mapa-rota-visual {
+  position: relative;
+  width: min(560px, 92vw);
+  min-height: 900px;
+  overflow: hidden;
+  border: 2px solid rgba(238, 243, 248, 0.18);
+  border-radius: 18px;
+  background: #69c993 url("img/ui/rota-floresta.png") center top / 100% auto repeat-y;
+  box-shadow: 0 18px 50px rgba(0,0,0,.35);
+}
+
+.mapa-rota-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 35, 22, .18), rgba(3, 35, 22, .32));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mapa-rota-visual .mapa-camadas {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 30px 18px 80px;
+  gap: 30px;
+}
+
+.mapa-rota-visual .linha-mapa {
+  gap: 12px;
+}
+
+.mapa-rota-visual .no-mapa {
+  width: 96px;
+  min-height: 92px;
+  padding: 8px 5px;
+  background: rgba(4, 28, 18, .72);
+  border: 2px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(2px);
+  text-shadow: 0 1px 2px #000;
+}
+
+.mapa-rota-visual .no-disponivel {
+  background: rgba(16, 58, 31, .88);
+  border-color: var(--ouro);
+}
+
+.no-icone-img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.no-icone-treinador {
+  width: 54px;
+  height: 60px;
+}
+
+.no-icone-evento,
+.no-icone-itens,
+.no-icone-loja {
+  width: 60px;
+  height: 60px;
+}
+
+.mapa-rota-visual .titulo-parte-mapa {
+  width: 100%;
+  color: #173d26;
+  border-color: rgba(255,255,255,.75);
+  background: rgba(248, 231, 169, .9);
+  text-shadow: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+}
+
+.modal-final-roguelike{text-align:center;max-width:520px}.modal-final-roguelike h2{font-family:"Cinzel","Georgia",serif;color:var(--ouro,#ffcb05);margin-top:0}.modal-final-roguelike p{opacity:.85;margin-bottom:20px}

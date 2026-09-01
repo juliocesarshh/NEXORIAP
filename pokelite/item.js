@@ -133,6 +133,16 @@ function proximaFormaNumero(base) {
   return evo.evoluiPara || null;
 }
 
+function animarEvolucao(monstro, pngAntes, pngDepois, nomeAntes, nomeDepois){
+ const alvo=document.getElementById("detalhe-gerenciamento-time")||document.getElementById("arena-batalha");
+ if(!alvo)return;
+ const overlay=document.createElement("div"); overlay.className="animacao-evolucao";
+ overlay.innerHTML=`<div class="evo-caixa"><div class="evo-nome">${nomeAntes}</div><img src="PNG/${pngAntes||""}" class="evo-sprite evo-antigo"><div class="evo-seta">✨ EVOLUÇÃO ✨</div><img src="PNG/${pngDepois||""}" class="evo-sprite evo-novo"><div class="evo-nome novo">${nomeDepois}</div></div>`;
+ document.body.appendChild(overlay);
+ setTimeout(()=>overlay.remove(),2600);
+}
+window.animarEvolucao=animarEvolucao;
+
 function evoluirMonstroComItem(monstro, itemCodigo) {
   const item = buscarItem(itemCodigo);
   if (!item || !monstro) return false;
@@ -150,6 +160,7 @@ function evoluirMonstroComItem(monstro, itemCodigo) {
 
   const destino = (window.DADOS_MONSTROS || []).find((m) => m.numero === numeroDestino);
   if (!destino) return false;
+  const nomeAntes=monstro.nome, pngAntes=monstro.png;
   const hpRatio = monstro.status?.hpMax ? monstro.hpAtual / monstro.status.hpMax : 1;
   monstro.numero = destino.numero;
   monstro.nome = destino.nome;
@@ -157,12 +168,14 @@ function evoluirMonstroComItem(monstro, itemCodigo) {
   monstro.png = destino.png;
   monstro.habilidade = destino.habilidade || null;
   monstro.statusBase = destino.statusBase;
-  monstro.golpesConhecidos = (destino.golpes || []).filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo);
+  monstro.golpesConhecidos = selecionarQuatroGolpes((destino.golpes || []).filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo), destino);
   monstro.item = null;
   if (typeof calcularStatus === "function") monstro.status = calcularStatus(destino, monstro.nivel);
+  if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(monstro.status, monstro.natureza);
   if (typeof aplicarMultiplicadoresItem === "function") monstro.status = aplicarMultiplicadoresItem(monstro, monstro.status);
   monstro.statusOriginal = { ...monstro.status };
   monstro.hpAtual = Math.max(1, Math.min(monstro.status.hpMax, Math.floor(monstro.status.hpMax * hpRatio)));
+  animarEvolucao(monstro,pngAntes,monstro.png,nomeAntes,monstro.nome);
   return true;
 }
 

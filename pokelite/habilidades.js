@@ -19,7 +19,9 @@ const HABILIDADES = {
   H003: { aoEntrar(proprio, oponente, batalha) { proprio.status.velocidade=Math.floor(proprio.status.velocidade*1.5); batalha.chuva=true; batalha.log.push(`${proprio.nome} traz a chuva! Velocidade aumentada.`); } },
   H004: {},
   H005: { chanceNocauteImediato:.05 },
-  H006: { sobrescreverEfetividade(tipoGolpe, tiposAlvoTexto, padrao) { const sem=["Água","Fogo","Pedra","Dragão","Terra"]; const superE=["Elétrico","Psíquico","Pedra","Dragão","Fantasma","Dark","Fada","Lutador","Inseto"]; const ts=tiposAlvoTexto.split('/').map(t=>t.trim()); if(ts.some(t=>sem.includes(t)))return 0; if(ts.some(t=>superE.includes(t)))return Math.max(padrao,2); return null; } },
+  // Loflame: a habilidade aumenta a efetividade ofensiva, mas NÃO cria
+  // nenhuma imunidade defensiva nem transforma tipos em 0x.
+  H006: { somenteOfensiva:true, sobrescreverEfetividade(tipoGolpe, tiposAlvoTexto, padrao) { const superE=["Elétrico","Psíquico","Pedra","Dragão","Fantasma","Dark","Fada","Lutador","Inseto"]; const ts=tiposAlvoTexto.split('/').map(t=>t.trim()); if(ts.some(t=>superE.includes(t)))return Math.max(padrao,2); return null; } },
   H007: { aoEntrar(proprio, oponente, batalha) { oponente.status.ataque=Math.floor(oponente.status.ataque*.65); batalha.log.push(`A presença de ${proprio.nome} intimida ${oponente.nome}! Ataque reduzido.`); } },
   H008: { aoAcertar(proprio, alvo, golpe, batalha) { if(estaImune(alvo,'cego'))return; if(Math.random()<.3){alvo.statusAlterado='cego'; batalha.log.push(`${alvo.nome} ficou Cego!`);} } },
   H009: { sobrescreverEfetividade(tipoGolpe, tiposAlvoTexto, padrao) { if(tipoGolpe==='Fogo'&&padrao>1)return 1; return null; } },
