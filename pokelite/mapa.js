@@ -197,15 +197,14 @@ function subirNivelTime(quantidade) {
     m.nivel = Math.min(NIVEL_MAXIMO, m.nivel + quantidade);
     const base = DADOS_MONSTROS.find((x) => x.numero === m.numero);
     if (base) {
-      m.golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
+      m.golpesConhecidos = (base.golpes || [])
         .filter((g) => g.nivel <= m.nivel)
-        .map((g) => g.codigo), base);
+        .map((g) => g.codigo);
     }
     if (typeof recalcularStatusDaInstancia === "function") {
       recalcularStatusDaInstancia(m, false);
     } else if (base) {
       m.status = calcularStatus(base, m.nivel);
-      if (typeof aplicarNatureza === "function" && m.natureza) aplicarNatureza(m.status, m.natureza);
       m.hpAtual = m.status.hpMax;
     }
 
@@ -217,15 +216,6 @@ function subirNivelTime(quantidade) {
   });
 }
 
-function aplicarBonusEventoAoStatus(monstro, status) {
-  const bonus = monstro?._bonusEvento || {};
-  const mapa = { ataque: "ataque", defesa: "defesa", ataqueEspecial: "ataqueEspecial", defesaEspecial: "defesaEspecial", velocidade: "velocidade" };
-  for (const [chave, fator] of Object.entries(bonus)) {
-    if (mapa[chave] && Number.isFinite(status[mapa[chave]])) status[mapa[chave]] = Math.max(1, Math.floor(status[mapa[chave]] * (1 + Number(fator))));
-  }
-  return status;
-}
-
 function miniaturaItem(item) {
   return item.png
     ? `<img class="thumb-item" src="Png-Itens/${item.png}" alt="${item.nome}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'thumb-item thumb-item-vazia',textContent:'?'}))">`
@@ -234,183 +224,87 @@ function miniaturaItem(item) {
 
 const POOL_ITENS = [
   "B001","B002","B003","B004","B005","B006","B007","B008","B009","B010","B011",
-  "B012","B013","B014","B015","B016","B017","B018","B019","B020","B021","B022","B023","B024","B025"
+  "B012","B013","B014","B015","B016","B017","B018","B019","B020","B021","B022"
 ];
 // Evento é realmente aleatório: pode virar treinador, captura, raro, matinho,
 // item, cura ou simplesmente não acontecer nada.
 const EVENTOS_ALEATORIOS = [
-  { tipo: "nada", texto: "O evento não deu em nada..." },
-  { tipo: "comerciante", texto: "Um comerciante misterioso deixou uma recompensa." },
-  { tipo: "altar", texto: "Um altar antigo emite uma energia estranha." },
-  { tipo: "sorte", texto: "Hoje parece ser seu dia!" },
-  { tipo: "azar", texto: "Uma sensação ruim tomou conta do caminho..." },
-  { tipo: "caixa", texto: "Você encontrou uma caixa misteriosa." },
-  { tipo: "fantasma", texto: "Uma criatura fantasma oferece um pequeno acordo." },
-  { tipo: "treinamento", texto: "Um mestre oferece um treinamento rápido." },
-  { tipo: "cientista", texto: "Um cientista oferece um experimento." },
-  { tipo: "cacador", texto: "Um caçador de monstros fez uma proposta." },
-  { tipo: "bruxa", texto: "Uma bruxa apareceu no caminho." },
+  { tipo: "nada", texto: "O evento não deu em nada... talvez na próxima." },
+  { tipo: "treinador", texto: "Um treinador apareceu de repente!" },
+  { tipo: "captura", texto: "Uma Pokébola misteriosa apareceu! Você pode capturar um monstro." },
+  { tipo: "raro", texto: "Um monstro raro apareceu!" },
+  { tipo: "matinho", texto: "O matinho começou a se mexer..." },
+  { tipo: "itens", texto: "Você encontrou uma pequena bolsa de itens!" },
+  { tipo: "cura", texto: "Uma energia restauradora envolveu seu time!" },
 ];
 
-// Sorteio de raridade para capturas. A ideia é que Comuns sejam frequentes,
-// Raros/Épicos apareçam com alguma regularidade e Míticos/Lendários sejam
-// verdadeiros momentos de sorte. A Pokébola Rara melhora bastante as chances.
-const PESOS_RARIDADE_CAPTURA = {
-  normal: [
-    ["Comum", 75], ["Raro", 18], ["Épico", 5.5], ["Mítico", 1.4], ["Lendário", 0.1]
-  ],
-  rara: [
-    ["Comum", 35], ["Raro", 35], ["Épico", 20], ["Mítico", 8], ["Lendário", 2]
-  ]
-};
-
-function sortearRaridadeCaptura(rara = false) {
-  const pesos = PESOS_RARIDADE_CAPTURA[rara ? "rara" : "normal"];
-  const total = pesos.reduce((s, [, p]) => s + p, 0);
-  let r = Math.random() * total;
-  for (const [raridade, peso] of pesos) {
-    if (r < peso) return raridade;
-    r -= peso;
-  }
-  return "Comum";
-}
-
-function gerarMonstroCapturaPorRaridade(nivelMin, nivelMax, rara = false) {
+function gerarMonstroRaroNivel(nivelMin, nivelMax) {
+  const pool = DADOS_MONSTROS.filter((m) => m.raridade === "Mítico" || m.raridade === "Lendário" || m.raridade === "Raro");
+  if (!pool.length) return gerarMonstroSelvagemNivel(nivelMin, nivelMax);
   const min = Math.max(1, Number(nivelMin) || 1);
   const max = Math.max(min, Number(nivelMax) || min);
   const nivel = Math.floor(Math.random() * (max - min + 1)) + min;
-  const raridade = sortearRaridadeCaptura(rara);
-  let pool = DADOS_MONSTROS.filter((m) => m.raridade === raridade);
-  // Starters/Iniciais não entram nas capturas normais.
-  if (!pool.length) pool = DADOS_MONSTROS.filter((m) => ["Comum", "Raro", "Épico", "Mítico", "Lendário"].includes(m.raridade));
-  if (!pool.length) return gerarMonstroSelvagemNivel(min, max);
-  const escolhido = pool[Math.floor(Math.random() * pool.length)];
-  return criarInstanciaMonstro(escolhido.numero, nivel);
-}
-
-function gerarMonstroRaroNivel(nivelMin, nivelMax) {
-  return gerarMonstroCapturaPorRaridade(nivelMin, nivelMax, true);
-}
-
-function adicionarItemGratuito(codigo) {
-  estadoRun.mochila = estadoRun.mochila || [];
-  estadoRun.mochila.push(codigo);
-}
-
-function eventoEscolhaRapida(pergunta, sim, nao) {
-  const ok = window.confirm(pergunta);
-  if (ok) sim(); else if (nao) nao();
+  return criarInstanciaMonstro(pool[Math.floor(Math.random() * pool.length)].numero, nivel);
 }
 
 function executarEventoAleatorio(no) {
   const evento = EVENTOS_ALEATORIOS[Math.floor(Math.random() * EVENTOS_ALEATORIOS.length)];
   mostrarMensagemMapa(evento.texto);
-  const nivelMin = no.nivelMin || 1, nivelMax = no.nivelMax || nivelMin;
 
   switch (evento.tipo) {
-    case "comerciante": {
-      const pool = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 3);
-      pool.forEach(adicionarItemGratuito);
-      mostrarMensagemMapa(`O comerciante deixou ${pool.length} itens: ${pool.map(c => buscarItem(c)?.nome || c).join(", ")}.`);
-      break;
-    }
-    case "altar": {
-      eventoEscolhaRapida("Usar o altar e perder 20% do HP atual do time para receber um item raro?", () => {
-        estadoRun.time.forEach(m => { m.hpAtual = Math.max(1, Math.floor((m.hpAtual || m.status.hpMax) * 0.8)); });
-        const codigo = ["B001","B002","B003","B023","B025"].sort(() => Math.random()-0.5)[0];
-        adicionarItemGratuito(codigo);
-        mostrarMensagemMapa(`O altar concedeu: ${buscarItem(codigo)?.nome || codigo}.`);
-      }, () => mostrarMensagemMapa("Você deixou o altar para trás."));
-      break;
-    }
-    case "sorte": {
-      const r = Math.random();
-      if (r < 0.35) { const c = ["B002","B023","B024","B025","B001","B003"][Math.floor(Math.random()*6)]; adicionarItemGratuito(c); mostrarMensagemMapa(`Sorte grande! Você ganhou ${buscarItem(c)?.nome || c}.`); }
-      else if (r < 0.65) { estadoRun.time.forEach(m => m.hpAtual = Math.min(m.status.hpMax, m.hpAtual + Math.floor(m.status.hpMax*0.25))); mostrarMensagemMapa("Uma energia restauradora recuperou 25% do HP do time."); }
-      else if (r < 0.85) { subirNivelTime(1); mostrarMensagemMapa("Boa sorte! Todo o time ganhou +1 nível."); }
-      else mostrarMensagemMapa("A sorte passou perto... mas não aconteceu nada.");
-      break;
-    }
-    case "azar": {
-      const r = Math.random();
-      if (r < 0.4) { estadoRun.time.forEach(m => m.hpAtual = Math.max(1, Math.floor(m.hpAtual*0.9))); mostrarMensagemMapa("O azar drenou 10% do HP atual do time."); }
-      else if (r < 0.65 && estadoRun.mochila?.length) { const i=Math.floor(Math.random()*estadoRun.mochila.length); const c=estadoRun.mochila.splice(i,1)[0]; mostrarMensagemMapa(`Você perdeu ${buscarItem(c)?.nome || c}.`); }
-      else mostrarMensagemMapa("O azar passou... nada aconteceu.");
-      break;
-    }
-    case "caixa": {
-      const r = Math.random();
-      const pool = r < .55 ? POOL_ITENS : ["B001","B002","B003","B023","B024","B025"];
-      const c = pool[Math.floor(Math.random()*pool.length)];
-      adicionarItemGratuito(c);
-      mostrarMensagemMapa(`Dentro da caixa havia: ${buscarItem(c)?.nome || c}.`);
-      break;
-    }
-    case "fantasma": {
-      const vivos = estadoRun.time.filter(m => (m.hpAtual || 0) > 0);
-      if (!vivos.length) { mostrarMensagemMapa("O fantasma não encontrou ninguém para ajudar."); break; }
-      const alvo = vivos[Math.floor(Math.random()*vivos.length)];
-      eventoEscolhaRapida(`Trocar 10% do HP de ${alvo.nome} por uma recompensa?`, () => {
-        alvo.hpAtual=Math.max(1,Math.floor(alvo.hpAtual*.9)); const c=["B002","B003","B023","B025"][Math.floor(Math.random()*4)]; adicionarItemGratuito(c); mostrarMensagemMapa(`O fantasma entregou ${buscarItem(c)?.nome || c}.`);
-      }, () => mostrarMensagemMapa("Você recusou o acordo."));
-      break;
-    }
-    case "treinamento": {
-      const opcoes=["Ataque","Defesa","Velocidade","Ataque Especial"];
-      const escolha=window.prompt("Treinamento rápido: digite 1 Ataque, 2 Defesa, 3 Velocidade ou 4 Ataque Especial", "1");
-      const idx=Math.max(0,Math.min(3,(Number(escolha)||1)-1));
-      const chave=["ataque","defesa","velocidade","ataqueEspecial"][idx];
-      estadoRun.time.forEach(m => { m._bonusEvento = m._bonusEvento || {}; m._bonusEvento[chave]=(m._bonusEvento[chave]||0)+0.05; });
-      mostrarMensagemMapa(`Treinamento concluído: +5% de ${opcoes[idx]} até o próximo Ginásio.`);
-      break;
-    }
-    case "cientista": {
-      const alvo=estadoRun.time[Math.floor(Math.random()*estadoRun.time.length)];
-      if (!alvo) break;
-      const stats=["ataque","defesa","ataqueEspecial","defesaEspecial","velocidade"];
-      const stat=stats[Math.floor(Math.random()*stats.length)];
-      const positivo=Math.random()<0.75;
-      alvo._bonusEvento=alvo._bonusEvento||{};
-      alvo._bonusEvento[stat]=(alvo._bonusEvento[stat]||0)+(positivo?.10:-.10);
-      mostrarMensagemMapa(`${alvo.nome}: ${positivo?"+10%":"-10%"} de ${stat} até o próximo Ginásio.`);
-      break;
-    }
-    case "cacador": {
-      const alvo=estadoRun.time.length>1 ? estadoRun.time[Math.floor(Math.random()*estadoRun.time.length)] : null;
-      if (!alvo) { mostrarMensagemMapa("O caçador foi embora sem fazer proposta."); break; }
-      eventoEscolhaRapida(`Entregar ${alvo.nome} ao caçador por uma recompensa rara?`, () => {
-        const i=estadoRun.time.indexOf(alvo); if(i>=0) estadoRun.time.splice(i,1);
-        const c=["B001","B002","B003","B025"][Math.floor(Math.random()*4)]; adicionarItemGratuito(c); mostrarMensagemMapa(`Você entregou ${alvo.nome} e recebeu ${buscarItem(c)?.nome || c}.`);
-      }, () => mostrarMensagemMapa("Você recusou a proposta."));
-      break;
-    }
-    case "bruxa": {
-      const alvo=estadoRun.time[Math.floor(Math.random()*estadoRun.time.length)];
-      if (!alvo) break;
-      const r=Math.random();
-      if(r<.34){ alvo.hpAtual=alvo.status.hpMax; mostrarMensagemMapa(`${alvo.nome} foi completamente curado.`); }
-      else if(r<.67){ subirNivelTime(1); mostrarMensagemMapa("A bruxa alterou o destino: +1 nível para todo o time."); }
-      else { const c=["B002","B003","B023","B024"][Math.floor(Math.random()*4)]; adicionarItemGratuito(c); mostrarMensagemMapa(`A bruxa deixou ${buscarItem(c)?.nome || c}.`); }
-      break;
-    }
     case "treinador": {
       const qtd = no.parte === 9 ? 3 : Math.min(2 + Math.floor((no.parte - 1) / 4), 3);
-      const timeTreinador = Array.from({ length: qtd }, () => gerarMonstroSelvagemNivel(nivelMin, nivelMax));
-      prepararTimeParaNovaBatalha(); recompensaNivelPendente = no.parte === 9 ? 3 : 2; contextoBatalhaAtual = "roguelike"; mostrarTela("tela-batalha"); iniciarBatalha(estadoRun.time, timeTreinador, false, false, evento.texto); break;
+      const timeTreinador = Array.from({ length: qtd }, () => gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax));
+      prepararTimeParaNovaBatalha();
+      recompensaNivelPendente = no.parte === 9 ? 3 : 2;
+      contextoBatalhaAtual = "roguelike";
+      mostrarTela("tela-batalha");
+      iniciarBatalha(estadoRun.time, timeTreinador, false, false, evento.texto);
+      break;
     }
-    case "nada": default: break;
+    case "captura":
+      abrirEscolhaCaptura();
+      break;
+    case "raro": {
+      if (estadoRun.time.length >= TAMANHO_MAX_TIME_ROGUELIKE) {
+        mostrarMensagemMapa("O monstro raro apareceu, mas seu time está cheio.");
+        break;
+      }
+      const raro = gerarMonstroRaroNivel(no.nivelMin, no.nivelMax);
+      const modal = document.querySelector('[data-modal="captura"]');
+      const lista = document.getElementById("opcoes-captura");
+      lista.innerHTML = "";
+      [raro, gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax)].forEach((c) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "card-captura";
+        const imgHtml = c.png ? `<img class="thumb" src="PNG/${c.png}" alt="${c.nome}">` : `<div class="thumb thumb-vazio">?</div>`;
+        btn.innerHTML = `${imgHtml}<span class="nome-captura">${c.nome}</span><span class="nivel-captura">Nv.${c.nivel}</span>`;
+        btn.addEventListener("click", () => { estadoRun.time.push(c); modal.hidden = true; mostrarMensagemMapa(`${c.nome} se juntou ao seu time!`); });
+        lista.appendChild(btn);
+      });
+      modal.hidden = false;
+      break;
+    }
+    case "matinho": {
+      const selvagem = gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax);
+      prepararTimeParaNovaBatalha();
+      recompensaNivelPendente = 1;
+      contextoBatalhaAtual = "roguelike";
+      mostrarTela("tela-batalha");
+      iniciarBatalha(estadoRun.time, [selvagem], false, false, evento.texto);
+      break;
+    }
+    case "itens":
+      abrirEscolhaItens();
+      break;
+    case "cura":
+      estadoRun.time.forEach((m) => { m.hpAtual = m.status.hpMax; m.statusAlterado = null; });
+      break;
+    case "nada":
+    default:
+      break;
   }
-}
-
-
-function restaurarTimeCompleto() {
-  if (!estadoRun?.time) return;
-  estadoRun.time.forEach((m) => {
-    const base = DADOS_MONSTROS.find((x) => x.numero === m.numero);
-    if (base && typeof recalcularStatusDaInstancia === "function") recalcularStatusDaInstancia(m);
-    m.hpAtual = m.status?.hpMax ?? m.hpAtual;
-    m.statusAlterado = null;
-  });
 }
 
 function aplicarEfeitoNo(no) {
@@ -454,28 +348,32 @@ function aplicarEfeitoNo(no) {
       break;
 
     case "loja": {
-      const opcoes = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 9 + Math.floor(Math.random() * 4));
+      // A loja final oferece três itens aleatórios para a mochila.
+      // Como o sistema de Ouro ainda não existe no projeto, a seleção é gratuita.
+      const opcoes = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 3);
       const modal = document.querySelector('[data-modal="itens"]');
       const lista = document.getElementById("opcoes-itens");
-      if (!modal || !lista) break;
+      if (!modal || !lista) {
+        mostrarMensagemMapa("A Lojinha está aberta, mas a interface de itens não foi encontrada.");
+        break;
+      }
       lista.innerHTML = "";
-      let escolhidos = 0;
-      const escolhidosSet = new Set();
-      const titulo = modal.querySelector("h2");
-      if (titulo) titulo.textContent = "Recompensa da Loja — escolha 3 grátis";
       opcoes.forEach((codigo) => {
-        const item = buscarItem(codigo); if (!item) return;
-        const btn=document.createElement("button"); btn.type="button"; btn.className="opcao-item";
-        btn.innerHTML=`${miniaturaItem(item)}<span class="texto-item"><strong>${item.codigo} · ${item.nome}</strong><span class="item-descricao">${item.descricao}</span></span>`;
-        btn.addEventListener("click",()=>{
-          if(escolhidosSet.has(codigo)) return;
-          if(escolhidos>=3){ mostrarMensagemMapa("Você já escolheu 3 itens."); return; }
-          escolhidosSet.add(codigo); adicionaItemSeguro(codigo); escolhidos++; btn.disabled=true; btn.classList.add("selecionado");
-          if(escolhidos===3){ modal.hidden=true; mostrarMensagemMapa("Você escolheu 3 recompensas grátis!"); }
+        const item = buscarItem(codigo);
+        if (!item) return;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "opcao-item";
+        btn.innerHTML = `${miniaturaItem(item)}<span class="texto-item"><strong>${item.codigo} · ${item.nome}</strong><span class="item-descricao">${item.descricao}</span></span>`;
+        btn.addEventListener("click", () => {
+          estadoRun.mochila = estadoRun.mochila || [];
+          estadoRun.mochila.push(codigo);
+          modal.hidden = true;
+          mostrarMensagemMapa(`Você comprou/pegou ${item.nome}.`);
         });
         lista.appendChild(btn);
       });
-      modal.hidden=false;
+      modal.hidden = false;
       break;
     }
 
@@ -528,12 +426,9 @@ function abrirEscolhaCaptura(no) {
   }
 
   const eRara = no && no.tipo === "capturaRara";
-  // Pokébola normal: pool fortemente favorecido para Comuns/Raros.
-  // Pokébola Rara: aumenta bastante a chance de Raros/Épicos e abre uma
-  // pequena chance real de Mítico/Lendário.
-  const candidatos = [0, 1, 2].map(() =>
-    gerarMonstroCapturaPorRaridade(no.nivelMin, no.nivelMax, eRara)
-  );
+  const candidatos = eRara
+    ? [gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroRaroNivel(no.nivelMin, no.nivelMax)]
+    : gerarCandidatosCaptura(3);
   const modal = document.querySelector('[data-modal="captura"]');
   const lista = document.getElementById("opcoes-captura");
   lista.innerHTML = "";
@@ -563,8 +458,6 @@ function abrirEscolhaCaptura(no) {
 
   modal.hidden = false;
 }
-
-function adicionaItemSeguro(codigo) { estadoRun.mochila = estadoRun.mochila || []; estadoRun.mochila.push(codigo); }
 
 function abrirEscolhaItens() {
   const embaralhado = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 3);
@@ -617,10 +510,6 @@ function abrirSelecaoAlvoItem(codigo, evolucao) {
       const base = DADOS_MONSTROS.find((x) => x.numero === m.numero);
       if (item.efeito?.tipo === "evolucao_proxima") pode = !!proximaFormaNumero(base);
       else pode = !!(item.evolucoes || []).some((r) => r.de === m.nome);
-    } else if (item.efeito?.tipo === "revive") {
-      pode = (m.hpAtual || 0) <= 0;
-    } else if (item.efeito?.tipo === "cura") {
-      pode = (m.hpAtual || 0) > 0 && (m.hpAtual || 0) < (m.status?.hpMax || 1);
     } else {
       pode = !item.tipo || itemFuncionaPara(m, item);
     }
@@ -633,21 +522,11 @@ function abrirSelecaoAlvoItem(codigo, evolucao) {
     btn.addEventListener("click", () => {
       if (evolucao) {
         if (evoluirMonstroComItem(m, codigo)) {
-          if (typeof desbloquearConquista === "function") desbloquearConquista("evolucao");
           estadoRun.mochila = estadoRun.mochila || [];
           mostrarMensagemMapa(`${m.nome} evoluiu usando ${item.nome}!`);
         } else {
           mostrarMensagemMapa("Esse item não pode ser usado nesse monstro.");
         }
-      } else if (item.efeito?.tipo === "revive") {
-        m.hpAtual = Math.max(1, Math.floor((m.status?.hpMax || 1) * (Number(item.efeito.valor) || 0.5)));
-        estadoRun.mochila = (estadoRun.mochila || []).filter((c, idx) => !(c === codigo && idx === estadoRun.mochila.indexOf(codigo)));
-        mostrarMensagemMapa(`${m.nome} voltou à batalha com ${m.hpAtual} HP!`);
-      } else if (item.efeito?.tipo === "cura") {
-        const cura = Math.floor((m.status?.hpMax || 1) * (Number(item.efeito.valor) || 0.5));
-        m.hpAtual = Math.min(m.status.hpMax, (m.hpAtual || 0) + cura);
-        const idx = (estadoRun.mochila || []).indexOf(codigo); if (idx >= 0) estadoRun.mochila.splice(idx, 1);
-        mostrarMensagemMapa(`${m.nome} recuperou ${cura} HP!`);
       } else {
         if (m.item) estadoRun.mochila.push(m.item);
         if (equiparItem(m, codigo)) {

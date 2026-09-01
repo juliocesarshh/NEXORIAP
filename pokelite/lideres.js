@@ -59,21 +59,3 @@ function gerarTimeLiderAtual() {
 function gerarTimeChefe() {
   return CHEFAO_ROGUELIKE.time.map((m) => criarInstanciaMonstro(m.numero, m.nivel)).filter(Boolean);
 }
-
-function atribuirItensAoTreinador(time, chefe=false){
-  const porTipo = {
-    Fogo:['B004'], Planta:['B005'], Água:['B007'], Voador:['B006'], Lutador:['B008'], Psíquico:['B009'], Pedra:['B010'], Metal:['B011'], Fada:['B012'], Dragão:['B013'], Vento:['B014'], Inseto:['B015'], Elétrico:['B016'], Dark:['B017'], Ice:['B018'], Normal:['B019'], Veneno:['B020']
-  };
-  return time.map((m,i)=>{
-    if(!m) return m;
-    const tipos=String(m.tipo||'').split('/').map(x=>x.trim());
-    const candidatos=tipos.flatMap(t=>porTipo[t]||[]);
-    const codigo=candidatos[0] || (chefe ? 'B019' : null);
-    if(codigo && typeof equiparItem==='function') equiparItem(m,codigo);
-    return m;
-  });
-}
-const _gerarTimeLider=gerarTimeLider;
-gerarTimeLider=function(indice=0){ return atribuirItensAoTreinador(_gerarTimeLider(indice),false); };
-const _gerarTimeChefe=gerarTimeChefe;
-gerarTimeChefe=function(){ return atribuirItensAoTreinador(_gerarTimeChefe(),true); };

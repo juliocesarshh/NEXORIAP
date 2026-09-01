@@ -157,7 +157,7 @@ function renderizarGridMultiplayer() {
       ${imgHtml}
       <div class="num">#${String(m.numero).padStart(3, "0")}</div>
       <div class="nome">${m.nome}</div>
-      <div class="tipo">${m.tipo} · ${m.raridade||"Normal"}</div>
+      <div class="tipo">${m.tipo}</div>
     `;
     card.addEventListener("click", () => escolherMonstroMultiplayer(m.numero));
     grid.appendChild(card);
@@ -178,9 +178,9 @@ function escolherMonstroMultiplayer(numero) {
       `Escolha seu time (${mpTimeEscolhido.length + 1} de ${mpTamanho})`;
     mpStatus("mp-selecao-status", `Você já escolheu ${mpTimeEscolhido.length}. Faltam ${faltam}.`);
   } else {
-    mpStatus("mp-selecao-status", "Time selecionado. Revise seus monstros antes de confirmar.");
+    mpStatus("mp-selecao-status", "Time enviado. Aguardando o outro jogador...");
+    mpEnviar("team-ready", { time: mpTimeEscolhido });
     document.getElementById("grid-selecao-multiplayer").style.pointerEvents = "none";
-    abrirTelaGerenciamentoTime(mpTimeEscolhido, {modo:"multiplayer", titulo:"Prepare seu Time", texto:"Clique em cada monstro para ver status, ataques e itens compatíveis."});
   }
 }
 

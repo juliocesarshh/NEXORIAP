@@ -287,41 +287,5 @@
       "valor": 0.1
     },
     "png": "Give me.png"
-  },
-  {
-    "codigo": "B023",
-    "nome": "Revive",
-    "categoria": "Cura",
-    "descricao": "Revive um monstro desmaiado e restaura 50% do HP máximo.",
-    "tipo": null,
-    "efeito": {
-      "tipo": "revive",
-      "valor": 0.5
-    },
-    "png": "Revive.png"
-  },
-  {
-    "codigo": "B024",
-    "nome": "Kit Médico",
-    "categoria": "Cura",
-    "descricao": "Recupera 50% do HP máximo de um monstro.",
-    "tipo": null,
-    "efeito": {
-      "tipo": "cura",
-      "valor": 0.5
-    },
-    "png": "Kit Médico.png"
-  },
-  {
-    "codigo": "B025",
-    "nome": "Kit Médico SS",
-    "categoria": "Cura",
-    "descricao": "Recupera todo o HP de um monstro.",
-    "tipo": null,
-    "efeito": {
-      "tipo": "cura",
-      "valor": 1
-    },
-    "png": "Kit Médico SS.png"
   }
 ]

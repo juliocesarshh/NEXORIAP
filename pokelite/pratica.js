@@ -56,7 +56,7 @@ function renderizarGridPratica() {
       ${imgHtml}
       <div class="num">#${String(m.numero).padStart(3, "0")}</div>
       <div class="nome">${m.nome}</div>
-      <div class="tipo">${m.tipo} · ${m.raridade||"Normal"}</div>
+      <div class="tipo">${m.tipo}</div>
     `;
     card.addEventListener("click", () => escolherMonstroPratica(m.numero));
     grid.appendChild(card);
@@ -65,7 +65,7 @@ function renderizarGridPratica() {
 
 function escolherMonstroPratica(numero) {
   const nivel = Number(document.getElementById("nivel-pratica").value) || NIVEL_PADRAO_PRATICA;
-  const instancia = criarInstanciaMonstro(numero, nivel, window.NEXORIA_NATUREZA_ESCOLHIDA || null);
+  const instancia = criarInstanciaMonstro(numero, nivel);
 
   if (ladoSelecaoAtual === "jogador") {
     timeJogadorEscolhido.push(instancia);
