@@ -9,7 +9,9 @@ const TELAS = [
   "tela-selecao-starter",
   "tela-mapa",
   "tela-tamanho-time",
+  "tela-dificuldade",
   "tela-selecao-pratica",
+  "tela-gerenciamento-time",
   "tela-batalha",
 ];
 
@@ -51,12 +53,18 @@ document.addEventListener("click", (e) => {
       mostrarTela("tela-modos");
       break;
 
+    case "voltar-mapa":
+      e.preventDefault();
+      mostrarTela("tela-mapa");
+      if (typeof renderizarMapa === "function") renderizarMapa();
+      break;
+
     case "config":
       abrirModalConfig();
       break;
 
     case "conquistas":
-      console.log("[NEXORIA] Conquistas ainda não implementadas.");
+      abrirConquistas();
       break;
 
     case "mudo":
@@ -64,7 +72,7 @@ document.addEventListener("click", (e) => {
       break;
 
     case "modo-roguelike":
-      mostrarTela("tela-selecao-starter");
+      nexoriaModoDificuldade = "roguelike"; mostrarTela("tela-dificuldade");
       break;
 
     case "ir-para-mapa":
@@ -78,17 +86,14 @@ document.addEventListener("click", (e) => {
           recompensaNivelPendente = 0;
         }
         if (lutandoContraGinasio) {
+          if (typeof desbloquearConquista === "function") { desbloquearConquista("primeiro-ginasio"); if ((estadoRun.badges||[]).length >= 5) desbloquearConquista("cinco-ginasios"); }
           ginasioConcluido = true;
           lutandoContraGinasio = false;
 
           // Vencer um Ginásio marca a transição para a próxima Parte.
           // Ao entrar nela, todo o time deve começar com HP completo.
-          if (typeof estadoRun !== "undefined" && Array.isArray(estadoRun.time)) {
-            estadoRun.time.forEach((m) => {
-              if (m.status?.hpMax) m.hpAtual = m.status.hpMax;
-              m.statusAlterado = null;
-            });
-          }
+          if (typeof restaurarTimeCompleto === "function") restaurarTimeCompleto();
+          if (typeof estadoRun !== "undefined" && Array.isArray(estadoRun.time)) estadoRun.time.forEach((m) => { delete m._bonusEvento; });
 
           if (typeof estadoRun !== "undefined" && Array.isArray(estadoRun.badges) && ginasioAtualIndex >= 0) {
             if (!estadoRun.badges.includes(ginasioAtualIndex + 1)) estadoRun.badges.push(ginasioAtualIndex + 1);
@@ -96,8 +101,10 @@ document.addEventListener("click", (e) => {
           ginasioAtualIndex = -1;
         }
         if (typeof chefaoAtual !== "undefined" && chefaoAtual) {
+          if (typeof desbloquearConquista === "function") desbloquearConquista("campeao");
           chefaoAtual = false;
-          mostrarMensagemMapa("🏆 EVERTON DERROTADO! Você venceu o Roguelike! 🔥");
+          mostrarMensagemMapa("🏆 EVERTON DERROTADO! VOCÊ CONQUISTOU NEXORIA! 🔥");
+          document.getElementById("modal-final-roguelike")?.removeAttribute("hidden");
         }
         mostrarTela("tela-mapa");
       } else {
@@ -110,7 +117,13 @@ document.addEventListener("click", (e) => {
       console.log("[NEXORIA] Loja ainda não implementada.");
       break;
 
+    case "final-voltar-modos":
+      document.getElementById("modal-final-roguelike")?.setAttribute("hidden", "");
+      mostrarTela("tela-modos");
+      break;
+
     case "hospital":
+      estadoRun._usouHospital = true;
       estadoRun.time.forEach((m) => {
         m.hpAtual = m.status.hpMax;
         m.statusAlterado = null;
@@ -156,14 +169,24 @@ document.addEventListener("click", (e) => {
       break;
 
     case "modo-pratica":
-      mostrarTela("tela-tamanho-time");
+      nexoriaModoDificuldade = "pratica"; mostrarTela("tela-dificuldade");
       break;
 
     case "pratica-de-novo":
       mostrarTela("tela-tamanho-time");
       break;
+    case "confirmar-gerenciamento-time":
+      confirmarGerenciamentoTime();
+      break;
   }
 });
 
+let nexoriaModoDificuldade = "roguelike";
+document.addEventListener("click", (e)=>{
+  const b=e.target.closest("[data-dificuldade]"); if(!b)return;
+  window.NEXORIA_DIFICULDADE=b.dataset.dificuldade;
+  if(nexoriaModoDificuldade==="roguelike") mostrarTela("tela-selecao-starter");
+  else mostrarTela("tela-tamanho-time");
+});
 // Tela inicial ao carregar o jogo
 mostrarTela("tela-inicial");

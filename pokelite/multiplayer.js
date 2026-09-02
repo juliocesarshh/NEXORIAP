@@ -178,9 +178,14 @@ function escolherMonstroMultiplayer(numero) {
       `Escolha seu time (${mpTimeEscolhido.length + 1} de ${mpTamanho})`;
     mpStatus("mp-selecao-status", `Você já escolheu ${mpTimeEscolhido.length}. Faltam ${faltam}.`);
   } else {
-    mpStatus("mp-selecao-status", "Time enviado. Aguardando o outro jogador...");
-    mpEnviar("team-ready", { time: mpTimeEscolhido });
+    // O time não é enviado ainda: primeiro o jogador entra na tela
+    // Preparar seus Monstros para escolher golpes, item e Natureza.
     document.getElementById("grid-selecao-multiplayer").style.pointerEvents = "none";
+    abrirTelaGerenciamentoTime(mpTimeEscolhido, {
+      modo: "multiplayer",
+      titulo: "Prepare seus Monstros",
+      texto: "Configure os 4 ataques, item e Natureza de cada monstro. Depois aperte Pronto."
+    });
   }
 }
 

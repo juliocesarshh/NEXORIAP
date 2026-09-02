@@ -190,29 +190,23 @@ function escolherNo(id) {
 
 // ---------- Efeitos de cada tipo de nó ----------
 function subirNivelTime(quantidade) {
+  if (!estadoRun?.time) return;
   estadoRun.time.forEach((m) => {
     const hpMaxAnterior = Number(m.status?.hpMax) || 0;
     const hpAnterior = Number.isFinite(Number(m.hpAtual)) ? Number(m.hpAtual) : hpMaxAnterior;
-
-    m.nivel = Math.min(NIVEL_MAXIMO, m.nivel + quantidade);
-    const base = DADOS_MONSTROS.find((x) => x.numero === m.numero);
-    if (base) {
-      m.golpesConhecidos = (base.golpes || [])
-        .filter((g) => g.nivel <= m.nivel)
-        .map((g) => g.codigo);
+    m.nivel = Math.min(NIVEL_MAXIMO, (Number(m.nivel)||1) + quantidade);
+    const baseAntes = DADOS_MONSTROS.find((x) => x.numero === m.numero);
+    if (baseAntes) {
+      m.golpesConhecidos = selecionarQuatroGolpes((baseAntes.golpes || [])
+        .filter((g) => g.nivel <= m.nivel).map((g) => g.codigo), baseAntes);
     }
-    if (typeof recalcularStatusDaInstancia === "function") {
-      recalcularStatusDaInstancia(m, false);
-    } else if (base) {
-      m.status = calcularStatus(base, m.nivel);
-      m.hpAtual = m.status.hpMax;
-    }
-
-    // Ao subir de nível, o HP máximo aumenta e o HP atual acompanha exatamente
-    // esse ganho. Ex.: 42/50 -> 46/54, em vez de continuar em 42/54.
+    let evoluiu = false;
+    if (typeof verificarEvolucaoPorNivel === "function") evoluiu = verificarEvolucaoPorNivel(m) || evoluiu;
+    if (typeof recalcularStatusDaInstancia === "function") recalcularStatusDaInstancia(m);
     const ganhoHp = Math.max(0, (Number(m.status?.hpMax) || hpMaxAnterior) - hpMaxAnterior);
     m.hpAtual = Math.min(Number(m.status?.hpMax) || hpAnterior, hpAnterior + ganhoHp);
     m.statusAlterado = null;
+    if (evoluiu) mostrarMensagemMapa(`✨ ${m.nome} evoluiu no nível ${m.nivel}!`);
   });
 }
 
@@ -223,8 +217,8 @@ function miniaturaItem(item) {
 }
 
 const POOL_ITENS = [
-  "B001","B002","B003","B004","B005","B006","B007","B008","B009","B010","B011",
-  "B012","B013","B014","B015","B016","B017","B018","B019","B020","B021","B022"
+  "B004","B005","B006","B007","B008","B009","B010","B011","B012","B013",
+  "B014","B015","B016","B017","B018","B019","B020","B021","B022","B023","B024","B025"
 ];
 // Evento é realmente aleatório: pode virar treinador, captura, raro, matinho,
 // item, cura ou simplesmente não acontecer nada.
@@ -238,13 +232,37 @@ const EVENTOS_ALEATORIOS = [
   { tipo: "cura", texto: "Uma energia restauradora envolveu seu time!" },
 ];
 
-function gerarMonstroRaroNivel(nivelMin, nivelMax) {
-  const pool = DADOS_MONSTROS.filter((m) => m.raridade === "Mítico" || m.raridade === "Lendário" || m.raridade === "Raro");
-  if (!pool.length) return gerarMonstroSelvagemNivel(nivelMin, nivelMax);
+function sortearRaridadeCaptura(rara = false) {
+  const pesos = rara
+    ? [["Comum", 35], ["Raro", 35], ["Épico", 20], ["Mítico", 8], ["Lendário", 2]]
+    : [["Comum", 75], ["Raro", 18], ["Épico", 5.5], ["Mítico", 1.4], ["Lendário", 0.1]];
+  const total = pesos.reduce((s, [, p]) => s + p, 0);
+  let r = Math.random() * total;
+  for (const [raridade, peso] of pesos) {
+    if (r < peso) return raridade;
+    r -= peso;
+  }
+  return "Comum";
+}
+
+function gerarMonstroRaroNivel(nivelMin, nivelMax, forcarRaro = false) {
+  const raridade = sortearRaridadeCaptura(forcarRaro);
+  let pool = DADOS_MONSTROS.filter((m) => m.raridade === raridade);
+  // "Inicial" não entra nas capturas do Roguelike; se uma categoria estiver
+  // vazia por causa de uma atualização de dados, fazemos fallback seguro.
+  if (!pool.length) pool = DADOS_MONSTROS.filter((m) => m.raridade === "Comum");
+  if (!pool.length) pool = DADOS_MONSTROS;
+  if (!pool.length) return null;
+
   const min = Math.max(1, Number(nivelMin) || 1);
   const max = Math.max(min, Number(nivelMax) || min);
   const nivel = Math.floor(Math.random() * (max - min + 1)) + min;
-  return criarInstanciaMonstro(pool[Math.floor(Math.random() * pool.length)].numero, nivel);
+  const escolhido = pool[Math.floor(Math.random() * pool.length)];
+  return escolhido ? criarInstanciaMonstro(escolhido.numero, nivel) : null;
+}
+
+function gerarCandidatoCapturaSeguro(nivelMin, nivelMax, rara = false) {
+  return gerarMonstroRaroNivel(nivelMin, nivelMax, rara) || gerarMonstroSelvagemNivel(nivelMin, nivelMax);
 }
 
 function executarEventoAleatorio(no) {
@@ -270,16 +288,16 @@ function executarEventoAleatorio(no) {
         mostrarMensagemMapa("O monstro raro apareceu, mas seu time está cheio.");
         break;
       }
-      const raro = gerarMonstroRaroNivel(no.nivelMin, no.nivelMax);
+      const raro = gerarMonstroRaroNivel(no.nivelMin, no.nivelMax, true);
       const modal = document.querySelector('[data-modal="captura"]');
       const lista = document.getElementById("opcoes-captura");
       lista.innerHTML = "";
-      [raro, gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroSelvagemNivel(no.nivelMin, no.nivelMax)].forEach((c) => {
+      [raro, gerarMonstroRaroNivel(no.nivelMin, no.nivelMax, true), gerarCandidatoCapturaSeguro(no.nivelMin, no.nivelMax)].filter(Boolean).forEach((c) => {
         const btn = document.createElement("button");
         btn.type = "button";
         btn.className = "card-captura";
         const imgHtml = c.png ? `<img class="thumb" src="PNG/${c.png}" alt="${c.nome}">` : `<div class="thumb thumb-vazio">?</div>`;
-        btn.innerHTML = `${imgHtml}<span class="nome-captura">${c.nome}</span><span class="nivel-captura">Nv.${c.nivel}</span>`;
+        btn.innerHTML = `${imgHtml}<span class="nome-captura">${c.nome}</span><span class="nivel-captura">Nv.${c.nivel} · ${c.raridade || "Comum"}</span>`;
         btn.addEventListener("click", () => { estadoRun.time.push(c); modal.hidden = true; mostrarMensagemMapa(`${c.nome} se juntou ao seu time!`); });
         lista.appendChild(btn);
       });
@@ -348,35 +366,53 @@ function aplicarEfeitoNo(no) {
       break;
 
     case "loja": {
-      // A loja final oferece três itens aleatórios para a mochila.
-      // Como o sistema de Ouro ainda não existe no projeto, a seleção é gratuita.
-      const opcoes = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 3);
+      // Loja renovada: 9–12 opções aparecem de uma vez e o jogador pode
+      // escolher exatamente 3 gratuitamente. O modal permanece aberto até
+      // completar as três escolhas, tornando a Loja tão recompensadora quanto
+      // o Hospital sem criar uma economia artificial.
+      const opcoes = [...POOL_ITENS].sort(() => Math.random() - 0.5).slice(0, 10);
       const modal = document.querySelector('[data-modal="itens"]');
       const lista = document.getElementById("opcoes-itens");
       if (!modal || !lista) {
-        mostrarMensagemMapa("A Lojinha está aberta, mas a interface de itens não foi encontrada.");
+        mostrarMensagemMapa("A Loja está aberta, mas a interface de itens não foi encontrada.");
         break;
       }
-      lista.innerHTML = "";
-      opcoes.forEach((codigo) => {
-        const item = buscarItem(codigo);
-        if (!item) return;
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "opcao-item";
-        btn.innerHTML = `${miniaturaItem(item)}<span class="texto-item"><strong>${item.codigo} · ${item.nome}</strong><span class="item-descricao">${item.descricao}</span></span>`;
-        btn.addEventListener("click", () => {
-          estadoRun.mochila = estadoRun.mochila || [];
-          estadoRun.mochila.push(codigo);
-          modal.hidden = true;
-          mostrarMensagemMapa(`Você comprou/pegou ${item.nome}.`);
+      const escolhidos = new Set();
+      const renderLoja = () => {
+        lista.innerHTML = "";
+        const titulo = document.getElementById("titulo-itens");
+        if (titulo) titulo.textContent = `Loja — escolha 3 itens grátis (${escolhidos.size}/3)`;
+        opcoes.forEach((codigo) => {
+          const item = buscarItem(codigo);
+          if (!item) return;
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = `opcao-item ${escolhidos.has(codigo) ? "item-escolhido" : ""}`;
+          btn.innerHTML = `${miniaturaItem(item)}<span class="texto-item"><strong>${item.codigo} · ${item.nome}</strong><span class="item-descricao">${item.descricao}</span></span>`;
+          btn.addEventListener("click", () => {
+            if (escolhidos.has(codigo)) {
+              escolhidos.delete(codigo);
+            } else {
+              if (escolhidos.size >= 3) { mostrarMensagemMapa("Você já escolheu 3 itens."); return; }
+              escolhidos.add(codigo);
+            }
+            if (escolhidos.size === 3) {
+              estadoRun.mochila = estadoRun.mochila || [];
+              escolhidos.forEach((c) => estadoRun.mochila.push(c));
+              modal.hidden = true;
+              if (titulo) titulo.textContent = "Escolha um item";
+              mostrarMensagemMapa("🎒 Você recebeu 3 itens grátis da Loja!");
+              return;
+            }
+            renderLoja();
+          });
+          lista.appendChild(btn);
         });
-        lista.appendChild(btn);
-      });
+      };
+      renderLoja();
       modal.hidden = false;
       break;
     }
-
     case "hospital":
       estadoRun.time.forEach((m) => {
         m.hpAtual = m.status.hpMax;
@@ -426,11 +462,20 @@ function abrirEscolhaCaptura(no) {
   }
 
   const eRara = no && no.tipo === "capturaRara";
-  const candidatos = eRara
-    ? [gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroRaroNivel(no.nivelMin, no.nivelMax), gerarMonstroRaroNivel(no.nivelMin, no.nivelMax)]
-    : gerarCandidatosCaptura(3);
+  const nivelMin = no?.nivelMin ?? (estadoRun.time.length ? Math.min(...estadoRun.time.map((m) => m.nivel)) : 1);
+  const nivelMax = no?.nivelMax ?? (estadoRun.time.length ? Math.max(...estadoRun.time.map((m) => m.nivel)) : 1);
+  const candidatos = Array.from({ length: 3 }, () => gerarCandidatoCapturaSeguro(nivelMin, nivelMax, eRara)).filter(Boolean);
   const modal = document.querySelector('[data-modal="captura"]');
   const lista = document.getElementById("opcoes-captura");
+  if (!modal || !lista) {
+    console.error("[NEXORIA] Interface de captura não encontrada.");
+    mostrarMensagemMapa("Não foi possível abrir a captura. A interface não foi carregada.");
+    return;
+  }
+  if (!candidatos.length) {
+    mostrarMensagemMapa("Nenhum Monstro disponível para captura neste momento.");
+    return;
+  }
   lista.innerHTML = "";
 
   candidatos.forEach((c) => {
@@ -445,7 +490,7 @@ function abrirEscolhaCaptura(no) {
     btn.innerHTML = `
       ${imgHtml}
       <span class="nome-captura">${c.nome}</span>
-      <span class="nivel-captura">Nv.${c.nivel}</span>
+      <span class="nivel-captura">Nv.${c.nivel} · ${c.raridade || "Comum"}</span>
     `;
     btn.addEventListener("click", () => {
       if (typeof nexoriaTocarEfeito === "function") nexoriaTocarEfeito("Som/batalha/pokebola.mp3", 0.7);
@@ -571,6 +616,44 @@ function abrirMenuTime() {
   modal.hidden = false;
 }
 
+// ---------- Time lateral do Roguelike ----------
+function renderizarPainelTimeRoguelike() {
+  const lista = document.getElementById("lista-time-roguelike");
+  if (!lista) return;
+  lista.innerHTML = "";
+  const time = estadoRun?.time || [];
+  if (!time.length) {
+    lista.innerHTML = '<div class="vazio">Seu time aparecerá aqui.</div>';
+    return;
+  }
+  time.forEach((m) => {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "card-time-roguelike";
+    const hp = Math.max(0, Number(m.hpAtual) || 0);
+    const hpMax = Math.max(1, Number(m.status?.hpMax) || 1);
+    const img = m.png
+      ? `<img src="PNG/${m.png}" alt="${m.nome}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'vazio',textContent:'?'}))">`
+      : `<div class="vazio">?</div>`;
+    const item = typeof itemDe === "function" ? itemDe(m) : null;
+    const golpes = (m.golpesConhecidos || []).slice(0,4).length;
+    card.innerHTML = `${img}<div><div class="nome">${m.nome}</div><div class="meta">Lv. ${m.nivel} · ${m.tipo}</div><div class="hp">HP ${hp}/${hpMax} · ${golpes}/4 ataques</div><div class="meta">${item ? "🎒 "+item.nome : "Sem item"} · ${m.natureza || "Natureza"}</div></div>`;
+    card.addEventListener("click", () => {
+      abrirTelaGerenciamentoTime(estadoRun.time, {
+        modo: "roguelike",
+        selecionadoNumero: m.numero,
+        titulo: `Preparar ${m.nome}`,
+        texto: "Escolha os 4 ataques, troque o item e ajuste a Natureza. As alterações ficam salvas na Run."
+      });
+      setTimeout(() => {
+        const base = DADOS_MONSTROS.find(x => x.numero === m.numero);
+        if (base) renderizarDetalheGerenciamento(m, base);
+      }, 0);
+    });
+    lista.appendChild(card);
+  });
+}
+
 // ---------- Mensagens ----------
 function mostrarMensagemMapa(texto) {
   const el = document.getElementById("mensagem-mapa");
@@ -600,6 +683,7 @@ function iconeNoHTML(tipo) {
 function renderizarMapa() {
   const container = document.getElementById("mapa-camadas");
   container.innerHTML = "";
+  renderizarPainelTimeRoguelike();
   const disponiveis = nosDisponiveis();
 
   mapaAtual.forEach((camada, i) => {

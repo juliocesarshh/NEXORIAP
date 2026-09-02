@@ -395,3 +395,18 @@
   text-shadow: none;
   box-shadow: 0 4px 10px rgba(0,0,0,.18);
 }
+
+.modal-final-roguelike{text-align:center;max-width:520px}.modal-final-roguelike h2{font-family:"Cinzel","Georgia",serif;color:var(--ouro,#ffcb05);margin-top:0}.modal-final-roguelike p{opacity:.85;margin-bottom:20px}
+
+/* Time fixo ao lado do mapa no Roguelike */
+.layout-roguelike{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;align-items:start}
+.painel-time-roguelike{position:sticky;top:12px;background:rgba(18,18,24,.94);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px;box-shadow:0 12px 35px rgba(0,0,0,.25);z-index:3}
+.titulo-time-roguelike{display:flex;flex-direction:column;gap:3px;margin-bottom:10px}
+.titulo-time-roguelike strong{font-size:1.05rem}.titulo-time-roguelike span{font-size:.72rem;opacity:.7}
+.card-time-roguelike{width:100%;display:grid;grid-template-columns:48px 1fr;gap:8px;align-items:center;text-align:left;margin:6px 0;padding:7px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);color:inherit;cursor:pointer}
+.card-time-roguelike:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.25)}
+.card-time-roguelike img{width:48px;height:48px;object-fit:contain}.card-time-roguelike .vazio{width:48px;height:48px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.06)}
+.card-time-roguelike .nome{font-weight:700}.card-time-roguelike .meta{font-size:.72rem;opacity:.75}.card-time-roguelike .hp{font-size:.7rem}
+@media(max-width:900px){.layout-roguelike{grid-template-columns:1fr}.painel-time-roguelike{position:relative;top:auto;order:-1}.painel-time-roguelike #lista-time-roguelike{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:5px}.card-time-roguelike{margin:0}}
+
+.item-escolhido{outline:2px solid currentColor;transform:translateY(-2px)}

@@ -3,7 +3,7 @@
     "numero": 1,
     "nome": "Folkim",
     "tipo": "Planta/Inseto",
-    "png": "Folkim.png",
+    "png": "Folkim.jpeg",
     "descricao": "Um pequeno monstro cheio de energia, curioso e sempre pronto para explorar.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
@@ -13,24 +13,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G067",
-        "nivel": 12
+        "codigo": "G020",
+        "nivel": 1
       },
       {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G069",
-        "nivel": 28
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
       },
       {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 24
+      },
+      {
+        "codigo": "G068",
+        "nivel": 28
+      },
+      {
+        "codigo": "G069",
+        "nivel": 32
+      },
+      {
+        "codigo": "G070",
+        "nivel": 36
+      },
+      {
         "codigo": "G071",
         "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 42
+      },
+      {
+        "codigo": "G091",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -62,24 +94,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G020",
+        "nivel": 1
       },
       {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
       },
       {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -111,24 +175,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G020",
+        "nivel": 1
       },
       {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
       },
       {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -150,22 +246,66 @@
     "numero": 4,
     "nome": "Kaidin",
     "tipo": "Fogo",
-    "png": "Kaidin.png",
+    "png": "Kaidin.jpeg",
     "descricao": "Um jovem monstro de fogo que começa a desenvolver sua verdadeira força.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
+        "codigo": "G009",
+        "nivel": 8
+      },
+      {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -193,16 +333,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
+        "codigo": "G009",
+        "nivel": 8
+      },
+      {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -230,28 +414,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
-        "codigo": "G050",
-        "nivel": 12
+        "codigo": "G009",
+        "nivel": 8
       },
       {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G052",
-        "nivel": 28
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
       },
       {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
         "codigo": "G054",
         "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -280,16 +496,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
+        "codigo": "G015",
+        "nivel": 8
+      },
+      {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G031",
+        "nivel": 28
+      },
+      {
+        "codigo": "G032",
+        "nivel": 32
+      },
+      {
+        "codigo": "G033",
+        "nivel": 36
+      },
+      {
+        "codigo": "G034",
+        "nivel": 40
+      },
+      {
+        "codigo": "G035",
+        "nivel": 40
+      },
+      {
+        "codigo": "G036",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -317,16 +577,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
+        "codigo": "G015",
+        "nivel": 8
+      },
+      {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G031",
+        "nivel": 28
+      },
+      {
+        "codigo": "G032",
+        "nivel": 32
+      },
+      {
+        "codigo": "G033",
+        "nivel": 36
+      },
+      {
+        "codigo": "G034",
+        "nivel": 40
+      },
+      {
+        "codigo": "G035",
+        "nivel": 40
+      },
+      {
+        "codigo": "G036",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -354,31 +658,59 @@
     "golpeAssinatura": "Dilacera",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G098",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G100",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G102",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G097",
+        "nivel": 28
+      },
+      {
+        "codigo": "G098",
+        "nivel": 32
+      },
+      {
+        "codigo": "G099",
+        "nivel": 36
+      },
+      {
+        "codigo": "G100",
         "nivel": 40
       },
       {
-        "codigo": "GA001",
+        "codigo": "G101",
+        "nivel": 40
+      },
+      {
+        "codigo": "G102",
+        "nivel": 42
+      },
+      {
+        "codigo": "G031",
         "nivel": 45
       }
     ],
@@ -411,12 +743,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G038",
+        "nivel": 1
+      },
+      {
         "codigo": "G039",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G040",
+        "nivel": 12
       },
       {
         "codigo": "G041",
         "nivel": 33
+      },
+      {
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 28
+      },
+      {
+        "codigo": "G050",
+        "nivel": 32
+      },
+      {
+        "codigo": "G051",
+        "nivel": 36
+      },
+      {
+        "codigo": "G052",
+        "nivel": 40
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -432,7 +808,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Raro",
+    "raridade": "Épico",
     "habilidadeInfo": "Transforma o campo em Campo de Batalha e concede +10% em um status aleatório."
   },
   {
@@ -449,12 +825,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
         "codigo": "G069",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G070",
+        "nivel": 12
       },
       {
         "codigo": "G071",
         "nivel": 33
+      },
+      {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G019",
+        "nivel": 28
+      },
+      {
+        "codigo": "G020",
+        "nivel": 32
+      },
+      {
+        "codigo": "G021",
+        "nivel": 36
+      },
+      {
+        "codigo": "G022",
+        "nivel": 40
+      },
+      {
+        "codigo": "G023",
+        "nivel": 40
+      },
+      {
+        "codigo": "G024",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -482,16 +902,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
         "codigo": "G068",
         "nivel": 1
       },
       {
+        "codigo": "G069",
+        "nivel": 8
+      },
+      {
         "codigo": "G070",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G071",
+        "nivel": 33
       },
       {
         "codigo": "G072",
         "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G019",
+        "nivel": 28
+      },
+      {
+        "codigo": "G020",
+        "nivel": 32
+      },
+      {
+        "codigo": "G021",
+        "nivel": 36
+      },
+      {
+        "codigo": "G022",
+        "nivel": 40
+      },
+      {
+        "codigo": "G023",
+        "nivel": 40
+      },
+      {
+        "codigo": "G024",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -519,28 +983,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
         "codigo": "G068",
         "nivel": 1
       },
       {
-        "codigo": "G008",
-        "nivel": 12
+        "codigo": "G069",
+        "nivel": 8
       },
       {
         "codigo": "G070",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G010",
-        "nivel": 28
+        "codigo": "G071",
+        "nivel": 33
       },
       {
         "codigo": "G072",
         "nivel": 33
       },
       {
-        "codigo": "G012",
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G007",
+        "nivel": 28
+      },
+      {
+        "codigo": "G008",
+        "nivel": 32
+      },
+      {
+        "codigo": "G009",
+        "nivel": 36
+      },
+      {
+        "codigo": "G010",
         "nivel": 40
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      },
+      {
+        "codigo": "G012",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -568,28 +1064,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G067",
+        "nivel": 1
+      },
+      {
         "codigo": "G068",
         "nivel": 1
       },
       {
-        "codigo": "G092",
-        "nivel": 12
+        "codigo": "G069",
+        "nivel": 8
       },
       {
         "codigo": "G070",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G094",
-        "nivel": 28
+        "codigo": "G071",
+        "nivel": 33
       },
       {
         "codigo": "G072",
         "nivel": 33
       },
       {
-        "codigo": "G096",
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 28
+      },
+      {
+        "codigo": "G092",
+        "nivel": 32
+      },
+      {
+        "codigo": "G093",
+        "nivel": 36
+      },
+      {
+        "codigo": "G094",
         "nivel": 40
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -611,7 +1139,7 @@
     "numero": 15,
     "nome": "Scorpk",
     "tipo": "Inseto/Venenoso",
-    "png": "Scorpok.png",
+    "png": "",
     "descricao": "Um pequeno escorpião venenoso que surpreende adversários com sua agilidade.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
@@ -621,24 +1149,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G043",
-        "nivel": 12
+        "codigo": "G068",
+        "nivel": 1
       },
       {
         "codigo": "G069",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G045",
-        "nivel": 28
+        "codigo": "G070",
+        "nivel": 12
       },
       {
         "codigo": "G071",
         "nivel": 33
       },
       {
-        "codigo": "G047",
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 28
+      },
+      {
+        "codigo": "G092",
+        "nivel": 32
+      },
+      {
+        "codigo": "G093",
+        "nivel": 36
+      },
+      {
+        "codigo": "G094",
         "nivel": 40
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -654,40 +1214,72 @@
       "evoluiPara": 16
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 16,
     "nome": "Scorpon",
-    "tipo": "Venenoso/Fogo",
+    "tipo": "Fogo/Fantasma",
     "png": "Scorpon.png",
     "descricao": "Um enorme escorpião vermelho enfurecido, envolto em calor e veneno.",
     "habilidade": "H002",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
-        "codigo": "G043",
+        "codigo": "G007",
         "nivel": 1
       },
       {
-        "codigo": "G007",
-        "nivel": 12
-      },
-      {
-        "codigo": "G045",
-        "nivel": 20
+        "codigo": "G008",
+        "nivel": 1
       },
       {
         "codigo": "G009",
-        "nivel": 28
+        "nivel": 8
       },
       {
-        "codigo": "G047",
-        "nivel": 33
+        "codigo": "G010",
+        "nivel": 12
       },
       {
         "codigo": "G011",
+        "nivel": 33
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 24
+      },
+      {
+        "codigo": "G074",
+        "nivel": 28
+      },
+      {
+        "codigo": "G075",
+        "nivel": 32
+      },
+      {
+        "codigo": "G076",
+        "nivel": 36
+      },
+      {
+        "codigo": "G077",
         "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 40
+      },
+      {
+        "codigo": "G085",
+        "nivel": 42
+      },
+      {
+        "codigo": "G086",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -703,7 +1295,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 17,
@@ -719,12 +1311,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
         "codigo": "G033",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G034",
+        "nivel": 12
       },
       {
         "codigo": "G035",
         "nivel": 33
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      },
+      {
+        "codigo": "G013",
+        "nivel": 24
+      },
+      {
+        "codigo": "G014",
+        "nivel": 28
+      },
+      {
+        "codigo": "G015",
+        "nivel": 32
+      },
+      {
+        "codigo": "G016",
+        "nivel": 36
+      },
+      {
+        "codigo": "G017",
+        "nivel": 40
+      },
+      {
+        "codigo": "G018",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -740,7 +1376,7 @@
       "evoluiPara": 18
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 18,
@@ -756,12 +1392,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
         "codigo": "G033",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G034",
+        "nivel": 12
       },
       {
         "codigo": "G035",
         "nivel": 33
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      },
+      {
+        "codigo": "G013",
+        "nivel": 24
+      },
+      {
+        "codigo": "G014",
+        "nivel": 28
+      },
+      {
+        "codigo": "G015",
+        "nivel": 32
+      },
+      {
+        "codigo": "G016",
+        "nivel": 36
+      },
+      {
+        "codigo": "G017",
+        "nivel": 40
+      },
+      {
+        "codigo": "G018",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -777,7 +1457,7 @@
       "evoluiPara": 19
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 19,
@@ -793,12 +1473,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G032",
+        "nivel": 1
+      },
+      {
         "codigo": "G033",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G034",
+        "nivel": 12
       },
       {
         "codigo": "G035",
         "nivel": 33
+      },
+      {
+        "codigo": "G036",
+        "nivel": 33
+      },
+      {
+        "codigo": "G013",
+        "nivel": 24
+      },
+      {
+        "codigo": "G014",
+        "nivel": 28
+      },
+      {
+        "codigo": "G015",
+        "nivel": 32
+      },
+      {
+        "codigo": "G016",
+        "nivel": 36
+      },
+      {
+        "codigo": "G017",
+        "nivel": 40
+      },
+      {
+        "codigo": "G018",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -814,13 +1538,13 @@
       "evoluiPara": 20
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 20,
     "nome": "Sabot",
     "tipo": "Fantasma/Dark",
-    "png": "Saibot.png",
+    "png": "",
     "descricao": "Uma forma espectral que surge após a queda de Saber para continuar sua caçada.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
@@ -830,24 +1554,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G091",
-        "nivel": 12
+        "codigo": "G080",
+        "nivel": 1
       },
       {
         "codigo": "G081",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G093",
-        "nivel": 28
+        "codigo": "G082",
+        "nivel": 12
       },
       {
         "codigo": "G083",
         "nivel": 33
       },
       {
+        "codigo": "G084",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 24
+      },
+      {
+        "codigo": "G092",
+        "nivel": 28
+      },
+      {
+        "codigo": "G093",
+        "nivel": 32
+      },
+      {
+        "codigo": "G094",
+        "nivel": 36
+      },
+      {
         "codigo": "G095",
         "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 42
+      },
+      {
+        "codigo": "G061",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -863,7 +1619,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 21,
@@ -875,28 +1631,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G060",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 28
+      },
+      {
+        "codigo": "G056",
+        "nivel": 32
+      },
+      {
+        "codigo": "G057",
+        "nivel": 36
+      },
+      {
+        "codigo": "G058",
         "nivel": 40
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -912,7 +1700,7 @@
       "evoluiPara": 22
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 22,
@@ -924,28 +1712,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G060",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 28
+      },
+      {
+        "codigo": "G056",
+        "nivel": 32
+      },
+      {
+        "codigo": "G057",
+        "nivel": 36
+      },
+      {
+        "codigo": "G058",
         "nivel": 40
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -961,7 +1781,7 @@
       "evoluiPara": 23
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 23,
@@ -973,28 +1793,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G060",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 28
+      },
+      {
+        "codigo": "G056",
+        "nivel": 32
+      },
+      {
+        "codigo": "G057",
+        "nivel": 36
+      },
+      {
+        "codigo": "G058",
         "nivel": 40
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1010,7 +1862,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 24,
@@ -1022,28 +1874,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
         "codigo": "G020",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G021",
+        "nivel": 8
       },
       {
         "codigo": "G022",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G023",
+        "nivel": 33
       },
       {
         "codigo": "G024",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1059,40 +1943,72 @@
       "evoluiPara": 25
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 25,
     "nome": "Folharára",
     "tipo": "Planta/Voador",
-    "png": "Folharará.png",
+    "png": "",
     "descricao": "Uma ave de plumagem exuberante que usa folhas e sementes como armas.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
         "codigo": "G020",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G021",
+        "nivel": 8
       },
       {
         "codigo": "G022",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G023",
+        "nivel": 33
       },
       {
         "codigo": "G024",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1108,7 +2024,7 @@
       "evoluiPara": 26
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 26,
@@ -1120,28 +2036,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G019",
+        "nivel": 1
+      },
+      {
         "codigo": "G020",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G021",
+        "nivel": 8
       },
       {
         "codigo": "G022",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G023",
+        "nivel": 33
       },
       {
         "codigo": "G024",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1157,7 +2105,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 27,
@@ -1173,12 +2121,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G098",
+        "nivel": 1
+      },
+      {
         "codigo": "G099",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G100",
+        "nivel": 12
       },
       {
         "codigo": "G101",
         "nivel": 33
+      },
+      {
+        "codigo": "G102",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 24
+      },
+      {
+        "codigo": "G074",
+        "nivel": 28
+      },
+      {
+        "codigo": "G075",
+        "nivel": 32
+      },
+      {
+        "codigo": "G076",
+        "nivel": 36
+      },
+      {
+        "codigo": "G077",
+        "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 40
+      },
+      {
+        "codigo": "G049",
+        "nivel": 42
+      },
+      {
+        "codigo": "G050",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1194,7 +2186,7 @@
       "evoluiPara": 28
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 28,
@@ -1210,12 +2202,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G098",
+        "nivel": 1
+      },
+      {
         "codigo": "G099",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G100",
+        "nivel": 12
       },
       {
         "codigo": "G101",
         "nivel": 33
+      },
+      {
+        "codigo": "G102",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 24
+      },
+      {
+        "codigo": "G074",
+        "nivel": 28
+      },
+      {
+        "codigo": "G075",
+        "nivel": 32
+      },
+      {
+        "codigo": "G076",
+        "nivel": 36
+      },
+      {
+        "codigo": "G077",
+        "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 40
+      },
+      {
+        "codigo": "G049",
+        "nivel": 42
+      },
+      {
+        "codigo": "G050",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1231,13 +2267,13 @@
       "evoluiPara": 29
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 29,
     "nome": "Ferragão",
     "tipo": "Aço/Dragão",
-    "png": "Ferragao.png",
+    "png": "",
     "descricao": "Um verdadeiro dragão de aço com corpo inspirado em um gigantesco tatu-bola.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
@@ -1247,24 +2283,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G085",
-        "nivel": 12
+        "codigo": "G098",
+        "nivel": 1
       },
       {
         "codigo": "G099",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G087",
-        "nivel": 28
+        "codigo": "G100",
+        "nivel": 12
       },
       {
         "codigo": "G101",
         "nivel": 33
       },
       {
+        "codigo": "G102",
+        "nivel": 33
+      },
+      {
+        "codigo": "G085",
+        "nivel": 24
+      },
+      {
+        "codigo": "G086",
+        "nivel": 28
+      },
+      {
+        "codigo": "G087",
+        "nivel": 32
+      },
+      {
+        "codigo": "G088",
+        "nivel": 36
+      },
+      {
         "codigo": "G089",
         "nivel": 40
+      },
+      {
+        "codigo": "G090",
+        "nivel": 40
+      },
+      {
+        "codigo": "G007",
+        "nivel": 42
+      },
+      {
+        "codigo": "G008",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1280,7 +2348,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 30,
@@ -1296,24 +2364,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G002",
+        "nivel": 1
       },
       {
         "codigo": "G003",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G004",
+        "nivel": 12
       },
       {
         "codigo": "G005",
         "nivel": 33
       },
       {
+        "codigo": "G006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1335,7 +2435,7 @@
     "numero": 31,
     "nome": "Kanguringue",
     "tipo": "Lutador",
-    "png": "Canguringue.png",
+    "png": "",
     "descricao": "Um verdadeiro campeão dos ringues, famoso por golpes surpreendentes.",
     "habilidade": "H005",
     "golpeAssinatura": "Nil",
@@ -1345,12 +2445,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G038",
+        "nivel": 1
+      },
+      {
         "codigo": "G039",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G040",
+        "nivel": 12
       },
       {
         "codigo": "G041",
         "nivel": 33
+      },
+      {
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 28
+      },
+      {
+        "codigo": "G050",
+        "nivel": 32
+      },
+      {
+        "codigo": "G051",
+        "nivel": 36
+      },
+      {
+        "codigo": "G052",
+        "nivel": 40
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1383,12 +2527,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 24
+      },
+      {
+        "codigo": "G068",
+        "nivel": 28
+      },
+      {
+        "codigo": "G069",
+        "nivel": 32
+      },
+      {
+        "codigo": "G070",
+        "nivel": 36
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 42
+      },
+      {
+        "codigo": "G049",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1420,12 +2608,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 24
+      },
+      {
+        "codigo": "G068",
+        "nivel": 28
+      },
+      {
+        "codigo": "G069",
+        "nivel": 32
+      },
+      {
+        "codigo": "G070",
+        "nivel": 36
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 42
+      },
+      {
+        "codigo": "G049",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1457,12 +2689,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 24
+      },
+      {
+        "codigo": "G068",
+        "nivel": 28
+      },
+      {
+        "codigo": "G069",
+        "nivel": 32
+      },
+      {
+        "codigo": "G070",
+        "nivel": 36
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 42
+      },
+      {
+        "codigo": "G049",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1494,12 +2770,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
         "codigo": "G009",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G010",
+        "nivel": 12
       },
       {
         "codigo": "G011",
         "nivel": 33
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1532,12 +2852,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
         "codigo": "G069",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G070",
+        "nivel": 12
       },
       {
         "codigo": "G071",
         "nivel": 33
+      },
+      {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G019",
+        "nivel": 28
+      },
+      {
+        "codigo": "G020",
+        "nivel": 32
+      },
+      {
+        "codigo": "G021",
+        "nivel": 36
+      },
+      {
+        "codigo": "G022",
+        "nivel": 40
+      },
+      {
+        "codigo": "G023",
+        "nivel": 40
+      },
+      {
+        "codigo": "G024",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1569,24 +2933,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G068",
+        "nivel": 1
       },
       {
         "codigo": "G069",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G070",
+        "nivel": 12
       },
       {
         "codigo": "G071",
         "nivel": 33
       },
       {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 28
+      },
+      {
+        "codigo": "G038",
+        "nivel": 32
+      },
+      {
+        "codigo": "G039",
+        "nivel": 36
+      },
+      {
+        "codigo": "G040",
+        "nivel": 40
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1602,7 +2998,7 @@
       "evoluiPara": 38
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 38,
@@ -1618,24 +3014,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G092",
+        "nivel": 1
       },
       {
         "codigo": "G093",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G094",
+        "nivel": 12
       },
       {
         "codigo": "G095",
         "nivel": 33
       },
       {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 28
+      },
+      {
+        "codigo": "G038",
+        "nivel": 32
+      },
+      {
+        "codigo": "G039",
+        "nivel": 36
+      },
+      {
+        "codigo": "G040",
+        "nivel": 40
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1651,7 +3079,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 39,
@@ -1667,24 +3095,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G001",
-        "nivel": 12
+        "codigo": "G014",
+        "nivel": 1
       },
       {
         "codigo": "G015",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G003",
-        "nivel": 28
+        "codigo": "G016",
+        "nivel": 12
       },
       {
         "codigo": "G017",
         "nivel": 33
       },
       {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G001",
+        "nivel": 28
+      },
+      {
+        "codigo": "G002",
+        "nivel": 32
+      },
+      {
+        "codigo": "G003",
+        "nivel": 36
+      },
+      {
+        "codigo": "G004",
+        "nivel": 40
+      },
+      {
         "codigo": "G005",
         "nivel": 40
+      },
+      {
+        "codigo": "G006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G031",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1716,12 +3176,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G014",
+        "nivel": 1
+      },
+      {
         "codigo": "G015",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G016",
+        "nivel": 12
       },
       {
         "codigo": "G017",
         "nivel": 33
+      },
+      {
+        "codigo": "G018",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G031",
+        "nivel": 28
+      },
+      {
+        "codigo": "G032",
+        "nivel": 32
+      },
+      {
+        "codigo": "G033",
+        "nivel": 36
+      },
+      {
+        "codigo": "G034",
+        "nivel": 40
+      },
+      {
+        "codigo": "G035",
+        "nivel": 40
+      },
+      {
+        "codigo": "G036",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1749,16 +3253,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
-        "codigo": "G044",
+        "codigo": "G091",
         "nivel": 1
       },
       {
-        "codigo": "G046",
-        "nivel": 20
+        "codigo": "G092",
+        "nivel": 1
       },
       {
-        "codigo": "G048",
+        "codigo": "G093",
+        "nivel": 8
+      },
+      {
+        "codigo": "G094",
+        "nivel": 12
+      },
+      {
+        "codigo": "G095",
         "nivel": 33
+      },
+      {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 28
+      },
+      {
+        "codigo": "G050",
+        "nivel": 32
+      },
+      {
+        "codigo": "G051",
+        "nivel": 36
+      },
+      {
+        "codigo": "G052",
+        "nivel": 40
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1779,35 +3327,67 @@
   {
     "numero": 42,
     "nome": "Black-Manbi",
-    "tipo": "Venenoso/Dark",
+    "tipo": "Dark/Aço",
     "png": "",
     "descricao": "Uma mamba negra fortalecida pelo Coração Sombrio, ainda mais perigosa.",
     "habilidade": "",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
-        "codigo": "G043",
+        "codigo": "G091",
         "nivel": 1
       },
       {
-        "codigo": "G091",
-        "nivel": 12
-      },
-      {
-        "codigo": "G045",
-        "nivel": 20
+        "codigo": "G092",
+        "nivel": 1
       },
       {
         "codigo": "G093",
-        "nivel": 28
+        "nivel": 8
       },
       {
-        "codigo": "G047",
-        "nivel": 33
+        "codigo": "G094",
+        "nivel": 12
       },
       {
         "codigo": "G095",
+        "nivel": 33
+      },
+      {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 28
+      },
+      {
+        "codigo": "G068",
+        "nivel": 32
+      },
+      {
+        "codigo": "G069",
+        "nivel": 36
+      },
+      {
+        "codigo": "G070",
         "nivel": 40
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1823,7 +3403,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 43,
@@ -1839,24 +3419,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G055",
-        "nivel": 12
+        "codigo": "G002",
+        "nivel": 1
       },
       {
         "codigo": "G003",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G057",
-        "nivel": 28
+        "codigo": "G004",
+        "nivel": 12
       },
       {
         "codigo": "G005",
         "nivel": 33
       },
       {
+        "codigo": "G006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
         "codigo": "G059",
         "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      },
+      {
+        "codigo": "G031",
+        "nivel": 42
+      },
+      {
+        "codigo": "G032",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1888,24 +3500,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G007",
-        "nivel": 12
+        "codigo": "G056",
+        "nivel": 1
       },
       {
         "codigo": "G057",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G009",
-        "nivel": 28
+        "codigo": "G058",
+        "nivel": 12
       },
       {
         "codigo": "G059",
         "nivel": 33
       },
       {
+        "codigo": "G060",
+        "nivel": 33
+      },
+      {
+        "codigo": "G007",
+        "nivel": 24
+      },
+      {
+        "codigo": "G008",
+        "nivel": 28
+      },
+      {
+        "codigo": "G009",
+        "nivel": 32
+      },
+      {
+        "codigo": "G010",
+        "nivel": 36
+      },
+      {
         "codigo": "G011",
         "nivel": 40
+      },
+      {
+        "codigo": "G012",
+        "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1922,7 +3566,7 @@
     },
     "habilidadeInfo": "Intimida o adversário, reduzindo seu Ataque em 35%.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 45,
@@ -1938,24 +3582,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G055",
-        "nivel": 12
+        "codigo": "G002",
+        "nivel": 1
       },
       {
         "codigo": "G003",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G057",
-        "nivel": 28
+        "codigo": "G004",
+        "nivel": 12
       },
       {
         "codigo": "G005",
         "nivel": 33
       },
       {
+        "codigo": "G006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
         "codigo": "G059",
         "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 40
+      },
+      {
+        "codigo": "G031",
+        "nivel": 42
+      },
+      {
+        "codigo": "G032",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -1987,24 +3663,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G091",
-        "nivel": 12
+        "codigo": "G056",
+        "nivel": 1
       },
       {
         "codigo": "G057",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G093",
-        "nivel": 28
+        "codigo": "G058",
+        "nivel": 12
       },
       {
         "codigo": "G059",
         "nivel": 33
       },
       {
+        "codigo": "G060",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 24
+      },
+      {
+        "codigo": "G092",
+        "nivel": 28
+      },
+      {
+        "codigo": "G093",
+        "nivel": 32
+      },
+      {
+        "codigo": "G094",
+        "nivel": 36
+      },
+      {
         "codigo": "G095",
         "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2037,15 +3745,55 @@
         "nivel": 1
       },
       {
+        "codigo": "G092",
+        "nivel": 1
+      },
+      {
         "codigo": "G093",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G094",
+        "nivel": 12
       },
       {
         "codigo": "G095",
         "nivel": 33
       },
       {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
         "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G079",
+        "nivel": 28
+      },
+      {
+        "codigo": "G080",
+        "nivel": 32
+      },
+      {
+        "codigo": "G081",
+        "nivel": 36
+      },
+      {
+        "codigo": "G082",
+        "nivel": 40
+      },
+      {
+        "codigo": "G083",
+        "nivel": 40
+      },
+      {
+        "codigo": "G084",
+        "nivel": 42
+      },
+      {
+        "codigo": "G037",
         "nivel": 45
       }
     ],
@@ -2063,7 +3811,7 @@
     },
     "habilidadeInfo": "Cegueira. Sugar tem 115 de Poder, é Dark e recupera 15% do dano causado em HP.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 48,
@@ -2079,15 +3827,55 @@
         "nivel": 1
       },
       {
+        "codigo": "G068",
+        "nivel": 1
+      },
+      {
         "codigo": "G069",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G070",
+        "nivel": 12
       },
       {
         "codigo": "G071",
         "nivel": 33
       },
       {
+        "codigo": "G072",
+        "nivel": 33
+      },
+      {
         "codigo": "GA003",
+        "nivel": 33
+      },
+      {
+        "codigo": "G019",
+        "nivel": 28
+      },
+      {
+        "codigo": "G020",
+        "nivel": 32
+      },
+      {
+        "codigo": "G021",
+        "nivel": 36
+      },
+      {
+        "codigo": "G022",
+        "nivel": 40
+      },
+      {
+        "codigo": "G023",
+        "nivel": 40
+      },
+      {
+        "codigo": "G024",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
         "nivel": 45
       }
     ],
@@ -2104,7 +3892,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 49,
@@ -2116,28 +3904,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G103",
+        "nivel": 1
+      },
+      {
         "codigo": "G104",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G105",
+        "nivel": 8
       },
       {
         "codigo": "G106",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G107",
+        "nivel": 33
       },
       {
         "codigo": "G108",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2154,11 +3974,11 @@
     },
     "levelevo": null,
     "habilidadeInfo": "No primeiro turno, 80% de chance de o adversário não atacar por ficar encantado.",
-    "raridade": "Comum"
+    "raridade": "Lendário"
   },
   {
     "numero": 50,
-    "nome": "Shalung",
+    "nome": "Sharlong",
     "tipo": "Dragão",
     "png": "",
     "descricao": "O Deus Dragão, considerado um dos Monstros mais poderosos de todos.",
@@ -2166,16 +3986,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G085",
+        "nivel": 1
+      },
+      {
         "codigo": "G086",
         "nivel": 1
       },
       {
+        "codigo": "G087",
+        "nivel": 8
+      },
+      {
         "codigo": "G088",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G089",
+        "nivel": 33
       },
       {
         "codigo": "G090",
         "nivel": 33
+      },
+      {
+        "codigo": "G007",
+        "nivel": 24
+      },
+      {
+        "codigo": "G008",
+        "nivel": 28
+      },
+      {
+        "codigo": "G009",
+        "nivel": 32
+      },
+      {
+        "codigo": "G010",
+        "nivel": 36
+      },
+      {
+        "codigo": "G011",
+        "nivel": 40
+      },
+      {
+        "codigo": "G012",
+        "nivel": 40
+      },
+      {
+        "codigo": "G013",
+        "nivel": 42
+      },
+      {
+        "codigo": "G014",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2204,28 +4068,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G026",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G028",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G030",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G025",
+        "nivel": 28
+      },
+      {
+        "codigo": "G026",
+        "nivel": 32
+      },
+      {
+        "codigo": "G027",
+        "nivel": 36
+      },
+      {
+        "codigo": "G028",
         "nivel": 40
+      },
+      {
+        "codigo": "G029",
+        "nivel": 40
+      },
+      {
+        "codigo": "G030",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2257,24 +4153,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G001",
-        "nivel": 12
+        "codigo": "G050",
+        "nivel": 1
       },
       {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G003",
-        "nivel": 28
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
       },
       {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G001",
+        "nivel": 28
+      },
+      {
+        "codigo": "G002",
+        "nivel": 32
+      },
+      {
+        "codigo": "G003",
+        "nivel": 36
+      },
+      {
+        "codigo": "G004",
+        "nivel": 40
+      },
+      {
         "codigo": "G005",
         "nivel": 40
+      },
+      {
+        "codigo": "G006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2306,24 +4234,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G055",
-        "nivel": 12
+        "codigo": "G050",
+        "nivel": 1
       },
       {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G057",
-        "nivel": 28
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
       },
       {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G055",
+        "nivel": 28
+      },
+      {
+        "codigo": "G056",
+        "nivel": 32
+      },
+      {
+        "codigo": "G057",
+        "nivel": 36
+      },
+      {
+        "codigo": "G058",
+        "nivel": 40
+      },
+      {
         "codigo": "G059",
         "nivel": 40
+      },
+      {
+        "codigo": "G060",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2356,12 +4316,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G050",
+        "nivel": 1
+      },
+      {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
+      },
+      {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 28
+      },
+      {
+        "codigo": "G074",
+        "nivel": 32
+      },
+      {
+        "codigo": "G075",
+        "nivel": 36
+      },
+      {
+        "codigo": "G076",
+        "nivel": 40
+      },
+      {
+        "codigo": "G077",
+        "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2393,12 +4397,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G050",
+        "nivel": 1
+      },
+      {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
+      },
+      {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 28
+      },
+      {
+        "codigo": "G074",
+        "nivel": 32
+      },
+      {
+        "codigo": "G075",
+        "nivel": 36
+      },
+      {
+        "codigo": "G076",
+        "nivel": 40
+      },
+      {
+        "codigo": "G077",
+        "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2415,7 +4463,7 @@
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 56,
@@ -2431,12 +4479,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G050",
+        "nivel": 1
+      },
+      {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
+      },
+      {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G073",
+        "nivel": 28
+      },
+      {
+        "codigo": "G074",
+        "nivel": 32
+      },
+      {
+        "codigo": "G075",
+        "nivel": 36
+      },
+      {
+        "codigo": "G076",
+        "nivel": 40
+      },
+      {
+        "codigo": "G077",
+        "nivel": 40
+      },
+      {
+        "codigo": "G078",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2453,7 +4545,7 @@
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 57,
@@ -2469,27 +4561,55 @@
         "nivel": 1
       },
       {
-        "codigo": "G085",
-        "nivel": 12
+        "codigo": "G050",
+        "nivel": 1
       },
       {
         "codigo": "G051",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G087",
-        "nivel": 28
+        "codigo": "G052",
+        "nivel": 12
       },
       {
         "codigo": "G053",
         "nivel": 33
       },
       {
+        "codigo": "G054",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 33
+      },
+      {
+        "codigo": "G085",
+        "nivel": 28
+      },
+      {
+        "codigo": "G086",
+        "nivel": 32
+      },
+      {
+        "codigo": "G087",
+        "nivel": 36
+      },
+      {
+        "codigo": "G088",
+        "nivel": 40
+      },
+      {
         "codigo": "G089",
         "nivel": 40
       },
       {
-        "codigo": "GA004",
+        "codigo": "G090",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
         "nivel": 45
       }
     ],
@@ -2507,7 +4627,7 @@
     },
     "habilidadeInfo": "Com pouco HP, aumenta Ataque e Defesa; ao derrotar um inimigo, o Ataque aumenta em 35%.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 58,
@@ -2519,12 +4639,24 @@
     "golpeAssinatura": "Ilusão",
     "golpes": [
       {
+        "codigo": "G061",
+        "nivel": 1
+      },
+      {
         "codigo": "G062",
         "nivel": 1
       },
       {
+        "codigo": "G063",
+        "nivel": 8
+      },
+      {
         "codigo": "G064",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G065",
+        "nivel": 33
       },
       {
         "codigo": "G066",
@@ -2532,6 +4664,34 @@
       },
       {
         "codigo": "GA005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G001",
+        "nivel": 28
+      },
+      {
+        "codigo": "G002",
+        "nivel": 32
+      },
+      {
+        "codigo": "G003",
+        "nivel": 36
+      },
+      {
+        "codigo": "G004",
+        "nivel": 40
+      },
+      {
+        "codigo": "G005",
+        "nivel": 40
+      },
+      {
+        "codigo": "G006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G103",
         "nivel": 45
       }
     ],
@@ -2561,16 +4721,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G025",
+        "nivel": 1
+      },
+      {
         "codigo": "G026",
         "nivel": 1
       },
       {
+        "codigo": "G027",
+        "nivel": 8
+      },
+      {
         "codigo": "G028",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G029",
+        "nivel": 33
       },
       {
         "codigo": "G030",
         "nivel": 33
+      },
+      {
+        "codigo": "G001",
+        "nivel": 24
+      },
+      {
+        "codigo": "G002",
+        "nivel": 28
+      },
+      {
+        "codigo": "G003",
+        "nivel": 32
+      },
+      {
+        "codigo": "G004",
+        "nivel": 36
+      },
+      {
+        "codigo": "G005",
+        "nivel": 40
+      },
+      {
+        "codigo": "G006",
+        "nivel": 40
+      },
+      {
+        "codigo": "G115",
+        "nivel": 42
+      },
+      {
+        "codigo": "G116",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2598,28 +4802,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G025",
+        "nivel": 1
+      },
+      {
         "codigo": "G026",
         "nivel": 1
       },
       {
-        "codigo": "G062",
-        "nivel": 12
+        "codigo": "G027",
+        "nivel": 8
       },
       {
         "codigo": "G028",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G064",
-        "nivel": 28
+        "codigo": "G029",
+        "nivel": 33
       },
       {
         "codigo": "G030",
         "nivel": 33
       },
       {
+        "codigo": "G061",
+        "nivel": 24
+      },
+      {
+        "codigo": "G062",
+        "nivel": 28
+      },
+      {
+        "codigo": "G063",
+        "nivel": 32
+      },
+      {
+        "codigo": "G064",
+        "nivel": 36
+      },
+      {
+        "codigo": "G065",
+        "nivel": 40
+      },
+      {
         "codigo": "G066",
         "nivel": 40
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2636,7 +4872,7 @@
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 61,
@@ -2648,28 +4884,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G025",
+        "nivel": 1
+      },
+      {
         "codigo": "G026",
         "nivel": 1
       },
       {
-        "codigo": "G038",
-        "nivel": 12
+        "codigo": "G027",
+        "nivel": 8
       },
       {
         "codigo": "G028",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G040",
-        "nivel": 28
+        "codigo": "G029",
+        "nivel": 33
       },
       {
         "codigo": "G030",
         "nivel": 33
       },
       {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      },
+      {
         "codigo": "G042",
         "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2686,7 +4954,7 @@
     },
     "habilidadeInfo": "50% de chance de voltar com 1 HP quando seria derrotado, até 9 vezes.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 62,
@@ -2702,12 +4970,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
         "codigo": "G003",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G004",
+        "nivel": 12
       },
       {
         "codigo": "G005",
         "nivel": 33
+      },
+      {
+        "codigo": "G006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
+        "codigo": "G041",
+        "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2739,12 +5051,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G038",
+        "nivel": 1
+      },
+      {
         "codigo": "G039",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G040",
+        "nivel": 12
       },
       {
         "codigo": "G041",
         "nivel": 33
+      },
+      {
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 28
+      },
+      {
+        "codigo": "G050",
+        "nivel": 32
+      },
+      {
+        "codigo": "G051",
+        "nivel": 36
+      },
+      {
+        "codigo": "G052",
+        "nivel": 40
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2776,24 +5132,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G049",
-        "nivel": 12
+        "codigo": "G038",
+        "nivel": 1
       },
       {
         "codigo": "G039",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G051",
-        "nivel": 28
+        "codigo": "G040",
+        "nivel": 12
       },
       {
         "codigo": "G041",
         "nivel": 33
       },
       {
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 28
+      },
+      {
+        "codigo": "G050",
+        "nivel": 32
+      },
+      {
+        "codigo": "G051",
+        "nivel": 36
+      },
+      {
+        "codigo": "G052",
+        "nivel": 40
+      },
+      {
         "codigo": "G053",
         "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2810,7 +5198,7 @@
     },
     "habilidadeInfo": "Quanto menor o HP, maior o Ataque; o bônus é limitado a 100%.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 65,
@@ -2826,27 +5214,55 @@
         "nivel": 1
       },
       {
-        "codigo": "G091",
-        "nivel": 12
+        "codigo": "G038",
+        "nivel": 1
       },
       {
         "codigo": "G039",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G093",
-        "nivel": 28
+        "codigo": "G040",
+        "nivel": 12
       },
       {
         "codigo": "G041",
         "nivel": 33
       },
       {
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 28
+      },
+      {
+        "codigo": "G092",
+        "nivel": 32
+      },
+      {
+        "codigo": "G093",
+        "nivel": 36
+      },
+      {
+        "codigo": "G094",
+        "nivel": 40
+      },
+      {
         "codigo": "G095",
         "nivel": 40
       },
       {
-        "codigo": "GA006",
+        "codigo": "G096",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA002",
         "nivel": 45
       }
     ],
@@ -2864,7 +5280,7 @@
     },
     "habilidadeInfo": "Fúria Colossal; quanto menor o HP, maior o Ataque, limitada a 100%. Rajada Dark tem 120 de Poder.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Épico"
   },
   {
     "numero": 66,
@@ -2876,28 +5292,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G073",
+        "nivel": 1
+      },
+      {
         "codigo": "G074",
         "nivel": 1
       },
       {
-        "codigo": "G062",
-        "nivel": 12
+        "codigo": "G075",
+        "nivel": 8
       },
       {
         "codigo": "G076",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G064",
-        "nivel": 28
+        "codigo": "G077",
+        "nivel": 33
       },
       {
         "codigo": "G078",
         "nivel": 33
       },
       {
+        "codigo": "G061",
+        "nivel": 24
+      },
+      {
+        "codigo": "G062",
+        "nivel": 28
+      },
+      {
+        "codigo": "G063",
+        "nivel": 32
+      },
+      {
+        "codigo": "G064",
+        "nivel": 36
+      },
+      {
+        "codigo": "G065",
+        "nivel": 40
+      },
+      {
         "codigo": "G066",
         "nivel": 40
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2925,28 +5373,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G073",
+        "nivel": 1
+      },
+      {
         "codigo": "G074",
         "nivel": 1
       },
       {
-        "codigo": "G092",
-        "nivel": 12
+        "codigo": "G075",
+        "nivel": 8
       },
       {
         "codigo": "G076",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G094",
-        "nivel": 28
+        "codigo": "G077",
+        "nivel": 33
       },
       {
         "codigo": "G078",
         "nivel": 33
       },
       {
+        "codigo": "G091",
+        "nivel": 24
+      },
+      {
+        "codigo": "G092",
+        "nivel": 28
+      },
+      {
+        "codigo": "G093",
+        "nivel": 32
+      },
+      {
+        "codigo": "G094",
+        "nivel": 36
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
         "codigo": "G096",
         "nivel": 40
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 42
+      },
+      {
+        "codigo": "G007",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -2975,16 +5455,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
         "codigo": "G032",
         "nivel": 1
       },
       {
+        "codigo": "G033",
+        "nivel": 8
+      },
+      {
         "codigo": "G034",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G035",
+        "nivel": 33
       },
       {
         "codigo": "G036",
         "nivel": 33
+      },
+      {
+        "codigo": "G013",
+        "nivel": 24
+      },
+      {
+        "codigo": "G014",
+        "nivel": 28
+      },
+      {
+        "codigo": "G015",
+        "nivel": 32
+      },
+      {
+        "codigo": "G016",
+        "nivel": 36
+      },
+      {
+        "codigo": "G017",
+        "nivel": 40
+      },
+      {
+        "codigo": "G018",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3012,28 +5536,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
         "codigo": "G032",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G033",
+        "nivel": 8
       },
       {
         "codigo": "G034",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G035",
+        "nivel": 33
       },
       {
         "codigo": "G036",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3061,28 +5617,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G031",
+        "nivel": 1
+      },
+      {
         "codigo": "G032",
         "nivel": 1
       },
       {
-        "codigo": "G056",
-        "nivel": 12
+        "codigo": "G033",
+        "nivel": 8
       },
       {
         "codigo": "G034",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G058",
-        "nivel": 28
+        "codigo": "G035",
+        "nivel": 33
       },
       {
         "codigo": "G036",
         "nivel": 33
       },
       {
+        "codigo": "G055",
+        "nivel": 24
+      },
+      {
+        "codigo": "G056",
+        "nivel": 28
+      },
+      {
+        "codigo": "G057",
+        "nivel": 32
+      },
+      {
+        "codigo": "G058",
+        "nivel": 36
+      },
+      {
+        "codigo": "G059",
+        "nivel": 40
+      },
+      {
         "codigo": "G060",
         "nivel": 40
+      },
+      {
+        "codigo": "G001",
+        "nivel": 42
+      },
+      {
+        "codigo": "G002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3115,28 +5703,72 @@
         "nivel": 1
       },
       {
+        "codigo": "G020",
+        "nivel": 1
+      },
+      {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
+      },
+      {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G067",
+        "nivel": 24
+      },
+      {
+        "codigo": "G068",
+        "nivel": 28
+      },
+      {
+        "codigo": "G069",
+        "nivel": 32
+      },
+      {
+        "codigo": "G070",
+        "nivel": 36
+      },
+      {
+        "codigo": "G071",
+        "nivel": 40
+      },
+      {
+        "codigo": "G072",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA003",
+        "nivel": 42
+      },
+      {
+        "codigo": "G049",
+        "nivel": 45
       }
     ],
     "statusBase": {
-      "hp": 50,
-      "ataque": 45,
-      "defesa": 45,
-      "ataqueEspecial": 45,
-      "defesaEspecial": 45,
-      "velocidade": 55
+      "hp": 70,
+      "ataque": 65,
+      "defesa": 55,
+      "ataqueEspecial": 65,
+      "defesaEspecial": 55,
+      "velocidade": 75
     },
     "evolucao": {
       "evoluiDe": "",
       "evoluiPara": 72
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Mítico"
   },
   {
     "numero": 72,
@@ -3152,40 +5784,72 @@
         "nivel": 1
       },
       {
-        "codigo": "G007",
-        "nivel": 12
+        "codigo": "G020",
+        "nivel": 1
       },
       {
         "codigo": "G021",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G009",
-        "nivel": 28
+        "codigo": "G022",
+        "nivel": 12
       },
       {
         "codigo": "G023",
         "nivel": 33
       },
       {
+        "codigo": "G024",
+        "nivel": 33
+      },
+      {
+        "codigo": "G007",
+        "nivel": 24
+      },
+      {
+        "codigo": "G008",
+        "nivel": 28
+      },
+      {
+        "codigo": "G009",
+        "nivel": 32
+      },
+      {
+        "codigo": "G010",
+        "nivel": 36
+      },
+      {
         "codigo": "G011",
         "nivel": 40
+      },
+      {
+        "codigo": "G012",
+        "nivel": 40
+      },
+      {
+        "codigo": "G073",
+        "nivel": 42
+      },
+      {
+        "codigo": "G074",
+        "nivel": 45
       }
     ],
     "statusBase": {
-      "hp": 85,
-      "ataque": 95,
-      "defesa": 75,
-      "ataqueEspecial": 85,
-      "defesaEspecial": 75,
-      "velocidade": 90
+      "hp": 95,
+      "ataque": 105,
+      "defesa": 82,
+      "ataqueEspecial": 100,
+      "defesaEspecial": 82,
+      "velocidade": 100
     },
     "evolucao": {
       "evoluiDe": 71,
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Mítico"
   },
   {
     "numero": 73,
@@ -3197,32 +5861,76 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
+        "codigo": "G009",
+        "nivel": 8
+      },
+      {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
-      "hp": 50,
-      "ataque": 55,
-      "defesa": 40,
-      "ataqueEspecial": 60,
-      "defesaEspecial": 40,
-      "velocidade": 55
+      "hp": 70,
+      "ataque": 70,
+      "defesa": 55,
+      "ataqueEspecial": 75,
+      "defesaEspecial": 55,
+      "velocidade": 75
     },
     "evolucao": {
       "evoluiDe": "",
       "evoluiPara": 74
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Mítico"
   },
   {
     "numero": 74,
@@ -3234,37 +5942,69 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
-        "codigo": "G086",
-        "nivel": 12
+        "codigo": "G009",
+        "nivel": 8
       },
       {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G088",
-        "nivel": 28
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
       },
       {
+        "codigo": "G085",
+        "nivel": 24
+      },
+      {
+        "codigo": "G086",
+        "nivel": 28
+      },
+      {
+        "codigo": "G087",
+        "nivel": 32
+      },
+      {
+        "codigo": "G088",
+        "nivel": 36
+      },
+      {
+        "codigo": "G089",
+        "nivel": 40
+      },
+      {
         "codigo": "G090",
         "nivel": 40
+      },
+      {
+        "codigo": "G031",
+        "nivel": 42
+      },
+      {
+        "codigo": "G032",
+        "nivel": 45
       }
     ],
     "statusBase": {
-      "hp": 90,
-      "ataque": 110,
-      "defesa": 85,
-      "ataqueEspecial": 120,
-      "defesaEspecial": 85,
-      "velocidade": 100
+      "hp": 100,
+      "ataque": 120,
+      "defesa": 92,
+      "ataqueEspecial": 130,
+      "defesaEspecial": 92,
+      "velocidade": 108
     },
     "evolucao": {
       "evoluiDe": 73,
@@ -3272,7 +6012,7 @@
     },
     "habilidadeInfo": "Golpes têm chance de queimar o adversário.",
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Mítico"
   },
   {
     "numero": 75,
@@ -3288,28 +6028,72 @@
         "nivel": 1
       },
       {
+        "codigo": "G008",
+        "nivel": 1
+      },
+      {
         "codigo": "G009",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G010",
+        "nivel": 12
       },
       {
         "codigo": "G011",
         "nivel": 33
+      },
+      {
+        "codigo": "G012",
+        "nivel": 33
+      },
+      {
+        "codigo": "G049",
+        "nivel": 24
+      },
+      {
+        "codigo": "G050",
+        "nivel": 28
+      },
+      {
+        "codigo": "G051",
+        "nivel": 32
+      },
+      {
+        "codigo": "G052",
+        "nivel": 36
+      },
+      {
+        "codigo": "G053",
+        "nivel": 40
+      },
+      {
+        "codigo": "G054",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA004",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
-      "hp": 55,
-      "ataque": 65,
-      "defesa": 45,
-      "ataqueEspecial": 60,
-      "defesaEspecial": 45,
-      "velocidade": 55
+      "hp": 75,
+      "ataque": 82,
+      "defesa": 62,
+      "ataqueEspecial": 88,
+      "defesaEspecial": 62,
+      "velocidade": 82
     },
     "evolucao": {
       "evoluiDe": "",
       "evoluiPara": 76
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Mítico"
   },
   {
     "numero": 76,
@@ -3321,28 +6105,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G007",
+        "nivel": 1
+      },
+      {
         "codigo": "G008",
         "nivel": 1
       },
       {
-        "codigo": "G080",
-        "nivel": 12
+        "codigo": "G009",
+        "nivel": 8
       },
       {
         "codigo": "G010",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G082",
-        "nivel": 28
+        "codigo": "G011",
+        "nivel": 33
       },
       {
         "codigo": "G012",
         "nivel": 33
       },
       {
+        "codigo": "G079",
+        "nivel": 24
+      },
+      {
+        "codigo": "G080",
+        "nivel": 28
+      },
+      {
+        "codigo": "G081",
+        "nivel": 32
+      },
+      {
+        "codigo": "G082",
+        "nivel": 36
+      },
+      {
+        "codigo": "G083",
+        "nivel": 40
+      },
+      {
         "codigo": "G084",
         "nivel": 40
+      },
+      {
+        "codigo": "G073",
+        "nivel": 42
+      },
+      {
+        "codigo": "G074",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3375,12 +6191,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G092",
+        "nivel": 1
+      },
+      {
         "codigo": "G093",
-        "nivel": 20
+        "nivel": 8
+      },
+      {
+        "codigo": "G094",
+        "nivel": 12
       },
       {
         "codigo": "G095",
         "nivel": 33
+      },
+      {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G079",
+        "nivel": 28
+      },
+      {
+        "codigo": "G080",
+        "nivel": 32
+      },
+      {
+        "codigo": "G081",
+        "nivel": 36
+      },
+      {
+        "codigo": "G082",
+        "nivel": 40
+      },
+      {
+        "codigo": "G083",
+        "nivel": 40
+      },
+      {
+        "codigo": "G084",
+        "nivel": 42
+      },
+      {
+        "codigo": "G037",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3412,24 +6272,56 @@
         "nivel": 1
       },
       {
-        "codigo": "G037",
-        "nivel": 12
+        "codigo": "G092",
+        "nivel": 1
       },
       {
         "codigo": "G093",
-        "nivel": 20
+        "nivel": 8
       },
       {
-        "codigo": "G039",
-        "nivel": 28
+        "codigo": "G094",
+        "nivel": 12
       },
       {
         "codigo": "G095",
         "nivel": 33
       },
       {
+        "codigo": "G096",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 28
+      },
+      {
+        "codigo": "G038",
+        "nivel": 32
+      },
+      {
+        "codigo": "G039",
+        "nivel": 36
+      },
+      {
+        "codigo": "G040",
+        "nivel": 40
+      },
+      {
         "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3458,16 +6350,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
+        "codigo": "G015",
+        "nivel": 8
+      },
+      {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
+      },
+      {
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
+      },
+      {
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G031",
+        "nivel": 28
+      },
+      {
+        "codigo": "G032",
+        "nivel": 32
+      },
+      {
+        "codigo": "G033",
+        "nivel": 36
+      },
+      {
+        "codigo": "G034",
+        "nivel": 40
+      },
+      {
+        "codigo": "G035",
+        "nivel": 40
+      },
+      {
+        "codigo": "G036",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3495,28 +6431,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
+        "codigo": "G013",
+        "nivel": 1
+      },
+      {
         "codigo": "G014",
         "nivel": 1
       },
       {
-        "codigo": "G062",
-        "nivel": 12
+        "codigo": "G015",
+        "nivel": 8
       },
       {
         "codigo": "G016",
-        "nivel": 20
+        "nivel": 12
       },
       {
-        "codigo": "G064",
-        "nivel": 28
+        "codigo": "G017",
+        "nivel": 33
       },
       {
         "codigo": "G018",
         "nivel": 33
       },
       {
-        "codigo": "G066",
+        "codigo": "GA001",
+        "nivel": 33
+      },
+      {
+        "codigo": "G061",
+        "nivel": 28
+      },
+      {
+        "codigo": "G062",
+        "nivel": 32
+      },
+      {
+        "codigo": "G063",
+        "nivel": 36
+      },
+      {
+        "codigo": "G064",
         "nivel": 40
+      },
+      {
+        "codigo": "G065",
+        "nivel": 40
+      },
+      {
+        "codigo": "G066",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3545,28 +6513,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
-        "codigo": "G033",
+        "codigo": "G061",
         "nivel": 1
       },
       {
-        "codigo": "G035",
-        "nivel": 12
-      },
-      {
-        "codigo": "G061",
-        "nivel": 20
+        "codigo": "G062",
+        "nivel": 1
       },
       {
         "codigo": "G063",
-        "nivel": 28
+        "nivel": 8
       },
       {
-        "codigo": "G005",
+        "codigo": "G064",
+        "nivel": 12
+      },
+      {
+        "codigo": "G065",
         "nivel": 33
       },
       {
-        "codigo": "G006",
+        "codigo": "G066",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 28
+      },
+      {
+        "codigo": "G092",
+        "nivel": 32
+      },
+      {
+        "codigo": "G093",
+        "nivel": 36
+      },
+      {
+        "codigo": "G094",
         "nivel": 40
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3598,24 +6598,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G116",
+        "nivel": 1
+      },
+      {
         "codigo": "G117",
+        "nivel": 8
+      },
+      {
+        "codigo": "G118",
         "nivel": 12
       },
       {
-        "codigo": "G037",
-        "nivel": 20
-      },
-      {
-        "codigo": "G039",
-        "nivel": 28
-      },
-      {
-        "codigo": "G011",
+        "codigo": "G119",
         "nivel": 33
       },
       {
-        "codigo": "G005",
+        "codigo": "G120",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
+        "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G001",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3647,24 +6679,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
         "codigo": "G003",
+        "nivel": 8
+      },
+      {
+        "codigo": "G004",
         "nivel": 12
       },
       {
         "codigo": "G005",
-        "nivel": 20
-      },
-      {
-        "codigo": "G002",
-        "nivel": 28
-      },
-      {
-        "codigo": "G004",
         "nivel": 33
       },
       {
         "codigo": "G006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G037",
+        "nivel": 24
+      },
+      {
+        "codigo": "G038",
+        "nivel": 28
+      },
+      {
+        "codigo": "G039",
+        "nivel": 32
+      },
+      {
+        "codigo": "G040",
+        "nivel": 36
+      },
+      {
+        "codigo": "G041",
         "nivel": 40
+      },
+      {
+        "codigo": "G042",
+        "nivel": 40
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 42
+      },
+      {
+        "codigo": "G055",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3697,28 +6761,60 @@
     "golpeAssinatura": "Nil",
     "golpes": [
       {
-        "codigo": "G033",
+        "codigo": "G061",
         "nivel": 1
       },
       {
-        "codigo": "G035",
-        "nivel": 12
-      },
-      {
-        "codigo": "G061",
-        "nivel": 20
+        "codigo": "G062",
+        "nivel": 1
       },
       {
         "codigo": "G063",
-        "nivel": 28
+        "nivel": 8
       },
       {
-        "codigo": "G005",
+        "codigo": "G064",
+        "nivel": 12
+      },
+      {
+        "codigo": "G065",
         "nivel": 33
       },
       {
-        "codigo": "G006",
+        "codigo": "G066",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA005",
+        "nivel": 33
+      },
+      {
+        "codigo": "G091",
+        "nivel": 28
+      },
+      {
+        "codigo": "G092",
+        "nivel": 32
+      },
+      {
+        "codigo": "G093",
+        "nivel": 36
+      },
+      {
+        "codigo": "G094",
         "nivel": 40
+      },
+      {
+        "codigo": "G095",
+        "nivel": 40
+      },
+      {
+        "codigo": "G096",
+        "nivel": 42
+      },
+      {
+        "codigo": "GA002",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3734,7 +6830,7 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   },
   {
     "numero": 85,
@@ -3750,24 +6846,56 @@
         "nivel": 1
       },
       {
+        "codigo": "G038",
+        "nivel": 1
+      },
+      {
         "codigo": "G039",
+        "nivel": 8
+      },
+      {
+        "codigo": "G040",
         "nivel": 12
       },
       {
-        "codigo": "G067",
-        "nivel": 20
-      },
-      {
-        "codigo": "G069",
-        "nivel": 28
-      },
-      {
-        "codigo": "G005",
+        "codigo": "G041",
         "nivel": 33
       },
       {
-        "codigo": "G011",
+        "codigo": "G042",
+        "nivel": 33
+      },
+      {
+        "codigo": "GA006",
+        "nivel": 33
+      },
+      {
+        "codigo": "G097",
+        "nivel": 28
+      },
+      {
+        "codigo": "G098",
+        "nivel": 32
+      },
+      {
+        "codigo": "G099",
+        "nivel": 36
+      },
+      {
+        "codigo": "G100",
         "nivel": 40
+      },
+      {
+        "codigo": "G101",
+        "nivel": 40
+      },
+      {
+        "codigo": "G102",
+        "nivel": 42
+      },
+      {
+        "codigo": "G073",
+        "nivel": 45
       }
     ],
     "statusBase": {
@@ -3783,6 +6911,6 @@
       "evoluiPara": ""
     },
     "levelevo": null,
-    "raridade": "Comum"
+    "raridade": "Raro"
   }
 ]

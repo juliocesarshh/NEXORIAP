@@ -77,8 +77,14 @@ function escolherMonstroPratica(numero) {
 
   if (indiceSelecaoAtual >= tamanhoTimeEscolhido) {
     if (ladoSelecaoAtual === "jogador") {
-      ladoSelecaoAtual = "oponente";
-      indiceSelecaoAtual = 0;
+      // Antes de começar a batalha, o jogador prepara cada monstro:
+      // até 4 golpes, item compatível e Natureza.
+      abrirTelaGerenciamentoTime(timeJogadorEscolhido, {
+        modo: "pratica",
+        titulo: "Prepare seus Monstros",
+        texto: "Escolha os 4 ataques, equipe os itens e defina a Natureza antes de apertar Pronto."
+      });
+      return;
     } else {
       contextoBatalhaAtual = "pratica";
       mostrarTela("tela-batalha");

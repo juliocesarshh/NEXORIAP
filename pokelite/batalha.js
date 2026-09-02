@@ -30,7 +30,7 @@ function calcularEfetividadeComHabilidades(golpe, atacante, alvo) {
   }
 
   const hAlvo = habilidadeDe(alvo);
-  if (hAlvo && hAlvo.sobrescreverEfetividade) {
+  if (hAlvo && hAlvo.sobrescreverEfetividade && !hAlvo.somenteOfensiva) {
     const r = hAlvo.sobrescreverEfetividade(golpe.tipo, atacante.tipo, resultado);
     if (r !== null && r !== undefined) resultado = r;
   }
@@ -198,6 +198,7 @@ function iniciarBatalha(timeJogador, timeOponente, multiplayer = false, multipla
     turno: 0,
     campoBatalha: false,
     statusCampoBatalha: null,
+    dificuldade: multiplayer ? "dificil" : (window.NEXORIA_DIFICULDADE || (contextoBatalhaAtual === "roguelike" ? "dificil" : "facil")), 
   };
 
   aplicarAoEntrarUnico(jogadorAtivo(), oponenteAtivo());
@@ -422,8 +423,35 @@ function executarAcaoJogador(acao) {
   const jogador = jogadorAtivo();
   const oponente = oponenteAtivo();
 
-  const codigosOponente = oponenteAtivo().golpesConhecidos;
-  const golpeOponente = buscarGolpe(codigosOponente[Math.floor(Math.random() * codigosOponente.length)]);
+  const oponenteAtual = oponenteAtivo();
+  const dificuldade = estadoBatalha.dificuldade || "normal";
+  // IA difícil/expert pode trocar quando o ativo está em clara desvantagem.
+  if (dificuldade !== "facil" && oponenteAtual && estadoBatalha.timeOponente.length > 1) {
+    const vivos = estadoBatalha.timeOponente.map((m,i)=>({m,i})).filter(x=>x.m.hpAtual>0 && x.i!==estadoBatalha.ativoOponente);
+    const atualEf = (oponenteAtual.tipo && jogador.tipo) ? calcularEfetividade(jogador.golpesConhecidos?.length ? (buscarGolpe(jogador.golpesConhecidos[0])?.tipo||"Normal") : "Normal", oponenteAtual.tipo) : 1;
+    if (vivos.length && atualEf > 1 && Math.random() < (dificuldade === "expert" ? .55 : .35)) {
+      let melhor=vivos[0], melhorScore=-Infinity;
+      vivos.forEach(x=>{const melhorGolpe=(x.m.golpesConhecidos||[]).map(buscarGolpe).filter(Boolean).reduce((mx,g)=>Math.max(mx,calcularEfetividadeComHabilidades(g,x.m,jogador)*(Number(g.poder)||0)),0); if(melhorGolpe>melhorScore){melhorScore=melhorGolpe;melhor=x;}});
+      if(melhorScore>0){ processarTurno(acao.tipo === "trocar" ? acao : {tipo:"atacar",golpe:buscarGolpe(acao.codigoGolpe)}, {tipo:"trocar",indice:melhor.i}); return; }
+    }
+  }
+  const codigosOponente = (oponenteAtual.golpesConhecidos || []).filter(Boolean);
+  const golpesOponente = codigosOponente.map(buscarGolpe).filter(Boolean);
+  let golpeOponente = golpesOponente[Math.floor(Math.random() * golpesOponente.length)] || golpesOponente[0];
+  if (dificuldade !== "facil" && golpesOponente.length) {
+    const avaliados = golpesOponente.map((g) => {
+      const ef = calcularEfetividadeComHabilidades(g, oponenteAtual, jogador);
+      const stab = String(oponenteAtual.tipo || "").split("/").map(x => x.trim()).includes(g.tipo) ? 1.5 : 1;
+      const poder = Number(g.poder) || 0;
+      let score = (ef * poder * stab);
+      if (g.categoria === "Especial") score *= (oponenteAtual.status.ataqueEspecial / Math.max(1, jogador.status.defesaEspecial));
+      else score *= (oponenteAtual.status.ataque / Math.max(1, jogador.status.defesa));
+      if (jogador.hpAtual / jogador.status.hpMax < 0.35 && ef > 1) score *= 1.25;
+      return { g, score };
+    }).sort((a,b)=>b.score-a.score);
+    const janela = dificuldade === "expert" ? 1 : dificuldade === "dificil" ? Math.min(2, avaliados.length) : Math.min(3, avaliados.length);
+    golpeOponente = avaliados[Math.floor(Math.random() * janela)].g;
+  }
   const acaoOponente = { tipo: "atacar", golpe: golpeOponente };
 
   processarTurno(
@@ -614,6 +642,7 @@ function renderizarBatalha() {
   const modalTroca = document.querySelector('[data-modal="troca"]');
 
   if (terminou) {
+    if (vencedor === "jogador" && typeof desbloquearConquista === "function") { desbloquearConquista("batalha"); if (contextoBatalhaAtual === "multiplayer") desbloquearConquista("multiplayer"); }
     golpesEl.hidden = true;
     avisoTroca.hidden = true;
     modalTroca.hidden = true;

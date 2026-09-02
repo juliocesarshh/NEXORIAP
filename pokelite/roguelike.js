@@ -31,6 +31,106 @@ function calcularStatus(base, nivel) {
 
 const NIVEL_MAXIMO = 105;
 
+// O jogador pode conhecer muitos golpes, mas batalha sempre com no máximo 4.
+// Priorizamos STAB, golpe assinatura, poder e variedade física/especial.
+function selecionarQuatroGolpes(codigos, base) {
+  const unicos=[...new Set((codigos||[]).filter(Boolean))];
+  if(unicos.length<=4) return unicos;
+  const tipos=String(base?.tipo||"").split("/").map(x=>x.trim());
+  const dados=unicos.map((codigo,ordem)=>{
+    const g=typeof buscarGolpe==="function"?buscarGolpe(codigo):null;
+    if(!g) return {codigo,score:-999,ordem};
+    const stab=tipos.includes(String(g.tipo||"").trim())?35:0;
+    const poder=Number(g.poder)||0;
+    const variedade=g.categoria==="Especial"?8:g.categoria==="Físico"?6:4;
+    const assinatura=base?.golpeAssinatura===codigo?50:0;
+    return {codigo,score:assinatura+stab+poder+variedade,ordem};
+  });
+  const escolhidos=[];
+  for(const cat of ["Físico","Especial"]){
+    const x=dados.filter(d=>{const g=typeof buscarGolpe==="function"?buscarGolpe(d.codigo):null; return g?.categoria===cat;}).sort((a,b)=>b.score-a.score||b.ordem-a.ordem)[0];
+    if(x) escolhidos.push(x);
+  }
+  dados.sort((a,b)=>b.score-a.score||b.ordem-a.ordem);
+  for(const x of dados){if(escolhidos.length>=4)break;if(!escolhidos.some(y=>y.codigo===x.codigo))escolhidos.push(x);}
+  return escolhidos.slice(0,4).map(x=>x.codigo);
+}
+window.selecionarQuatroGolpes=selecionarQuatroGolpes;
+
+// Evolução automática por nível. Quando o arquivo de dados não informa um
+// nível específico, usamos a progressão padrão da NEXORIA: primeira evolução
+// no Lv.20 e segunda/final no Lv.40. Evoluções alternativas (ex.: Cabrito)
+// continuam sendo sorteadas entre as formas possíveis.
+const NIVEL_EVOLUCAO_PADRAO_PRIMEIRA = 20;
+const NIVEL_EVOLUCAO_PADRAO_SEGUNDA = 40;
+
+function numeroProximaEvolucaoPorNivel(base, nivel) {
+  const evo = base?.evolucao || {};
+  if (Array.isArray(evo.evolucoesPossiveis) && evo.evolucoesPossiveis.length) {
+    const nivelEvo = Number(base.levelevo) || NIVEL_EVOLUCAO_PADRAO_PRIMEIRA;
+    return nivel >= nivelEvo ? evo.evolucoesPossiveis[Math.floor(Math.random() * evo.evolucoesPossiveis.length)] : null;
+  }
+  if (!evo.evoluiPara) return null;
+  const nivelEvo = Number(base.levelevo) || (evo.evoluiDe ? NIVEL_EVOLUCAO_PADRAO_SEGUNDA : NIVEL_EVOLUCAO_PADRAO_PRIMEIRA);
+  return nivel >= nivelEvo ? Number(evo.evoluiPara) : null;
+}
+
+function aplicarEvolucaoDeNivel(monstro) {
+  const base = DADOS_MONSTROS.find((m) => m.numero === monstro.numero);
+  if (!base) return false;
+  const destinoNumero = numeroProximaEvolucaoPorNivel(base, monstro.nivel);
+  if (!destinoNumero) return false;
+  const destino = DADOS_MONSTROS.find((m) => m.numero === Number(destinoNumero));
+  if (!destino) return false;
+
+  const hpMaxAnterior = Number(monstro.status?.hpMax) || 0;
+  const hpAnterior = Number.isFinite(Number(monstro.hpAtual)) ? Number(monstro.hpAtual) : hpMaxAnterior;
+  const itemAnterior = monstro.item || null;
+
+  monstro.numero = destino.numero;
+  monstro.nome = destino.nome;
+  monstro.tipo = destino.tipo;
+  monstro.png = destino.png;
+  monstro.habilidade = destino.habilidade || null;
+  monstro.statusBase = destino.statusBase;
+  monstro.golpesConhecidos = selecionarQuatroGolpes((destino.golpes || [])
+    .filter((g) => g.nivel <= monstro.nivel)
+    .map((g) => g.codigo), destino);
+  monstro.item = itemAnterior;
+
+  let status = calcularStatus(destino, monstro.nivel);
+  if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(status, monstro.natureza);
+  if (typeof aplicarMultiplicadoresItem === "function") status = aplicarMultiplicadoresItem(monstro, status);
+  monstro.status = status;
+  monstro.statusOriginal = { ...status };
+  const ganhoHp = Math.max(0, status.hpMax - hpMaxAnterior);
+  monstro.hpAtual = Math.max(0, Math.min(status.hpMax, Math.floor(hpAnterior + ganhoHp)));
+  monstro.statusAlterado = null;
+
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new CustomEvent("nexoria:monstro-evoluiu", {
+      detail: { de: base, para: destino, monstro }
+    }));
+    // A evolução por nível também recebe a mesma apresentação visual das
+    // evoluções por item: forma antiga → brilho/flash → forma nova.
+    if (typeof animarEvolucao === "function") {
+      animarEvolucao(monstro, base.png, destino.png, base.nome, destino.nome);
+    }
+  }
+  console.log(`[NEXORIA] ${base.nome} evoluiu para ${destino.nome} no Lv.${monstro.nivel}`);
+  return true;
+}
+
+function verificarEvolucaoPorNivel(monstro) {
+  let evoluiu = false;
+  // Permite mais de uma evolução quando o jogador sobe vários níveis de uma vez.
+  for (let tentativas = 0; tentativas < 3; tentativas++) {
+    if (!aplicarEvolucaoDeNivel(monstro)) break;
+    evoluiu = true;
+  }
+  return evoluiu;
+}
+
 // Monta uma "instância de batalha" de um monstro: nível atual, status calculado,
 // HP atual e quais golpes ele já sabe nesse nível.
 function recalcularStatusDaInstancia(monstro) {
@@ -42,6 +142,7 @@ function recalcularStatusDaInstancia(monstro) {
   // ao novo HP máximo. Não convertemos para porcentagem.
   const hpAnterior = Number.isFinite(Number(monstro.hpAtual)) ? Number(monstro.hpAtual) : 0;
   let status = calcularStatus(base, monstro.nivel);
+  if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(status, monstro.natureza);
   if (typeof aplicarMultiplicadoresItem === "function") status = aplicarMultiplicadoresItem(monstro, status);
   monstro.status = status;
   monstro.statusOriginal = { ...status };
@@ -67,11 +168,11 @@ function prepararTimeParaNovaBatalha() {
     monstro.png = base.png;
     monstro.habilidade = base.habilidade || null;
     monstro.statusBase = base.statusBase;
-    monstro.golpesConhecidos = (base.golpes || [])
-      .filter((g) => g.nivel <= monstro.nivel)
-      .map((g) => g.codigo);
+    monstro.golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
+      .filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo), base);
 
     let status = calcularStatus(base, monstro.nivel);
+    if (typeof aplicarNatureza === "function" && monstro.natureza) aplicarNatureza(status, monstro.natureza);
     if (typeof aplicarMultiplicadoresItem === "function") {
       status = aplicarMultiplicadoresItem(monstro, status);
     }
@@ -97,17 +198,18 @@ function prepararTimeParaNovaBatalha() {
   });
 }
 
-function criarInstanciaMonstro(numero, nivel) {
+function criarInstanciaMonstro(numero, nivel, natureza = null) {
   const base = DADOS_MONSTROS.find((m) => m.numero === numero);
   if (!base) return null;
 
   const nivelFinal = Math.max(1, Math.min(NIVEL_MAXIMO, nivel));
+  const naturezaFinal = natureza || (typeof naturezaAleatoria === "function" ? naturezaAleatoria().id : null);
 
-  const golpesConhecidos = (base.golpes || [])
-    .filter((g) => g.nivel <= nivelFinal)
-    .map((g) => g.codigo);
+  const golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
+    .filter((g) => g.nivel <= nivelFinal).map((g) => g.codigo), base);
 
-  const status = calcularStatus(base, nivelFinal);
+  let status = calcularStatus(base, nivelFinal);
+  if (typeof aplicarNatureza === "function") aplicarNatureza(status, naturezaFinal);
 
   const instancia = {
     numero: base.numero,
@@ -117,6 +219,7 @@ function criarInstanciaMonstro(numero, nivel) {
     habilidade: base.habilidade || null,
     item: base.item || null,
     nivel: nivelFinal,
+    natureza: naturezaFinal,
     statusBase: base.statusBase,
     status,
     statusOriginal: { ...status },
@@ -128,6 +231,12 @@ function criarInstanciaMonstro(numero, nivel) {
     instancia.status = aplicarMultiplicadoresItem(instancia, instancia.status);
     instancia.statusOriginal = { ...instancia.status };
     instancia.hpAtual = instancia.status.hpMax;
+  }
+
+  // Se um monstro for criado/capturado já em um nível alto, ele não fica preso
+  // na forma inicial. Aplica todas as evoluções que já deveriam ter ocorrido.
+  if (typeof verificarEvolucaoPorNivel === "function") {
+    verificarEvolucaoPorNivel(instancia);
   }
   return instancia;
 }

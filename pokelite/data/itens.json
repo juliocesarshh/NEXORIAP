@@ -134,7 +134,7 @@
         "defesaEspecial": 0.2
       }
     },
-    "png": "Armon.png"
+    "png": "earth Power.png"
   },
   {
     "codigo": "B011",
@@ -160,7 +160,7 @@
         "ataqueEspecial": 0.15
       }
     },
-    "png": "Piripimpim.png"
+    "png": "piripimpim.png"
   },
   {
     "codigo": "B013",
@@ -226,7 +226,7 @@
       "tipo": "dano",
       "valor": 0.15
     },
-    "png": "Dark Essence.png"
+    "png": "Dark Claw.png"
   },
   {
     "codigo": "B018",
@@ -287,5 +287,41 @@
       "valor": 0.1
     },
     "png": "Give me.png"
+  },
+  {
+    "codigo": "B023",
+    "nome": "Revive",
+    "categoria": "Cura",
+    "descricao": "Revive um monstro desmaiado e restaura 50% do HP máximo.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "revive",
+      "valor": 0.5
+    },
+    "png": "Revive.png"
+  },
+  {
+    "codigo": "B024",
+    "nome": "Kit Médico",
+    "categoria": "Cura",
+    "descricao": "Recupera 50% do HP máximo de um monstro.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "cura",
+      "valor": 0.5
+    },
+    "png": "Kit Médico.png"
+  },
+  {
+    "codigo": "B025",
+    "nome": "Kit Médico SS",
+    "categoria": "Cura",
+    "descricao": "Recupera todo o HP de um monstro.",
+    "tipo": null,
+    "efeito": {
+      "tipo": "cura",
+      "valor": 1
+    },
+    "png": "Kit Médico SS.png"
   }
 ]

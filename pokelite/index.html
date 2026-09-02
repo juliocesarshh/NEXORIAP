@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="mapa.css" />
   <link rel="stylesheet" href="batalha.css" />
   <link rel="stylesheet" href="multiplayer.css" />
+  <link rel="stylesheet" href="gerenciamento-time.css" />
 </head>
 <body>
   <div class="fundo-jogo" id="fundo-jogo">
@@ -54,7 +55,7 @@
       </div>
     </div>
 
-    <p class="rodape">v0.1 · em desenvolvimento</p>
+    <p class="rodape">Beta v1.1 · em desenvolvimento</p>
   </section>
 
   <!-- ===== TELA: Modos ===== -->
@@ -89,6 +90,15 @@
     </div>
   </section>
 
+  <section id="tela-dificuldade" class="tela" hidden>
+    <a class="voltar-tela" href="#" data-acao="voltar-modos">&larr; Voltar</a>
+    <h2 class="subtitulo">Escolha a Dificuldade</h2>
+    <div class="painel-dificuldade">
+      <button class="botao botao-play" type="button" data-dificuldade="facil"><strong>🟢 Fácil</strong><span>IA aleatória, ideal para testar e jogar sem pressão.</span></button>
+      <button class="botao botao-secundario" type="button" data-dificuldade="dificil"><strong>🔴 Difícil</strong><span>IA considera tipos, status, habilidades, itens e pode trocar.</span></button>
+    </div>
+  </section>
+
   <!-- ===== TELA: Seleção de Starter (Modo Roguelike) ===== -->
   <section id="tela-selecao-starter" class="tela" hidden>
     <a class="voltar-tela" href="#" data-acao="voltar-modos">&larr; Voltar</a>
@@ -101,12 +111,15 @@
   <!-- ===== TELA: Mapa (Modo Roguelike) ===== -->
   <section id="tela-mapa" class="tela" hidden>
     <h2 class="subtitulo">Rota</h2>
-    <div class="mapa-acoes">
-      <button class="botao botao-secundario" type="button" data-acao="abrir-menu-time">👥 Meu Time</button>
-    </div>
     <p class="mensagem-mapa" id="mensagem-mapa" hidden></p>
 
-    <div class="mapa-rota-visual"><div class="mapa-camadas" id="mapa-camadas"></div></div>
+    <div class="layout-roguelike">
+      <aside class="painel-time-roguelike" id="painel-time-roguelike">
+        <div class="titulo-time-roguelike"><strong>Meu Time</strong><span>Clique em um monstro para preparar</span></div>
+        <div id="lista-time-roguelike"></div>
+      </aside>
+      <div class="mapa-rota-visual"><div class="mapa-camadas" id="mapa-camadas"></div></div>
+    </div>
 
     <div class="painel-cidade" id="painel-cidade" hidden>
       <h3>Você chegou na cidade!</h3>
@@ -235,6 +248,15 @@
         <div id="grid-selecao-pratica" class="grid"></div>
       </div>
     </div>
+  </section>
+
+  <section id="tela-gerenciamento-time" class="tela" hidden>
+    <a class="voltar-tela" href="#" data-acao="voltar-modos">&larr; Voltar</a>
+    <h2 class="subtitulo" id="titulo-gerenciamento-time">Prepare seu Time</h2>
+    <p id="texto-gerenciamento-time" class="texto-gerenciamento-time"></p>
+    <div class="gerenciamento-layout"><aside class="lista-gerenciamento" id="lista-gerenciamento-time"></aside><main class="painel-gerenciamento"><div id="detalhe-gerenciamento-time"></div></main></div>
+    <p class="mp-status" id="status-gerenciamento-time"></p>
+    <button class="botao botao-play" type="button" data-acao="confirmar-gerenciamento-time"><span>Confirmar e continuar</span></button>
   </section>
 
   <!-- ===== TELA: Batalha ===== -->
@@ -401,8 +423,26 @@
     </div>
   </div>
 
+
+  <div class="modal-fundo" data-modal="conquistas" hidden>
+    <div class="modal-conteudo">
+      <div class="modal-cabecalho"><h2>🏆 Conquistas</h2><button class="modal-fechar" type="button" data-fechar-modal-conquistas>&times;</button></div>
+      <div id="lista-conquistas" class="lista-conquistas"></div>
+    </div>
+  </div>
+
+  <div class="modal-fundo" id="modal-final-roguelike" hidden>
+    <div class="modal modal-final-roguelike" role="dialog" aria-modal="true">
+      <h2>🏆 NEXORIA CONQUISTADA!</h2>
+      <p>Você derrotou Everton e concluiu as 9 Partes.</p>
+      <button class="botao botao-play" type="button" data-acao="final-voltar-modos"><span>Voltar aos Modos</span></button>
+    </div>
+  </div>
+
   <script src="som.js"></script>
   <script src="trilha.js"></script>
+  <script src="natureza.js"></script>
+  <script src="conquistas.js"></script>
   <script src="dados.js"></script>
   <script src="starters.js"></script>
   <script src="lideres.js"></script>
@@ -413,6 +453,7 @@
   <script src="tela-inicial.js"></script>
   <script src="monsterpedia.js"></script>
   <script src="roguelike.js"></script>
+  <script src="gerenciamento-time.js"></script>
   <script src="mapa.js"></script>
   <script src="batalha.js"></script>
   <script src="pratica.js"></script>
