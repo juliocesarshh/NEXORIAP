@@ -24,11 +24,11 @@ function renderizarGerenciamentoTime(){
  });
 }
 function renderizarConsumiveisMochila(monstro){
-  // A mochila existe no Roguelike. Em Prática/Multiplayer não há consumíveis
-  // de run, então deixamos a seção vazia sem quebrar a tela de preparação.
-  const mochila = Array.isArray(window.estadoRun?.mochila) ? window.estadoRun.mochila : [];
-  if (!mochila.length) return '<span class="sem-consumiveis">Nenhum consumível disponível na mochila.</span>';
-  const codigos = mochila.filter(Boolean);
+  if (nexoriaContextoRevisao?.modo !== "roguelike") return '';
+  const run = (typeof estadoRun !== "undefined" && estadoRun) ? estadoRun : window.estadoRun;
+  const mochila = Array.isArray(run?.mochila) ? run.mochila : [];
+  const codigos = mochila.filter(c => typeof itemConsumivel === "function" ? itemConsumivel(c) : ["B023","B024","B025"].includes(c));
+  if (!codigos.length) return '<span class="sem-consumiveis">Nenhum consumível disponível na mochila.</span>';
   const unicos = [...new Set(codigos)];
   const html = unicos.map(codigo => {
     const item = typeof buscarItem === 'function' ? buscarItem(codigo) : null;
@@ -47,13 +47,13 @@ function renderizarDetalheGerenciamento(m,base){
  const hab=typeof habilidadeDe==="function"?habilidadeDe(m):null;
  const aprendidos=(base.golpes||[]).filter(g=>g.nivel<=m.nivel).map(g=>g.codigo).filter((c,i,a)=>a.indexOf(c)===i);
  const golpes=aprendidos.map(c=>{const g=buscarGolpe(c),on=m.golpesConhecidos.includes(c);return `<button type="button" class="golpe-revisao ${on?"ativo":""}" data-golpe="${c}"><span>${g.nome}</span><small>${g.tipo} · ${g.categoria} · Poder ${g.poder}</small></button>`}).join("");
- const itens=(window.DADOS_ITENS||[]).filter(x=>x&&(!x.tipo||tipos.includes(x.tipo))).filter(x=>!["evolucao_especifica","evolucao_proxima"].includes(x.efeito?.tipo)).map(x=>`<button type="button" class="item-revisao ${m.item===x.codigo?"equipado":""}" data-item="${x.codigo}">${x.png?`<img class="item-revisao-img" src="Png-Itens/${x.png}" alt="" onerror="this.style.display='none'">`:""}<strong>${x.nome}</strong><small>${x.codigo} · ${x.descricao||""}</small></button>`).join("");
+ const itens=(window.DADOS_ITENS||[]).filter(x=>x&&(!x.tipo||tipos.includes(x.tipo))).filter(x=>!((typeof itemConsumivel==="function"&&itemConsumivel(x))||["evolucao_especifica","evolucao_proxima"].includes(x.efeito?.tipo))).map(x=>`<button type="button" class="item-revisao ${m.item===x.codigo?"equipado":""}" data-item="${x.codigo}">${x.png?`<img class="item-revisao-img" src="Png-Itens/${x.png}" alt="" onerror="this.style.display='none'">`:""}<strong>${x.nome}</strong><small>${x.codigo} · ${x.descricao||""}</small></button>`).join("");
  el.innerHTML=`<div class="cabecalho-monstro-revisao">${m.png?`<img src="PNG/${m.png}" alt="${m.nome}">`:""}<div><h3>${m.nome}</h3><span>Lv. ${m.nivel} · ${tipos.join(" / ")} · ${base.raridade||"Normal"}</span></div></div>
  <div class="stats-revisao"><div><b>Hp</b><span>${s.hpMax}</span></div><div><b>Ata</b><span>${s.ataque}</span></div><div><b>Def</b><span>${s.defesa}</span></div><div><b>Sp.A</b><span>${s.ataqueEspecial}</span></div><div><b>Sp.D</b><span>${s.defesaEspecial}</span></div><div><b>Vel</b><span>${s.velocidade}</span></div></div>
  <p><b>Habilidade:</b> ${hab?.nome||base.habilidade||"Nenhuma"}</p>
  <label class="campo-natureza"><b>Natureza:</b> <select id="seletor-natureza">${(window.NATUREZAS||[]).map(n=>`<option value="${n.id}" ${m.natureza===n.id?"selected":""}>${n.id} — ${n.desc}</option>`).join("")}</select></label><section><h4>Ataques — máximo 4</h4><p class="dica-revisao">No máximo 4 ataques. Golpes do mesmo tipo do monstro recebem STAB de dano.</p><div class="grade-revisao-golpes">${golpes||"Nenhum golpe aprendido."}</div></section>
  <section><h4>Itens compatíveis</h4><div class="grade-revisao-itens">${itens||"Nenhum item compatível."}</div></section>
- <section><h4>🎒 Itens da mochila</h4><div class="grade-revisao-itens">${renderizarConsumiveisMochila(m)}</div></section>`;
+ ${nexoriaContextoRevisao?.modo === "roguelike" ? `<section><h4>🧪 Consumíveis da mochila</h4><p class="dica-revisao">Revive e Kits são usados diretamente no monstro e são consumidos.</p><div class="grade-revisao-itens">${renderizarConsumiveisMochila(m)}</div></section>` : ""}`;
  el.querySelectorAll("[data-golpe]").forEach(b=>b.onclick=()=>{const c=b.dataset.golpe,a=[...m.golpesConhecidos];if(a.includes(c)){if(a.length>1)m.golpesConhecidos=a.filter(x=>x!==c)}else{if(a.length>=4){document.getElementById("status-gerenciamento-time").textContent="Máximo de 4 ataques.";return}m.golpesConhecidos=[...a,c]}renderizarDetalheGerenciamento(m,base)});
  el.querySelectorAll("[data-item]").forEach(b=>b.onclick=()=>{if(m.item===b.dataset.item)m.item=null;else if(typeof equiparItem==="function")equiparItem(m,b.dataset.item);renderizarDetalheGerenciamento(m,base);renderizarGerenciamentoTime()});
  const ns=el.querySelector("#seletor-natureza"); if(ns) ns.onchange=()=>{m.natureza=ns.value; if(typeof recalcularStatusDaInstancia==="function") recalcularStatusDaInstancia(m); nexoriaMonstroSelecionado=m.numero; renderizarGerenciamentoTime();};

@@ -267,7 +267,7 @@
   {
     "codigo": "B021",
     "nome": "Last Dance",
-    "categoria": "Cura",
+    "categoria": "Especial",
     "descricao": "10% de chance de sobreviver com 1 HP ao receber um golpe que o faria desmaiar.",
     "tipo": null,
     "efeito": {
@@ -279,7 +279,7 @@
   {
     "codigo": "B022",
     "nome": "Give me",
-    "categoria": "Cura",
+    "categoria": "Especial",
     "descricao": "Se o adversário estiver usando item, recupera 10% do HP máximo a cada turno.",
     "tipo": null,
     "efeito": {
@@ -291,7 +291,7 @@
   {
     "codigo": "B023",
     "nome": "Revive",
-    "categoria": "Cura",
+    "categoria": "Consumível",
     "descricao": "Revive um monstro desmaiado e restaura 50% do HP máximo.",
     "tipo": null,
     "efeito": {
@@ -303,7 +303,7 @@
   {
     "codigo": "B024",
     "nome": "Kit Médico",
-    "categoria": "Cura",
+    "categoria": "Consumível",
     "descricao": "Recupera 50% do HP máximo de um monstro.",
     "tipo": null,
     "efeito": {
@@ -315,7 +315,7 @@
   {
     "codigo": "B025",
     "nome": "Kit Médico SS",
-    "categoria": "Cura",
+    "categoria": "Consumível",
     "descricao": "Recupera todo o HP de um monstro.",
     "tipo": null,
     "efeito": {

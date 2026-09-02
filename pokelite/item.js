@@ -9,6 +9,59 @@ function nomeItem(codigo) {
   return buscarItem(codigo)?.nome || codigo || "";
 }
 
+
+function itemConsumivel(codigoOuItem) {
+  const item = typeof codigoOuItem === "string" ? buscarItem(codigoOuItem) : codigoOuItem;
+  return !!item && item.codigo && ["B023", "B024", "B025"].includes(item.codigo);
+}
+
+function itemEquipavel(codigoOuItem) {
+  const item = typeof codigoOuItem === "string" ? buscarItem(codigoOuItem) : codigoOuItem;
+  return !!item && !itemConsumivel(item);
+}
+
+function usarItemConsumivel(monstro, codigo) {
+  const item = buscarItem(codigo);
+  if (!monstro || !item || !itemConsumivel(item)) return false;
+  const run = (typeof estadoRun !== "undefined" && estadoRun) ? estadoRun : window.estadoRun;
+  if (!run || !Array.isArray(run.mochila)) return false;
+  const idx = run.mochila.indexOf(item.codigo);
+  if (idx < 0) return false;
+
+  const hpMax = Number(monstro.status?.hpMax || 0);
+  const hpAtual = Math.max(0, Number(monstro.hpAtual || 0));
+  let novoHp = hpAtual;
+
+  if (item.efeito?.tipo === "revive") {
+    if (hpAtual > 0) {
+      if (typeof mostrarMensagemMapa === "function") mostrarMensagemMapa(`${monstro.nome} ainda não desmaiou.`);
+      return false;
+    }
+    novoHp = Math.max(1, Math.floor(hpMax * Number(item.efeito.valor || 0.5)));
+  } else if (item.efeito?.tipo === "cura") {
+    if (hpAtual <= 0) {
+      if (typeof mostrarMensagemMapa === "function") mostrarMensagemMapa(`${monstro.nome} está desmaiado. Use Revive primeiro.`);
+      return false;
+    }
+    if (hpAtual >= hpMax) {
+      if (typeof mostrarMensagemMapa === "function") mostrarMensagemMapa(`${monstro.nome} já está com HP cheio.`);
+      return false;
+    }
+    novoHp = Math.min(hpMax, hpAtual + Math.floor(hpMax * Number(item.efeito.valor || 0)));
+  } else {
+    return false;
+  }
+
+  const recuperado = novoHp - hpAtual;
+  monstro.hpAtual = novoHp;
+  run.mochila.splice(idx, 1);
+  if (typeof mostrarMensagemMapa === "function") {
+    if (item.codigo === "B023") mostrarMensagemMapa(`💚 ${monstro.nome} voltou à batalha com ${novoHp}/${hpMax} HP!`);
+    else mostrarMensagemMapa(`💚 ${monstro.nome} recuperou ${recuperado} HP com ${item.nome}.`);
+  }
+  return true;
+}
+
 function itemDe(monstro) {
   return monstro && monstro.item ? buscarItem(monstro.item) : null;
 }
@@ -100,13 +153,16 @@ function itemPodeImpedirDesmaio(monstro, batalha) {
 
 function equiparItem(monstro, codigo) {
   const item = buscarItem(codigo);
-  if (!monstro || !item) return false;
+  if (!monstro || !item || itemConsumivel(item)) return false;
   if (item.tipo && !itemFuncionaPara(monstro, item)) return false;
   monstro.item = item.codigo;
   if (typeof recalcularStatusDaInstancia === "function") recalcularStatusDaInstancia(monstro);
   return true;
 }
 
+window.itemConsumivel = itemConsumivel;
+window.itemEquipavel = itemEquipavel;
+window.usarItemConsumivel = usarItemConsumivel;
 window.buscarItem = buscarItem;
 window.nomeItem = nomeItem;
 window.itemDe = itemDe;

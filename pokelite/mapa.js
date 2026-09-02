@@ -536,6 +536,15 @@ function usarOuGuardarItem(codigo) {
     return;
   }
 
+  // Consumíveis nunca são equipados: vão para a mochila e são usados
+  // diretamente em um monstro quando o jogador escolher o alvo.
+  if (typeof itemConsumivel === "function" && itemConsumivel(item)) {
+    estadoRun.mochila = estadoRun.mochila || [];
+    estadoRun.mochila.push(codigo);
+    mostrarMensagemMapa(`${item.nome} foi guardado na mochila para uso posterior.`);
+    return;
+  }
+
   abrirSelecaoAlvoItem(codigo, false);
 }
 
@@ -556,7 +565,7 @@ function abrirSelecaoAlvoItem(codigo, evolucao) {
       if (item.efeito?.tipo === "evolucao_proxima") pode = !!proximaFormaNumero(base);
       else pode = !!(item.evolucoes || []).some((r) => r.de === m.nome);
     } else {
-      pode = !item.tipo || itemFuncionaPara(m, item);
+      pode = !(typeof itemConsumivel === "function" && itemConsumivel(item)) && (!item.tipo || itemFuncionaPara(m, item));
     }
     if (!pode) return;
     elegiveis++;
