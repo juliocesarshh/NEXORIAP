@@ -1,0 +1,412 @@
+#tela-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 60px;
+}
+
+.mensagem-mapa {
+  width: min(560px, 92vw);
+  margin: 0 0 18px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(10, 16, 30, 0.65);
+  border: 1px solid rgba(255, 203, 5, 0.25);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.mensagem-mapa[hidden] {
+  display: none;
+}
+
+.mapa-camadas {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: min(560px, 92vw);
+}
+
+.linha-mapa {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.no-mapa {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 88px;
+  padding: 10px 6px;
+  border-radius: 12px;
+  background: rgba(10, 16, 30, 0.5);
+  border: 2px solid rgba(238, 243, 248, 0.15);
+  text-align: center;
+  opacity: 0.45;
+}
+
+.no-icone {
+  font-size: 1.6rem;
+}
+
+.no-nome {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.no-disponivel {
+  opacity: 1;
+  border-color: var(--ouro);
+  box-shadow: 0 0 14px rgba(255, 203, 5, 0.35);
+  cursor: pointer;
+}
+
+.no-disponivel:hover,
+.no-disponivel:focus-visible {
+  transform: translateY(-2px);
+}
+
+.no-atual {
+  opacity: 1;
+  border-color: var(--musgo);
+  box-shadow: 0 0 14px rgba(111, 174, 122, 0.45);
+}
+
+.no-perdido {
+  opacity: 0.25;
+}
+
+.no-bloqueado {
+  opacity: 0.35;
+}
+
+.painel-cidade {
+  margin-top: 30px;
+  text-align: center;
+  width: min(420px, 92vw);
+}
+
+.painel-cidade[hidden] {
+  display: none;
+}
+
+.painel-cidade h3 {
+  font-family: "Cinzel", "Georgia", serif;
+  color: var(--ouro-suave);
+}
+
+.botoes-cidade {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.botoes-cidade .botao {
+  width: auto;
+  flex: 1;
+}
+
+/* Modal de escolha de itens */
+
+.opcoes-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.opcao-item {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgba(238, 243, 248, 0.06);
+  border: 1px solid rgba(255, 203, 5, 0.3);
+  text-align: left;
+  font-weight: 700;
+}
+
+.opcao-item:hover,
+.opcao-item:focus-visible {
+  border-color: var(--ouro);
+  background: rgba(255, 203, 5, 0.1);
+}
+
+.item-descricao {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.item-inativo {
+  opacity: 0.6;
+}
+
+.texto-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.thumb-item {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.thumb-item-vazia {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(238, 243, 248, 0.35);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Escolha de captura: 3 cards com miniatura */
+
+.opcoes-captura {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-captura {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  width: 100px;
+  border-radius: 12px;
+  background: rgba(238, 243, 248, 0.06);
+  border: 1px solid rgba(255, 203, 5, 0.3);
+  text-align: center;
+}
+
+.card-captura:hover,
+.card-captura:focus-visible {
+  border-color: var(--ouro);
+  background: rgba(255, 203, 5, 0.1);
+}
+
+.card-captura .thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.card-captura .thumb-vazio {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(238, 243, 248, 0.35);
+  font-weight: bold;
+}
+
+.nome-captura {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.nivel-captura {
+  font-size: 0.7rem;
+  color: var(--ouro);
+}
+
+.titulo-rota {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -18px;
+  color: var(--ouro-suave);
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.titulo-parte-mapa {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: .08em;
+  margin: 14px 0 6px;
+  padding: 5px 8px;
+  border: 2px solid currentColor;
+  background: rgba(255,255,255,.82);
+  text-transform: uppercase;
+}
+.no-mapa[data-id*="fim"] .no-nome { font-weight: 900; }
+
+
+/* ---------- Meu Time no mapa ---------- */
+.mapa-acoes {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+.lista-time-mapa {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.card-time-mapa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(238,243,248,.16);
+  border-radius: 10px;
+  background: rgba(10,16,30,.45);
+}
+.thumb-time-mapa {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,.06);
+}
+.thumb-time-mapa.vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(238,243,248,.45);
+}
+.info-time-mapa {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: .75rem;
+}
+.info-time-mapa strong {
+  color: var(--ouro-suave);
+}
+@media (max-width: 560px) {
+  .lista-time-mapa { grid-template-columns: 1fr; }
+}
+
+
+/* ---------- Visual da rota em pixel art ---------- */
+.mapa-rota-visual {
+  position: relative;
+  width: min(560px, 92vw);
+  min-height: 900px;
+  overflow: hidden;
+  border: 2px solid rgba(238, 243, 248, 0.18);
+  border-radius: 18px;
+  background: #69c993 url("img/ui/rota-floresta.png") center top / 100% auto repeat-y;
+  box-shadow: 0 18px 50px rgba(0,0,0,.35);
+}
+
+.mapa-rota-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 35, 22, .18), rgba(3, 35, 22, .32));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mapa-rota-visual .mapa-camadas {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 30px 18px 80px;
+  gap: 30px;
+}
+
+.mapa-rota-visual .linha-mapa {
+  gap: 12px;
+}
+
+.mapa-rota-visual .no-mapa {
+  width: 96px;
+  min-height: 92px;
+  padding: 8px 5px;
+  background: rgba(4, 28, 18, .72);
+  border: 2px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(2px);
+  text-shadow: 0 1px 2px #000;
+}
+
+.mapa-rota-visual .no-disponivel {
+  background: rgba(16, 58, 31, .88);
+  border-color: var(--ouro);
+}
+
+.no-icone-img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.no-icone-treinador {
+  width: 54px;
+  height: 60px;
+}
+
+.no-icone-evento,
+.no-icone-itens,
+.no-icone-loja {
+  width: 60px;
+  height: 60px;
+}
+
+.mapa-rota-visual .titulo-parte-mapa {
+  width: 100%;
+  color: #173d26;
+  border-color: rgba(255,255,255,.75);
+  background: rgba(248, 231, 169, .9);
+  text-shadow: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+}
+
+.modal-final-roguelike{text-align:center;max-width:520px}.modal-final-roguelike h2{font-family:"Cinzel","Georgia",serif;color:var(--ouro,#ffcb05);margin-top:0}.modal-final-roguelike p{opacity:.85;margin-bottom:20px}
+
+/* Time fixo ao lado do mapa no Roguelike */
+.layout-roguelike{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;align-items:start}
+.painel-time-roguelike{position:sticky;top:12px;background:rgba(18,18,24,.94);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px;box-shadow:0 12px 35px rgba(0,0,0,.25);z-index:3}
+.titulo-time-roguelike{display:flex;flex-direction:column;gap:3px;margin-bottom:10px}
+.titulo-time-roguelike strong{font-size:1.05rem}.titulo-time-roguelike span{font-size:.72rem;opacity:.7}
+.card-time-roguelike{width:100%;display:grid;grid-template-columns:48px 1fr;gap:8px;align-items:center;text-align:left;margin:6px 0;padding:7px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);color:inherit;cursor:pointer}
+.card-time-roguelike:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.25)}
+.card-time-roguelike img{width:48px;height:48px;object-fit:contain}.card-time-roguelike .vazio{width:48px;height:48px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.06)}
+.card-time-roguelike .nome{font-weight:700}.card-time-roguelike .meta{font-size:.72rem;opacity:.75}.card-time-roguelike .hp{font-size:.7rem}
+@media(max-width:900px){.layout-roguelike{grid-template-columns:1fr}.painel-time-roguelike{position:relative;top:auto;order:-1}.painel-time-roguelike #lista-time-roguelike{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:5px}.card-time-roguelike{margin:0}}
+
+.item-escolhido{outline:2px solid currentColor;transform:translateY(-2px)}

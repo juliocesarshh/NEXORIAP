@@ -1,0 +1,413 @@
+/* ---------- Seleção de batalha (Modo Prática) ---------- */
+
+.controle-nivel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.controle-nivel input {
+  width: 64px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 203, 5, 0.35);
+  background: rgba(10, 16, 30, 0.6);
+  color: var(--tinta);
+  font-size: 0.9rem;
+}
+
+.painel-largo {
+  min-width: 100%;
+}
+
+/* ---------- Arena de batalha ---------- */
+
+#tela-batalha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.arena-batalha {
+  position: relative;
+  width: min(560px, 94vw);
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 203, 5, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.fundo-arena {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.sprite-batalha {
+  position: absolute;
+  z-index: 1;
+  width: 22%;
+  min-width: 64px;
+  max-width: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4));
+}
+
+/* Posições medidas nas plataformas reais das suas imagens de fundo */
+.sprite-oponente-pos {
+  left: 73%;
+  top: 40%;
+  transform: translate(-50%, -70%);
+}
+
+.sprite-jogador-pos {
+  left: 28%;
+  top: 63%;
+  transform: translate(-50%, -55%);
+}
+
+@keyframes bump-ataque {
+  0% { transform: translate(-50%, -70%) scale(1); }
+  40% { transform: translate(-50%, -70%) scale(1.18) translateY(-8px); }
+  100% { transform: translate(-50%, -70%) scale(1); }
+}
+.sprite-jogador-pos.animando-ataque {
+  animation: bump-ataque-jogador 0.32s ease;
+}
+@keyframes bump-ataque-jogador {
+  0% { transform: translate(-50%, -55%) scale(1); }
+  40% { transform: translate(-50%, -55%) scale(1.18) translateY(-8px); }
+  100% { transform: translate(-50%, -55%) scale(1); }
+}
+.sprite-oponente-pos.animando-ataque {
+  animation: bump-ataque 0.32s ease;
+}
+
+@keyframes shake-atingido {
+  0%, 100% { filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1); }
+  25% { filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(2) saturate(0); }
+  75% { filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1.3); }
+}
+.sprite-jogador-pos.animando-atingido {
+  animation: shake-atingido-jogador 0.28s ease;
+}
+@keyframes shake-atingido-jogador {
+  0%, 100% { transform: translate(-50%, -55%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1); }
+  25% { transform: translate(calc(-50% - 6px), -55%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(2) saturate(0); }
+  75% { transform: translate(calc(-50% + 6px), -55%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1.3); }
+}
+.sprite-oponente-pos.animando-atingido {
+  animation: shake-atingido-oponente 0.28s ease;
+}
+@keyframes shake-atingido-oponente {
+  0%, 100% { transform: translate(-50%, -70%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1); }
+  25% { transform: translate(calc(-50% - 6px), -70%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(2) saturate(0); }
+  75% { transform: translate(calc(-50% + 6px), -70%); filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 0.4)) brightness(1.3); }
+}
+
+.caixa-superior {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.caixa-oponente {
+  top: 6%;
+  right: 4%;
+  align-items: flex-end;
+}
+
+.caixa-jogador {
+  bottom: 4%;
+  left: 4%;
+  align-items: flex-start;
+}
+
+.caixa-habilidade {
+  align-self: flex-start;
+  font-size: 0.6rem;
+  padding: 2px 8px;
+  border-radius: 6px 6px 0 0;
+  background: rgba(10, 16, 30, 0.9);
+  border: 1px solid rgba(255, 203, 5, 0.4);
+  border-bottom: none;
+  color: var(--ouro-suave);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.caixa-oponente .caixa-habilidade {
+  align-self: flex-end;
+}
+
+.caixa-item {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.thumb-item-mini {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.caixa-info {
+  min-width: 150px;
+  background: rgba(10, 16, 30, 0.88);
+  border: 1px solid rgba(238, 243, 248, 0.25);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.linha-nome-nivel {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.barra-hp {
+  position: relative;
+}
+
+.hp-fundo {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(238, 243, 248, 0.15);
+  overflow: hidden;
+}
+
+.hp-preenchimento {
+  height: 100%;
+  background: var(--musgo);
+  transition: width 0.3s ease;
+}
+
+.hp-preenchimento.hp-baixo {
+  background: var(--perigo);
+}
+
+.rodape-caixa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+  gap: 6px;
+}
+
+.hp-texto {
+  font-size: 0.62rem;
+  color: rgba(238, 243, 248, 0.6);
+  white-space: nowrap;
+}
+
+.linha-modificadores {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.chip-mod {
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.chip-mod.buff {
+  background: rgba(111, 174, 122, 0.25);
+  color: #9be3a8;
+}
+
+.chip-mod.nerf {
+  background: rgba(255, 107, 107, 0.25);
+  color: #ff9d9d;
+}
+
+.log-batalha {
+  width: min(560px, 94vw);
+  min-height: 88px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(10, 16, 30, 0.65);
+  border: 1px solid rgba(238, 243, 248, 0.12);
+  font-size: 0.85rem;
+  overflow-y: auto;
+  max-height: 130px;
+}
+
+.log-batalha p {
+  margin: 0 0 6px 0;
+}
+
+.golpes-jogador {
+  width: min(560px, 94vw);
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.botao-golpe {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(238, 243, 248, 0.06);
+  border: 1px solid rgba(255, 203, 5, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.botao-golpe:hover,
+.botao-golpe:focus-visible {
+  border-color: var(--ouro);
+  background: rgba(255, 203, 5, 0.1);
+}
+
+.golpe-nome {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.golpe-info {
+  font-size: 0.7rem;
+  color: rgba(238, 243, 248, 0.55);
+}
+
+.painel-fim-batalha {
+  width: min(560px, 94vw);
+  margin-top: 14px;
+  text-align: center;
+}
+
+.painel-fim-batalha[hidden] {
+  display: none;
+}
+
+.resultado-batalha {
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+}
+
+.resultado-batalha.vitoria {
+  color: var(--ouro-suave);
+}
+
+.resultado-batalha.derrota {
+  color: var(--perigo);
+}
+
+.botoes-fim-batalha {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.botoes-fim-batalha .botao {
+  width: auto;
+  flex: 1;
+  max-width: 220px;
+}
+
+/* ---------- Tamanho do time ---------- */
+
+#tela-tamanho-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.grade-tamanhos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  width: min(360px, 88vw);
+}
+
+.botao-tamanho {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  padding: 18px 10px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: rgba(10, 16, 30, 0.55);
+  border: 1px solid rgba(111, 174, 122, 0.4);
+}
+
+.botao-tamanho:hover,
+.botao-tamanho:focus-visible {
+  border-color: var(--ouro);
+  transform: translateY(-2px);
+}
+
+/* ---------- Times na batalha ---------- */
+
+.status-times {
+  width: min(560px, 94vw);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgba(238, 243, 248, 0.6);
+  margin-bottom: 6px;
+}
+
+.aviso-troca-forcada {
+  width: min(560px, 94vw);
+  margin: 14px 0 0 0;
+  text-align: center;
+  color: var(--perigo);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.botao-trocar {
+  grid-column: 1 / -1;
+  background: rgba(111, 174, 122, 0.12);
+  border-color: rgba(111, 174, 122, 0.5);
+}
+
+.botao-trocar:hover,
+.botao-trocar:focus-visible {
+  border-color: var(--musgo);
+  background: rgba(111, 174, 122, 0.2);
+}
+
+.lista-troca {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
