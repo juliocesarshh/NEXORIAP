@@ -20,10 +20,28 @@ function renderizarGerenciamentoTime(){
   const b=document.createElement("button"); b.type="button"; b.className="card-time-revisao";
   b.innerHTML=`${m.png?`<img src="PNG/${m.png}" alt="${m.nome}">`:"<span class='sprite-vazio'>?</span>"}<strong>${m.nome}</strong><span>Lv. ${m.nivel}</span><span>${m.hpAtual}/${m.status.hpMax} HP</span>`;
   b.onclick=()=>{ nexoriaMonstroSelecionado=m.numero; renderizarGerenciamentoTime(); }; lista.appendChild(b);
-  if(m.numero===nexoriaMonstroSelecionado) renderizarDetalheGerenciamento(m,DADOS_MONSTROS.find(x=>x.numero===m.numero));
+  if(String(m.numero)===String(nexoriaMonstroSelecionado)) renderizarDetalheGerenciamento(m,DADOS_MONSTROS.find(x=>String(x.numero)===String(m.numero)));
  });
 }
+function renderizarConsumiveisMochila(monstro){
+  // A mochila existe no Roguelike. Em Prática/Multiplayer não há consumíveis
+  // de run, então deixamos a seção vazia sem quebrar a tela de preparação.
+  const mochila = Array.isArray(window.estadoRun?.mochila) ? window.estadoRun.mochila : [];
+  if (!mochila.length) return '<span class="sem-consumiveis">Nenhum consumível disponível na mochila.</span>';
+  const codigos = mochila.filter(Boolean);
+  const unicos = [...new Set(codigos)];
+  const html = unicos.map(codigo => {
+    const item = typeof buscarItem === 'function' ? buscarItem(codigo) : null;
+    if (!item) return '';
+    const quantidade = codigos.filter(x => x === codigo).length;
+    return `<button type="button" class="item-revisao consumivel-mochila" data-usar-consumivel="${item.codigo}">${item.png ? `<img class="item-revisao-img" src="Png-Itens/${item.png}" alt="" onerror="this.style.display='none'">` : ''}<strong>${item.nome}</strong><small>${quantidade > 1 ? `x${quantidade} · ` : ''}${item.descricao || ''}</small></button>`;
+  }).join('');
+  return html || '<span class="sem-consumiveis">Nenhum consumível disponível na mochila.</span>';
+}
+window.renderizarConsumiveisMochila = renderizarConsumiveisMochila;
+
 function renderizarDetalheGerenciamento(m,base){
+ if(!m || !base) return;
  const el=document.getElementById("detalhe-gerenciamento-time"),s=m.status||{},tipos=String(m.tipo||"").split("/").map(x=>x.trim());
  m.golpesConhecidos=selecionarQuatroGolpes(m.golpesConhecidos,base);
  const hab=typeof habilidadeDe==="function"?habilidadeDe(m):null;

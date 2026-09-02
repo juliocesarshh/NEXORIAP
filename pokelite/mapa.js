@@ -646,7 +646,7 @@ function renderizarPainelTimeRoguelike() {
         texto: "Escolha os 4 ataques, troque o item e ajuste a Natureza. As alterações ficam salvas na Run."
       });
       setTimeout(() => {
-        const base = DADOS_MONSTROS.find(x => x.numero === m.numero);
+        const base = DADOS_MONSTROS.find(x => String(x.numero) === String(m.numero));
         if (base) renderizarDetalheGerenciamento(m, base);
       }, 0);
     });
