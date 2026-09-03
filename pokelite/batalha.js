@@ -50,6 +50,17 @@ function calcularDanoComHabilidades(atacante, alvo, golpe, efetividade, agiuPrim
   }
 
   const hAtacante = habilidadeDe(atacante);
+  const hAlvo = habilidadeDe(alvo);
+
+  if (hAtacante && hAtacante.ignorarDanoChance && Math.random() < hAtacante.ignorarDanoChance) {
+    estadoBatalha.log.push(`${atacante.nome} ignorou o dano recebido!`);
+    return { dano: 0 };
+  }
+
+  if (hAlvo && hAlvo.esquivaChance && Math.random() < hAlvo.esquivaChance) {
+    estadoBatalha.log.push(`${alvo.nome} desviou do ataque!`);
+    return { dano: 0 };
+  }
 
   if (hAtacante && hAtacante.chanceNocauteImediato && Math.random() < hAtacante.chanceNocauteImediato) {
     return {
@@ -74,15 +85,37 @@ function calcularDanoComHabilidades(atacante, alvo, golpe, efetividade, agiuPrim
     base *= 0.5;
   }
 
-  if (batalha.campoNoturno && golpe.tipo === "Dark") {
-    base *= 1.5;
+  if (batalha.campoNoturno && golpe.tipo === "Dark") base *= 1.5;
+  if (batalha.florido && golpe.tipo === "Planta") base *= 1.35;
+  if (batalha.campoEletrico && golpe.tipo === "Elétrico") base *= 1.35;
+  if (batalha.campoGlacial && golpe.tipo === "Gelo") base *= 1.35;
+  if (batalha.campoSombrio && golpe.tipo === "Dark") base *= 1.35;
+  if (batalha.campoRochoso && (golpe.tipo === "Pedra" || golpe.tipo === "Terra")) base *= 1.25;
+  if (batalha.chuva && golpe.tipo === "Água") base *= 1.5;
+  if (batalha.sol && golpe.tipo === "Fogo") base *= 1.5;
+  if (batalha.neve && golpe.tipo === "Gelo") base *= 1.5;
+
+  if (hAtacante?.modificarPoder) {
+    const poderMod = hAtacante.modificarPoder(atacante, golpe);
+    if (Number.isFinite(poderMod) && poderMod > 0 && golpe.poder > 0) base *= poderMod / golpe.poder;
   }
+  if (hAtacante?.modificarPoderTipo) base *= hAtacante.modificarPoderTipo(atacante, golpe) || 1;
+  if (hAtacante?.modificarDano) base *= hAtacante.modificarDano(atacante, alvo, base, batalha) / Math.max(1, base);
+  if (hAlvo?.multiplicadorDanoRecebido) base *= hAlvo.multiplicadorDanoRecebido(golpe.tipo) || 1;
 
   const variacao = 0.85 + Math.random() * 0.15;
   let danoFinal = Math.max(1, Math.floor(base * stab * efetividade * variacao));
+  if (hAtacante?.bonusCritico && Math.random() < hAtacante.bonusCritico) {
+    danoFinal = Math.floor(danoFinal * 1.5);
+    estadoBatalha.log.push(`${atacante.nome} conseguiu um CRITICAL HIT!`);
+  }
 
   if (typeof multiplicadorDanoItem === "function") {
     danoFinal = Math.max(1, Math.floor(danoFinal * multiplicadorDanoItem(atacante)));
+  }
+
+  if (atacante._desejoDragaoTurno === batalha.turno) {
+    danoFinal = Math.max(1, Math.floor(danoFinal * 0.5));
   }
 
   return { dano: danoFinal };
@@ -90,9 +123,16 @@ function calcularDanoComHabilidades(atacante, alvo, golpe, efetividade, agiuPrim
 
 // ---------- Status alterado (Queimado / Confuso / Cego / Flinch) ----------
 function resolverStatusAntesDeAgir(quem, batalha) {
+  if (quem.statusAlterado === "dormindo" || quem.statusAlterado === "iludido") {
+    batalha.log.push(`${quem.nome} não conseguiu agir por causa do efeito!`);
+    quem._duracaoStatus = Math.max(0, (quem._duracaoStatus || 1) - 1);
+    if (quem._duracaoStatus <= 0) quem.statusAlterado = null;
+    return false;
+  }
   if (quem.statusAlterado === "flinchar") {
     batalha.log.push(`${quem.nome} Flinchou e não conseguiu agir!`);
-    quem.statusAlterado = null;
+    quem._duracaoStatus = Math.max(0, (quem._duracaoStatus || 1) - 1);
+    if (quem._duracaoStatus <= 0) quem.statusAlterado = null;
     return false;
   }
   if (quem.statusAlterado === "confuso" && Math.random() < 0.33) {
@@ -188,8 +228,19 @@ function iniciarBatalha(timeJogador, timeOponente, multiplayer = false, multipla
     vencedor: null,
     campoNoturno: false,
     chuva: false,
+    sol: false,
+    neve: false,
+    areia: false,
     estrelado: false,
     florido: false,
+    campoEletrico: false,
+    campoGlacial: false,
+    campoSombrio: false,
+    campoRochoso: false,
+    reverse: false,
+    reverseTurnos: 0,
+    noiteEstreladaDono: null,
+    noiteEstreladaDreno: 0,
     aguardandoTrocaJogador: false,
     aguardandoTrocaOponente: false,
     multiplayer,
@@ -200,6 +251,11 @@ function iniciarBatalha(timeJogador, timeOponente, multiplayer = false, multipla
     statusCampoBatalha: null,
     dificuldade: multiplayer ? "dificil" : (window.NEXORIA_DIFICULDADE || (contextoBatalhaAtual === "roguelike" ? "dificil" : "facil")), 
   };
+
+  [...timeJogador, ...timeOponente].forEach(m => {
+    if (m?.status) m._statusBase = {...m.status};
+    if (m) m._hpInicial = m.hpAtual;
+  });
 
   aplicarAoEntrarUnico(jogadorAtivo(), oponenteAtivo());
   aplicarAoEntrarUnico(oponenteAtivo(), jogadorAtivo());
@@ -243,6 +299,70 @@ function notificarErro(quem, contra, golpe) {
   if (hAlvo && hAlvo.aoErroDoOponente) hAlvo.aoErroDoOponente(contra, quem, estadoBatalha);
 }
 
+// ---------- Efeitos especiais dos novos golpes ----------
+function aplicarEfeitoGolpe(golpe, quem, contra, batalha) {
+  const e = golpe && golpe.effect;
+  if (!e) return { danoExtra: 0, mensagem: null };
+  const nomeStatus = { hpMax:"HP Máximo", ataque:"Ataque", defesa:"Defesa", ataqueEspecial:"Ataque Especial", defesaEspecial:"Defesa Especial", velocidade:"Velocidade" };
+  const ajustar = (monstro, status, valor) => {
+    if (!monstro?.status?.[status]) return;
+    const fator = 1 + Number(valor || 0);
+    const base = Number(monstro._statusBase?.[status] || monstro.status[status] || 1);
+    const atual = Number(monstro.status[status] || base);
+    let novo = atual * fator;
+    // Golpes com buff/debuff podem acumular, mas têm limites de batalha para evitar valores absurdos.
+    const minimo = base * 0.25;
+    const maximo = base * 4.00;
+    novo = Math.min(maximo, Math.max(minimo, novo));
+    monstro.status[status] = Math.max(1, Math.floor(novo));
+  };
+  switch (e.tipo) {
+    case 'buff': ajustar(quem, e.status, e.valor); return { mensagem: `${quem.nome} aumentou ${nomeStatus[e.status] || e.status}!` };
+    case 'debuff': ajustar(contra, e.status, e.valor); return { mensagem: `${contra.nome} teve ${nomeStatus[e.status] || e.status} reduzido!` };
+    case 'buffTodos': ['ataque','defesa','ataqueEspecial','defesaEspecial','velocidade'].forEach(s=>ajustar(quem,s,e.valor)); return { mensagem:`${quem.nome} aumentou seus atributos!` };
+    case 'buffMult': (e.statusList||[]).forEach(s=>ajustar(quem,s,e.valor)); return { mensagem:`${quem.nome} reforçou suas defesas!` };
+    case 'debuffMult': (e.statusList||[]).forEach(s=>ajustar(contra,s,e.valor)); return { mensagem:`Os atributos de ${contra.nome} foram reduzidos!` };
+    case 'buffDebuff': ajustar(quem,e.buff.status,e.buff.valor); ajustar(quem,e.debuff.status,e.debuff.valor); return { mensagem:`${quem.nome} apostou tudo em seu poder!` };
+    case 'chanceBuff': if(Math.random()<e.chance){ajustar(quem,e.status,e.valor); return {mensagem:`${quem.nome} conseguiu o Tudo ou Nada!`};} return {mensagem:`${quem.nome} falhou no Tudo ou Nada!`};
+    case 'campo':
+      batalha.campoNoturno = e.campo==='noturno' || batalha.campoNoturno;
+      batalha.estrelado = e.campo==='noturno' || batalha.estrelado;
+      batalha.florido = e.campo==='florido' || batalha.florido;
+      batalha.campoEletrico = e.campo==='eletrico' || batalha.campoEletrico;
+      batalha.campoGlacial = e.campo==='glacial' || batalha.campoGlacial;
+      batalha.campoSombrio = e.campo==='sombrio' || batalha.campoSombrio;
+      batalha.campoRochoso = e.campo==='rochoso' || batalha.campoRochoso;
+      return {mensagem:`${quem.nome} abriu o ${String(e.campo).replace('noturno','Campo Noturno').replace('florido','Campo de Flores').replace('eletrico','Campo Elétrico').replace('glacial','Campo Glacial').replace('sombrio','Campo Sombrio').replace('rochoso','Campo Rochoso')}!`};
+    case 'clima':
+      batalha.chuva = e.clima==='chuva' || batalha.chuva;
+      batalha.sol = e.clima==='sol' || batalha.sol;
+      batalha.neve = e.clima==='neve' || batalha.neve;
+      batalha.areia = e.clima==='areia' || batalha.areia;
+      if(e.clima==='neve') batalha.estrelado = batalha.estrelado;
+      return {mensagem:`${quem.nome} mudou o clima para ${e.clima}!`};
+    case 'cura': {
+      const cura=Math.max(1,Math.floor(quem.status.hpMax*Number(e.valor||0)));
+      const antes=quem.hpAtual; quem.hpAtual=Math.min(quem.status.hpMax,quem.hpAtual+cura);
+      return {mensagem:`${quem.nome} recuperou ${quem.hpAtual-antes} HP!`};
+    }
+    case 'protecao': quem.protegido=true; return {mensagem:`${quem.nome} criou um escudo!`};
+    case 'status': contra.statusAlterado=e.status; contra._duracaoStatus=Math.max(1, Math.ceil(Number(e.duracao||1)*(habilidadeDe(contra)?.reduzirDuracaoStatus||1))); return {mensagem:`${contra.nome} ficou ${e.status}!`};
+    case 'flinch': contra.statusAlterado='flinchar'; contra._duracaoStatus=Math.max(1, Math.ceil(Number(e.duracao||1)*(habilidadeDe(contra)?.reduzirDuracaoStatus||1))); return {mensagem:`${contra.nome} ficou em Flinch por ${e.duracao||1} turnos!`};
+    case 'reverse': batalha.reverse=true; batalha.reverseTurnos=Number(e.duracao||5); return {mensagem:`${quem.nome} ativou Reverse! Os Monstros mais lentos passam a agir primeiro.`};
+    case 'noiteEstreladaDreno': batalha.campoNoturno=true; batalha.estrelado=true; batalha.noiteEstreladaDono=quem; batalha.noiteEstreladaDreno=Number(e.valor||1/6); return {mensagem:`${quem.nome} transformou o campo em Noite Estrelada!`};
+    case 'desejoDragao': if (batalha.turno!==0) return {mensagem:`${quem.nome} tentou usar Desejo do Dragão, mas esse golpe só pode ser usado no primeiro turno!`}; quem._desejoDragaoTurno=batalha.turno+1; return {mensagem:`${quem.nome} lançou o Desejo do Dragão! No próximo turno, seu próximo ataque causará apenas 50% do dano.`};
+    case 'troca': quem._trocaDepoisDoGolpe=true; return {mensagem:`${quem.nome} está pronto para trocar!`};
+    case 'buffHpBaixo': { const perda=1-quem.hpAtual/quem.status.hpMax; ajustar(quem,'ataque',Math.min(1,perda)); return {mensagem:`${quem.nome} concentrou sua força!`}; }
+    case 'vinganca': quem._vinganca=true; return {mensagem:`${quem.nome} preparou sua vingança!`};
+    case 'danoPercentual': { const dano=Math.max(1,Math.floor(contra.status.hpMax*Number(e.valor||0))); contra.hpAtual=Math.max(0,contra.hpAtual-dano); return {danoExtra:dano,mensagem:`${quem.nome} causou ${dano} de dano direto!`}; }
+    case 'pressao': ajustar(quem,'velocidade',-.15); ajustar(contra,'velocidade',-.15); return {mensagem:'A pressão reduziu a Velocidade dos dois!'};
+    case 'ritualLunar': batalha.campoNoturno=true; batalha.estrelado=true; { const cura=Math.max(1,Math.floor(quem.status.hpMax*.25)); quem.hpAtual=Math.min(quem.status.hpMax,quem.hpAtual+cura); return {mensagem:`${quem.nome} realizou o Ritual Lunar e recuperou HP!`}; }
+    case 'limparStats': ['ataque','defesa','ataqueEspecial','defesaEspecial','velocidade'].forEach(s=>{quem.status[s]=quem._statusBase?.[s]||quem.status[s]; contra.status[s]=contra._statusBase?.[s]||contra.status[s];}); return {mensagem:'A Névoa limpou as alterações de atributos!'};
+    case 'armadilha': batalha.armadilhas = batalha.armadilhas || {}; batalha.armadilhas[e.armadilha] = true; return {mensagem:`${quem.nome} preparou ${e.armadilha}!`};
+    default: return {mensagem:null};
+  }
+}
+
 // ---------- Um ataque de um lado contra o outro ----------
 function executarAtaque(nomeLado, golpe, efetividade, agiuPrimeiro) {
   const quem = nomeLado === "jogador" ? jogadorAtivo() : oponenteAtivo();
@@ -254,6 +374,11 @@ function executarAtaque(nomeLado, golpe, efetividade, agiuPrimeiro) {
     return;
   }
 
+  if (golpe?.codigo === "GA007" && estadoBatalha.turno !== 0) {
+    estadoBatalha.log.push(`${quem.nome} não pode usar Desejo do Dragão agora: ele só pode ser usado no primeiro turno!`);
+    return;
+  }
+
   if (!golpeAcerta(quem, golpe)) {
     estadoBatalha.log.push(`${quem.nome} usou ${golpe.nome}, mas errou o golpe!`);
     notificarErro(quem, contra, golpe);
@@ -262,7 +387,14 @@ function executarAtaque(nomeLado, golpe, efetividade, agiuPrimeiro) {
 
   animarSprite(nomeLado === "jogador" ? "sprite-jogador" : "sprite-oponente", "animando-ataque");
 
-  const { dano, mensagemExtra } = calcularDanoComHabilidades(
+  if (contra.protegido && golpe.poder > 0 && !habilidadeDe(quem)?.ignoraProtecao) {
+    contra.protegido = false;
+    estadoBatalha.log.push(`${contra.nome} bloqueou o ataque com seu Escudo!`);
+    return;
+  }
+
+  const efeitoAplicado = aplicarEfeitoGolpe(golpe, quem, contra, estadoBatalha);
+  const { dano: danoBase, mensagemExtra } = calcularDanoComHabilidades(
     quem,
     contra,
     golpe,
@@ -270,13 +402,18 @@ function executarAtaque(nomeLado, golpe, efetividade, agiuPrimeiro) {
     agiuPrimeiro,
     estadoBatalha
   );
+  const dano = Math.max(0, danoBase || 0) + Math.max(0, efeitoAplicado.danoExtra || 0);
+  contra._ultimoDanoRecebido = dano;
+  quem._ultimoDanoCausado = dano;
   contra.hpAtual = Math.max(0, contra.hpAtual - dano);
+  if (contra._barreiraAtiva) contra._barreiraAtiva = false;
+  if (quem._desejoDragaoTurno === estadoBatalha.turno && golpe?.codigo !== "GA007") delete quem._desejoDragaoTurno;
 
   if (dano > 0) {
     animarSprite(nomeLado === "jogador" ? "sprite-oponente" : "sprite-jogador", "animando-atingido");
   }
 
-  let msg = mensagemExtra || `${quem.nome} usou ${golpe.nome}!`;
+  let msg = mensagemExtra || efeitoAplicado.mensagem || `${quem.nome} usou ${golpe.nome}!`;
   if (!mensagemExtra) {
     if (efetividade === 0) {
       msg = `${quem.nome} usou ${golpe.nome}, mas não afetou ${contra.nome}...`;
@@ -288,9 +425,11 @@ function executarAtaque(nomeLado, golpe, efetividade, agiuPrimeiro) {
   }
   estadoBatalha.log.push(msg);
 
-  if (efetividade !== 0 && dano > 0) {
+  if (efetividade !== 0) {
     const hAtacante = habilidadeDe(quem);
     if (hAtacante && hAtacante.aoAcertar) hAtacante.aoAcertar(quem, contra, golpe, estadoBatalha);
+    const hAlvoAtingido = habilidadeDe(contra);
+    if (contra.hpAtual > 0 && hAlvoAtingido && hAlvoAtingido.aoSerAtingido) hAlvoAtingido.aoSerAtingido(contra, quem, golpe, estadoBatalha);
     if (typeof processarItemAoAcertar === "function") processarItemAoAcertar(quem, contra, golpe, estadoBatalha);
   }
 
@@ -353,7 +492,9 @@ function processarTurno(acaoJogador, acaoOponente) {
     const jogadorPrimeiro =
       jogador.status.velocidade === oponente.status.velocidade
         ? Math.random() < 0.5
-        : jogador.status.velocidade > oponente.status.velocidade;
+        : (estadoBatalha.reverse
+            ? jogador.status.velocidade < oponente.status.velocidade
+            : jogador.status.velocidade > oponente.status.velocidade);
     ordem = jogadorPrimeiro ? ["jogador", "oponente"] : ["oponente", "jogador"];
   }
 
@@ -395,6 +536,34 @@ function finalizarTurno() {
           if (typeof processarItemFimDoTurno === "function") processarItemFimDoTurno(c, rival, estadoBatalha);
         }
       });
+
+      // Dano contínuo da Noite Estrelada: 1/6 do HP máximo do adversário.
+      if (estadoBatalha.noiteEstreladaDono && estadoBatalha.noiteEstreladaDreno > 0) {
+        const dono = estadoBatalha.noiteEstreladaDono;
+        const alvoNoite = jogadorAtivo() === dono ? oponenteAtivo() : (oponenteAtivo() === dono ? jogadorAtivo() : null);
+        if (alvoNoite && alvoNoite.hpAtual > 0) {
+          const danoNoite = Math.max(1, Math.floor(alvoNoite.status.hpMax * estadoBatalha.noiteEstreladaDreno));
+          alvoNoite.hpAtual = Math.max(0, alvoNoite.hpAtual - danoNoite);
+          estadoBatalha.log.push(`${alvoNoite.nome} sofre com a Noite Estrelada! (${danoNoite} de dano)`);
+          if (alvoNoite.hpAtual <= 0) {
+            tratarDesmaio(alvoNoite, jogadorAtivo() === alvoNoite ? "jogador" : "oponente");
+          }
+        }
+      }
+
+      if (estadoBatalha.reverse) {
+        estadoBatalha.reverseTurnos = Math.max(0, (estadoBatalha.reverseTurnos || 0) - 1);
+        if (estadoBatalha.reverseTurnos === 0) {
+          estadoBatalha.reverse = false;
+          estadoBatalha.log.push("O efeito de Reverse terminou!");
+        }
+      }
+
+      // O debuff do Desejo do Dragão vale somente durante o turno seguinte.
+      [jogadorAtivo(), oponenteAtivo()].forEach(c => {
+        if (c && c._desejoDragaoTurno !== undefined && c._desejoDragaoTurno < estadoBatalha.turno + 1) delete c._desejoDragaoTurno;
+      });
+
       estadoBatalha.turno = (estadoBatalha.turno || 0) + 1;
     }
   }

@@ -22,6 +22,7 @@ const TABELA_TIPOS = {
   Aço:      { Fogo: 0.5, Água: 0.5, Elétrico: 0.5, Gelo: 2, Pedra: 2, Aço: 0.5, Fada: 2 },
   Fada:     { Fogo: 0.5, Lutador: 2, Veneno: 0.5, Dragão: 2, Dark: 2, Aço: 0.5 },
   // Vento ainda não tem efetividade definida — fica neutro (1x) contra tudo por enquanto.
+  Fofo: {}, // tipo neutro por enquanto.
 };
 
 // tiposDefensorTexto pode ser um tipo só ("Fogo") ou dois separados por "/" ("Fogo/Terra").
@@ -42,6 +43,7 @@ const CORES_TIPO = {
   Planta: "#78C850", Gelo: "#98D8D8", Lutador: "#C03028", Veneno: "#A040A0",
   Terra: "#E0C068", Voador: "#A890F0", Psíquico: "#F85888", Inseto: "#A8B820",
   Pedra: "#B8A038", Fantasma: "#705898", Dragão: "#7038F8", Dark: "#705848",
+  Fofo: "#F6A6D7",
   Aço: "#B8B8D0", Fada: "#EE99AC", Vento: "#70C8D8",
 };
 

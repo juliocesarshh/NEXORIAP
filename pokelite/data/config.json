@@ -1,0 +1,43 @@
+{
+  "versaoDados": "1.2",
+  "evolucao": {
+    "observacao": "Níveis não definidos permanecem em branco; formas finais usam Nil.",
+    "niveisDefinidos": {
+      "Konguim": 25,
+      "Kongor": 45,
+      "Tocai": 28,
+      "Nevuru": 25,
+      "Glacuru": 42
+    }
+  },
+  "captura": {
+    "raridadesNormal": {
+      "Comum": 75,
+      "Raro": 18,
+      "Épico": 5.5,
+      "Mítico": 1.4,
+      "Lendário": 0.1
+    },
+    "raridadesRara": {
+      "Comum": 35,
+      "Raro": 35,
+      "Épico": 20,
+      "Mítico": 8,
+      "Lendário": 2
+    }
+  },
+  "nosMapa": {
+    "captura": 23,
+    "matinho": 27,
+    "itens": 14,
+    "treinador": 16,
+    "casinha": 8,
+    "evento": 11,
+    "capturaRara": 1
+  },
+  "observacoes": [
+    "Casinha e Captura Rara são intencionalmente mais difíceis de encontrar.",
+    "Captura Rara usa uma distribuição de raridade melhor que a captura normal.",
+    "Elite Four fica para uma etapa posterior."
+  ]
+}

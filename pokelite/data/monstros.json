@@ -5,7 +5,7 @@
     "tipo": "Planta/Inseto",
     "png": "Folkim.jpeg",
     "descricao": "Um pequeno monstro cheio de energia, curioso e sempre pronto para explorar.",
-    "habilidade": "",
+    "habilidade": "H072",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -63,6 +63,70 @@
       {
         "codigo": "G091",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -77,8 +141,12 @@
       "evoluiDe": "",
       "evoluiPara": 2
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "15",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H072"
+    ]
   },
   {
     "numero": 2,
@@ -86,7 +154,7 @@
     "tipo": "Planta/Lutador",
     "png": "Lokim.png",
     "descricao": "Uma criatura mais madura, com uma força que começa a despertar.",
-    "habilidade": "",
+    "habilidade": "H079",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -144,6 +212,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -158,8 +290,13 @@
       "evoluiDe": 1,
       "evoluiPara": 3
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "40",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H079",
+      "H080"
+    ]
   },
   {
     "numero": 3,
@@ -167,7 +304,7 @@
     "tipo": "Planta/Lutador",
     "png": "Louvador.png",
     "descricao": "Um poderoso monstro que domina seu estilo de combate e protege seu território.",
-    "habilidade": "",
+    "habilidade": "H086",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -225,6 +362,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -239,8 +440,14 @@
       "evoluiDe": 2,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "Nil",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H086",
+      "H087",
+      "H088"
+    ]
   },
   {
     "numero": 4,
@@ -248,7 +455,7 @@
     "tipo": "Fogo",
     "png": "Kaidin.jpeg",
     "descricao": "Um jovem monstro de fogo que começa a desenvolver sua verdadeira força.",
-    "habilidade": "",
+    "habilidade": "H093",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -306,6 +513,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
+      },
+      {
+        "codigo": "G128",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -320,8 +591,12 @@
       "evoluiDe": "",
       "evoluiPara": 5
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "16",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H093"
+    ]
   },
   {
     "numero": 5,
@@ -329,7 +604,7 @@
     "tipo": "Fogo",
     "png": "Kaidor.png",
     "descricao": "Um monstro resistente e agressivo, preparado para enfrentar adversários maiores.",
-    "habilidade": "",
+    "habilidade": "H100",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -387,6 +662,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
+      },
+      {
+        "codigo": "G128",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -401,8 +740,13 @@
       "evoluiDe": 4,
       "evoluiPara": 6
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "40",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H100",
+      "H101"
+    ]
   },
   {
     "numero": 6,
@@ -468,6 +812,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -483,8 +891,14 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Ao entrar em campo, causa um pequeno terremoto que retira 10% do HP do inimigo.",
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "Nil",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H001",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 7,
@@ -492,7 +906,7 @@
     "tipo": "Água",
     "png": "Maki.jpeg",
     "descricao": "Um pequeno tubarão quadrúpede cujo focinho possui um disco semelhante a uma Maquita.",
-    "habilidade": "",
+    "habilidade": "H073",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -550,6 +964,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
+      },
+      {
+        "codigo": "G216",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -564,8 +1042,12 @@
       "evoluiDe": "",
       "evoluiPara": 8
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "15",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H073"
+    ]
   },
   {
     "numero": 8,
@@ -573,7 +1055,7 @@
     "tipo": "Água",
     "png": "",
     "descricao": "Um tubarão que agora fica de pé e luta usando pequenos discos nos braços.",
-    "habilidade": "",
+    "habilidade": "H080",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -631,6 +1113,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
+      },
+      {
+        "codigo": "G216",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -645,8 +1191,13 @@
       "evoluiDe": 7,
       "evoluiPara": 9
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "40",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H080",
+      "H081"
+    ]
   },
   {
     "numero": 9,
@@ -654,7 +1205,7 @@
     "tipo": "Água/Aço",
     "png": "",
     "descricao": "Um grande guerreiro tubarão de Água e Metal, capaz de dilacerar seus adversários.",
-    "habilidade": "",
+    "habilidade": "H087",
     "golpeAssinatura": "Dilacera",
     "golpes": [
       {
@@ -712,6 +1263,70 @@
       {
         "codigo": "G031",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G191",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -726,8 +1341,14 @@
       "evoluiDe": 8,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Inicial"
+    "levelevo": "Nil",
+    "raridade": "Inicial",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H087",
+      "H088",
+      "H089"
+    ]
   },
   {
     "numero": 10,
@@ -793,6 +1414,70 @@
       {
         "codigo": "GA004",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G156",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -807,9 +1492,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
+    "levelevo": "Nil",
     "raridade": "Épico",
-    "habilidadeInfo": "Transforma o campo em Campo de Batalha e concede +10% em um status aleatório."
+    "habilidadeInfo": "Transforma o campo em Campo de Batalha e concede +10% em um status aleatório.",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H024",
+      "H072"
+    ]
   },
   {
     "numero": 11,
@@ -817,7 +1507,7 @@
     "tipo": "Inseto",
     "png": "Lingard.png",
     "descricao": "Uma pequena lagarta aparentemente comum que possui um potencial extraordinário.",
-    "habilidade": "",
+    "habilidade": "H101",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -875,6 +1565,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G180",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -889,8 +1643,13 @@
       "evoluiDe": "",
       "evoluiPara": 12
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "10",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H101",
+      "H102"
+    ]
   },
   {
     "numero": 12,
@@ -898,7 +1657,7 @@
     "tipo": "Inseto",
     "png": "Brascasulo.png",
     "descricao": "Um casulo onde sua energia se transforma para revelar seu verdadeiro destino.",
-    "habilidade": "",
+    "habilidade": "H108",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -956,6 +1715,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G180",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -968,10 +1791,19 @@
     },
     "evolucao": {
       "evoluiDe": 11,
-      "evoluiPara": "13 ou 14"
+      "evolucoesPossiveis": [
+        13,
+        14
+      ]
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "30",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H108",
+      "H109",
+      "H110"
+    ]
   },
   {
     "numero": 13,
@@ -979,7 +1811,7 @@
     "tipo": "Inseto/Fogo",
     "png": "Inciderar.png",
     "descricao": "Uma magnífica borboleta de fogo cujas asas irradiam calor e chamas.",
-    "habilidade": "",
+    "habilidade": "H074",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1037,6 +1869,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1051,8 +1947,12 @@
       "evoluiDe": 12,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H074"
+    ]
   },
   {
     "numero": 14,
@@ -1060,7 +1960,7 @@
     "tipo": "Inseto/Dark",
     "png": "Maripositi.png",
     "descricao": "Uma mariposa sombria que se move silenciosamente durante a noite.",
-    "habilidade": "",
+    "habilidade": "H081",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1118,6 +2018,70 @@
       {
         "codigo": "GA002",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1132,8 +2096,13 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H081",
+      "H082"
+    ]
   },
   {
     "numero": 15,
@@ -1141,7 +2110,7 @@
     "tipo": "Inseto/Venenoso",
     "png": "",
     "descricao": "Um pequeno escorpião venenoso que surpreende adversários com sua agilidade.",
-    "habilidade": "",
+    "habilidade": "H088",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1199,6 +2168,70 @@
       {
         "codigo": "GA002",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G180",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1213,8 +2246,14 @@
       "evoluiDe": "",
       "evoluiPara": 16
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "18",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H088",
+      "H089",
+      "H090"
+    ]
   },
   {
     "numero": 16,
@@ -1280,6 +2319,70 @@
       {
         "codigo": "G086",
         "nivel": 45
+      },
+      {
+        "codigo": "G162",
+        "nivel": 18
+      },
+      {
+        "codigo": "G279",
+        "nivel": 1
+      },
+      {
+        "codigo": "G283",
+        "nivel": 1
+      },
+      {
+        "codigo": "G081",
+        "nivel": 18
+      },
+      {
+        "codigo": "G082",
+        "nivel": 18
+      },
+      {
+        "codigo": "G278",
+        "nivel": 1
+      },
+      {
+        "codigo": "G280",
+        "nivel": 1
+      },
+      {
+        "codigo": "G281",
+        "nivel": 1
+      },
+      {
+        "codigo": "G286",
+        "nivel": 1
+      },
+      {
+        "codigo": "G288",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G276",
+        "nivel": 1
+      },
+      {
+        "codigo": "G277",
+        "nivel": 1
+      },
+      {
+        "codigo": "G282",
+        "nivel": 1
+      },
+      {
+        "codigo": "G291",
+        "nivel": 18
+      },
+      {
+        "codigo": "G275",
+        "nivel": 1
       }
     ],
     "statusBase": {
@@ -1294,8 +2397,13 @@
       "evoluiDe": 15,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H002",
+      "H072"
+    ]
   },
   {
     "numero": 17,
@@ -1303,7 +2411,7 @@
     "tipo": "Gelo",
     "png": "Sabrito.png",
     "descricao": "Um pequeno dente-de-sabre corajoso que não recua diante de inimigos maiores.",
-    "habilidade": "",
+    "habilidade": "H102",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1361,6 +2469,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1375,8 +2547,13 @@
       "evoluiDe": "",
       "evoluiPara": 18
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "16",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H102",
+      "H103"
+    ]
   },
   {
     "numero": 18,
@@ -1384,7 +2561,7 @@
     "tipo": "Gelo",
     "png": "Sabor.png",
     "descricao": "Um dente-de-sabre intermediário com presas e garras mais resistentes.",
-    "habilidade": "",
+    "habilidade": "H109",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1442,6 +2619,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1456,8 +2697,14 @@
       "evoluiDe": 17,
       "evoluiPara": 19
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "40",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H109",
+      "H110",
+      "H111"
+    ]
   },
   {
     "numero": 19,
@@ -1465,7 +2712,7 @@
     "tipo": "Gelo",
     "png": "Saber.png",
     "descricao": "Um poderoso dente-de-sabre de gelo, especialista em ataques físicos congelantes.",
-    "habilidade": "",
+    "habilidade": "H075",
     "golpeAssinatura": "Garras de Gelo",
     "golpes": [
       {
@@ -1523,6 +2770,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -1537,8 +2848,12 @@
       "evoluiDe": 18,
       "evoluiPara": 20
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "",
+    "raridade": "Raro",
+    "metodoEvolucao": "Ao ser derrotado",
+    "habilidades": [
+      "H075"
+    ]
   },
   {
     "numero": 20,
@@ -1546,7 +2861,7 @@
     "tipo": "Fantasma/Dark",
     "png": "",
     "descricao": "Uma forma espectral que surge após a queda de Saber para continuar sua caçada.",
-    "habilidade": "",
+    "habilidade": "H082",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1604,6 +2919,70 @@
       {
         "codigo": "G061",
         "nivel": 45
+      },
+      {
+        "codigo": "G162",
+        "nivel": 18
+      },
+      {
+        "codigo": "G279",
+        "nivel": 1
+      },
+      {
+        "codigo": "G283",
+        "nivel": 1
+      },
+      {
+        "codigo": "G278",
+        "nivel": 1
+      },
+      {
+        "codigo": "G280",
+        "nivel": 1
+      },
+      {
+        "codigo": "G281",
+        "nivel": 1
+      },
+      {
+        "codigo": "G286",
+        "nivel": 1
+      },
+      {
+        "codigo": "G288",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G276",
+        "nivel": 1
+      },
+      {
+        "codigo": "G277",
+        "nivel": 1
+      },
+      {
+        "codigo": "G282",
+        "nivel": 1
+      },
+      {
+        "codigo": "G291",
+        "nivel": 18
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G275",
+        "nivel": 1
+      },
+      {
+        "codigo": "G293",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -1618,8 +2997,13 @@
       "evoluiDe": 19,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H082",
+      "H083"
+    ]
   },
   {
     "numero": 21,
@@ -1627,7 +3011,7 @@
     "tipo": "Água/Voador",
     "png": "Cleitin.png",
     "descricao": "Uma pequena ave aquática curiosa e veloz que atravessa rios e lagos.",
-    "habilidade": "",
+    "habilidade": "H089",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1685,6 +3069,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -1699,8 +3147,14 @@
       "evoluiDe": "",
       "evoluiPara": 22
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "15",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H089",
+      "H090",
+      "H091"
+    ]
   },
   {
     "numero": 22,
@@ -1708,7 +3162,7 @@
     "tipo": "Água/Voador",
     "png": "Cleitora.png",
     "descricao": "Uma ave aquática maior e mais forte, capaz de voar por longas distâncias.",
-    "habilidade": "",
+    "habilidade": "H096",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1766,6 +3220,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -1780,8 +3298,12 @@
       "evoluiDe": 21,
       "evoluiPara": 23
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "40",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H096"
+    ]
   },
   {
     "numero": 23,
@@ -1847,6 +3369,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -1861,8 +3447,13 @@
       "evoluiDe": 22,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H003",
+      "H072"
+    ]
   },
   {
     "numero": 24,
@@ -1870,7 +3461,7 @@
     "tipo": "Planta/Voador",
     "png": "Folhi.png",
     "descricao": "Um pequeno pássaro semelhante a uma arara verde que vive nas copas das árvores.",
-    "habilidade": "",
+    "habilidade": "H110",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -1928,6 +3519,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -1942,8 +3597,14 @@
       "evoluiDe": "",
       "evoluiPara": 25
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "14",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H110",
+      "H111",
+      "H072"
+    ]
   },
   {
     "numero": 25,
@@ -1951,7 +3612,7 @@
     "tipo": "Planta/Voador",
     "png": "",
     "descricao": "Uma ave de plumagem exuberante que usa folhas e sementes como armas.",
-    "habilidade": "",
+    "habilidade": "H076",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2009,6 +3670,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -2023,8 +3748,12 @@
       "evoluiDe": 24,
       "evoluiPara": 26
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "32",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H076"
+    ]
   },
   {
     "numero": 26,
@@ -2090,6 +3819,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -2104,8 +3897,13 @@
       "evoluiDe": 25,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H004",
+      "H072"
+    ]
   },
   {
     "numero": 27,
@@ -2113,7 +3911,7 @@
     "tipo": "Aço",
     "png": "Tati.png",
     "descricao": "Um pequeno tatu-bola protegido por uma carapaça metálica resistente.",
-    "habilidade": "",
+    "habilidade": "H090",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2171,6 +3969,70 @@
       {
         "codigo": "G050",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G191",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G192",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2185,8 +4047,14 @@
       "evoluiDe": "",
       "evoluiPara": 28
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "18",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H090",
+      "H091",
+      "H092"
+    ]
   },
   {
     "numero": 28,
@@ -2194,7 +4062,7 @@
     "tipo": "Aço",
     "png": "Tatugor.png",
     "descricao": "Um tatu-bola robusto cuja defesa suporta golpes muito fortes.",
-    "habilidade": "",
+    "habilidade": "H097",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2252,6 +4120,70 @@
       {
         "codigo": "G050",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G191",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G192",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2266,8 +4198,12 @@
       "evoluiDe": 27,
       "evoluiPara": 29
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "40",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H097"
+    ]
   },
   {
     "numero": 29,
@@ -2275,7 +4211,7 @@
     "tipo": "Aço/Dragão",
     "png": "",
     "descricao": "Um verdadeiro dragão de aço com corpo inspirado em um gigantesco tatu-bola.",
-    "habilidade": "",
+    "habilidade": "H104",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2333,6 +4269,70 @@
       {
         "codigo": "G008",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G166",
+        "nivel": 18
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G191",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G167",
+        "nivel": 18
+      },
+      {
+        "codigo": "G192",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2347,8 +4347,13 @@
       "evoluiDe": 28,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H104",
+      "H105"
+    ]
   },
   {
     "numero": 30,
@@ -2356,7 +4361,7 @@
     "tipo": "Normal/Lutador",
     "png": "Lutanguinho.png",
     "descricao": "Um pequeno canguru que sonha em se tornar um grande campeão de boxe.",
-    "habilidade": "",
+    "habilidade": "H111",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2414,6 +4419,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G156",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G211",
+        "nivel": 32
+      },
+      {
+        "codigo": "G157",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -2428,8 +4497,14 @@
       "evoluiDe": "",
       "evoluiPara": 31
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "16",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H111",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 31,
@@ -2495,6 +4570,70 @@
       {
         "codigo": "GA004",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G156",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2510,8 +4649,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "5% de chance de dar um golpe que desmaia o inimigo.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H005",
+      "H072"
+    ]
   },
   {
     "numero": 32,
@@ -2519,7 +4663,7 @@
     "tipo": "Planta",
     "png": "",
     "descricao": "Um pequeno lobo de Planta cujos chifres lembram galhos de madeira.",
-    "habilidade": "",
+    "habilidade": "H084",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2577,6 +4721,70 @@
       {
         "codigo": "G049",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
+      },
+      {
+        "codigo": "G123",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2591,8 +4799,13 @@
       "evoluiDe": "",
       "evoluiPara": 33
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "18",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H084",
+      "H085"
+    ]
   },
   {
     "numero": 33,
@@ -2600,7 +4813,7 @@
     "tipo": "Planta",
     "png": "",
     "descricao": "Um lobo maior que protege seu território com força e chifres de madeira.",
-    "habilidade": "",
+    "habilidade": "H091",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2658,6 +4871,70 @@
       {
         "codigo": "G049",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
+      },
+      {
+        "codigo": "G123",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2672,8 +4949,14 @@
       "evoluiDe": 32,
       "evoluiPara": 34
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H091",
+      "H092",
+      "H093"
+    ]
   },
   {
     "numero": 34,
@@ -2681,7 +4964,7 @@
     "tipo": "Planta",
     "png": "",
     "descricao": "Um grande lobo que domina a selva e é respeitado pelas criaturas da floresta.",
-    "habilidade": "",
+    "habilidade": "H098",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2739,6 +5022,70 @@
       {
         "codigo": "G049",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
+      },
+      {
+        "codigo": "G123",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2753,8 +5100,12 @@
       "evoluiDe": 33,
       "evoluiPara": 35
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "",
+    "raridade": "Comum",
+    "metodoEvolucao": "Pedra do Desejo",
+    "habilidades": [
+      "H098"
+    ]
   },
   {
     "numero": 35,
@@ -2820,6 +5171,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
+      },
+      {
+        "codigo": "G128",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2835,8 +5250,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Todo ataque é Super-efetivo, exceto contra os tipos definidos como não atingidos pela regra.",
-    "levelevo": null,
-    "raridade": "Lendário"
+    "levelevo": "Nil",
+    "raridade": "Lendário",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H006",
+      "H072"
+    ]
   },
   {
     "numero": 36,
@@ -2844,7 +5264,7 @@
     "tipo": "Inseto",
     "png": "",
     "descricao": "Uma pequena aranha vermelha e azul que se movimenta rapidamente.",
-    "habilidade": "",
+    "habilidade": "H112",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2902,6 +5322,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G180",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2916,8 +5400,14 @@
       "evoluiDe": "",
       "evoluiPara": 37
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "20",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H112",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 37,
@@ -2925,7 +5415,7 @@
     "tipo": "Inseto/Lutador",
     "png": "",
     "descricao": "Uma aranha brava e forte que combina agilidade com golpes físicos.",
-    "habilidade": "",
+    "habilidade": "H078",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -2983,6 +5473,70 @@
       {
         "codigo": "GA006",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -2997,8 +5551,12 @@
       "evoluiDe": 36,
       "evoluiPara": 38
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "",
+    "raridade": "Raro",
+    "metodoEvolucao": "Coração Sombrio",
+    "habilidades": [
+      "H078"
+    ]
   },
   {
     "numero": 38,
@@ -3006,7 +5564,7 @@
     "tipo": "Dark/Lutador",
     "png": "",
     "descricao": "Uma aranha transformada pelo Coração Sombrio, agora muito mais poderosa.",
-    "habilidade": "",
+    "habilidade": "H085",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3064,6 +5622,70 @@
       {
         "codigo": "GA006",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3078,8 +5700,13 @@
       "evoluiDe": 37,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H085",
+      "H086"
+    ]
   },
   {
     "numero": 39,
@@ -3087,7 +5714,7 @@
     "tipo": "Água/Normal",
     "png": "",
     "descricao": "Uma pequena capivara tranquila que vive próxima à água.",
-    "habilidade": "",
+    "habilidade": "H092",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3145,6 +5772,70 @@
       {
         "codigo": "G031",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
+      },
+      {
+        "codigo": "G216",
+        "nivel": 18
+      },
+      {
+        "codigo": "G133",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G134",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3159,8 +5850,14 @@
       "evoluiDe": "",
       "evoluiPara": 40
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "22",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H092",
+      "H093",
+      "H094"
+    ]
   },
   {
     "numero": 40,
@@ -3168,7 +5865,7 @@
     "tipo": "Água",
     "png": "",
     "descricao": "Uma poderosa capivara especialista em ambientes aquáticos.",
-    "habilidade": "",
+    "habilidade": "H099",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3226,6 +5923,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
+      },
+      {
+        "codigo": "G216",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3240,8 +6001,12 @@
       "evoluiDe": 39,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H099"
+    ]
   },
   {
     "numero": 41,
@@ -3249,7 +6014,7 @@
     "tipo": "Venenoso",
     "png": "",
     "descricao": "Uma pequena mamba negra extremamente ágil e veloz.",
-    "habilidade": "",
+    "habilidade": "H106",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3307,6 +6072,70 @@
       {
         "codigo": "GA004",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3321,8 +6150,13 @@
       "evoluiDe": "",
       "evoluiPara": 42
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "",
+    "raridade": "Comum",
+    "metodoEvolucao": "Coração Sombrio",
+    "habilidades": [
+      "H106",
+      "H107"
+    ]
   },
   {
     "numero": 42,
@@ -3330,7 +6164,7 @@
     "tipo": "Dark/Aço",
     "png": "",
     "descricao": "Uma mamba negra fortalecida pelo Coração Sombrio, ainda mais perigosa.",
-    "habilidade": "",
+    "habilidade": "H072",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3388,6 +6222,70 @@
       {
         "codigo": "GA003",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G099",
+        "nivel": 18
+      },
+      {
+        "codigo": "G100",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G097",
+        "nivel": 1
+      },
+      {
+        "codigo": "G098",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3402,8 +6300,14 @@
       "evoluiDe": 41,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H072",
+      "H073",
+      "H074"
+    ]
   },
   {
     "numero": 43,
@@ -3411,7 +6315,7 @@
     "tipo": "Normal/Voador",
     "png": "",
     "descricao": "Um pequeno flamingo que sonha em se tornar o rei.",
-    "habilidade": "",
+    "habilidade": "H079",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3469,6 +6373,70 @@
       {
         "codigo": "G032",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G176",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G177",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G224",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3483,8 +6451,12 @@
       "evoluiDe": "",
       "evoluiPara": 44
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "20",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H079"
+    ]
   },
   {
     "numero": 44,
@@ -3550,6 +6522,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3565,8 +6601,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Intimida o adversário, reduzindo seu Ataque em 35%.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H007",
+      "H072"
+    ]
   },
   {
     "numero": 45,
@@ -3574,7 +6615,7 @@
     "tipo": "Normal/Voador",
     "png": "",
     "descricao": "Um pequeno morcego que voa silenciosamente durante a noite.",
-    "habilidade": "",
+    "habilidade": "H093",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3632,6 +6673,70 @@
       {
         "codigo": "G032",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G176",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G177",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G224",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3646,8 +6751,14 @@
       "evoluiDe": "",
       "evoluiPara": 46
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "24",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H093",
+      "H094",
+      "H095"
+    ]
   },
   {
     "numero": 46,
@@ -3713,6 +6824,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -3728,8 +6903,13 @@
       "evoluiPara": 47
     },
     "habilidadeInfo": "Deixa o oponente cego por 2 rounds; ele tem 50% de chance de acertar o golpe.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "40",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H008",
+      "H072"
+    ]
   },
   {
     "numero": 47,
@@ -3795,6 +6975,70 @@
       {
         "codigo": "G037",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G215",
+        "nivel": 32
+      },
+      {
+        "codigo": "G160",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3810,8 +7054,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Cegueira. Sugar tem 115 de Poder, é Dark e recupera 15% do dano causado em HP.",
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H008",
+      "H072"
+    ]
   },
   {
     "numero": 48,
@@ -3819,7 +7068,7 @@
     "tipo": "Inseto",
     "png": "",
     "descricao": "Um besouro-bombardeiro especializado em lançar uma poderosa explosão.",
-    "habilidade": "",
+    "habilidade": "H073",
     "golpeAssinatura": "Bomba",
     "golpes": [
       {
@@ -3877,6 +7126,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G179",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G178",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G180",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3891,8 +7204,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H073",
+      "H074",
+      "H075"
+    ]
   },
   {
     "numero": 49,
@@ -3900,7 +7219,7 @@
     "tipo": "Fada/Voador",
     "png": "",
     "descricao": "Uma sábia lendária e rainha das florestas, responsável pelos animais da mata.",
-    "habilidade": "",
+    "habilidade": "H004",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -3958,6 +7277,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G182",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G183",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G196",
+        "nivel": 18
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G176",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -3972,9 +7355,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
+    "levelevo": "Nil",
     "habilidadeInfo": "No primeiro turno, 80% de chance de o adversário não atacar por ficar encantado.",
-    "raridade": "Lendário"
+    "raridade": "Lendário",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H004",
+      "H072"
+    ]
   },
   {
     "numero": 50,
@@ -3982,8 +7370,8 @@
     "tipo": "Dragão",
     "png": "",
     "descricao": "O Deus Dragão, considerado um dos Monstros mais poderosos de todos.",
-    "habilidade": "H007",
-    "golpeAssinatura": "Nil",
+    "habilidade": "H028",
+    "golpeAssinatura": "GA007",
     "golpes": [
       {
         "codigo": "G085",
@@ -4040,6 +7428,70 @@
       {
         "codigo": "G014",
         "nivel": 45
+      },
+      {
+        "codigo": "GA007",
+        "nivel": 1
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G166",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G167",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4054,9 +7506,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "habilidadeInfo": "Intimida o adversário, reduzindo seu Ataque em 35%.",
-    "levelevo": null,
-    "raridade": "Lendário"
+    "habilidadeInfo": "BattleForm: ao derrotar o adversário, transforma a aparência/tipagem para a forma derrotada e recebe +50% de Ataque e Ataque Especial.",
+    "levelevo": "Nil",
+    "raridade": "Lendário",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H028",
+      "H112"
+    ]
   },
   {
     "numero": 51,
@@ -4122,6 +7579,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G137",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G136",
+        "nivel": 1
+      },
+      {
+        "codigo": "G140",
+        "nivel": 18
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4136,8 +7657,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Lendário"
+    "levelevo": "Nil",
+    "raridade": "Lendário",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H003",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 52,
@@ -4145,7 +7672,7 @@
     "tipo": "Terra/Normal",
     "png": "",
     "descricao": "Um pequeno monstro terrestre que ainda está aprendendo a sobreviver.",
-    "habilidade": "",
+    "habilidade": "H101",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -4203,6 +7730,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G152",
+        "nivel": 32
+      },
+      {
+        "codigo": "G153",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G229",
+        "nivel": 18
+      },
+      {
+        "codigo": "G238",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -4217,8 +7808,12 @@
       "evoluiDe": "",
       "evoluiPara": 53
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": 28,
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H101"
+    ]
   },
   {
     "numero": 53,
@@ -4284,6 +7879,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4299,8 +7958,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Não é afetado por Cegueira e aumenta a Defesa em 50% ao entrar em campo.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H010",
+      "H072"
+    ]
   },
   {
     "numero": 54,
@@ -4308,7 +7972,7 @@
     "tipo": "Terra",
     "png": "",
     "descricao": "Um pequeno dragão-de-komodo ágil que ainda está aprendendo a caçar.",
-    "habilidade": "",
+    "habilidade": "H074",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -4366,6 +8030,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4380,8 +8108,14 @@
       "evoluiDe": "",
       "evoluiPara": 55
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "18",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H074",
+      "H075",
+      "H076"
+    ]
   },
   {
     "numero": 55,
@@ -4447,6 +8181,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4462,8 +8260,13 @@
       "evoluiPara": 56
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "32",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H011",
+      "H072"
+    ]
   },
   {
     "numero": 56,
@@ -4529,6 +8332,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4544,8 +8411,13 @@
       "evoluiPara": 57
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "40",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H011",
+      "H072"
+    ]
   },
   {
     "numero": 57,
@@ -4611,6 +8483,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G166",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G167",
+        "nivel": 18
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
+      },
+      {
+        "codigo": "G151",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4626,8 +8562,14 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Com pouco HP, aumenta Ataque e Defesa; ao derrotar um inimigo, o Ataque aumenta em 35%.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H012",
+      "H112",
+      "H072"
+    ]
   },
   {
     "numero": 58,
@@ -4693,6 +8635,70 @@
       {
         "codigo": "G103",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G172",
+        "nivel": 32
+      },
+      {
+        "codigo": "G204",
+        "nivel": 32
+      },
+      {
+        "codigo": "G173",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G222",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -4708,8 +8714,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Não recebe dano de golpes de Água.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H013",
+      "H072"
+    ]
   },
   {
     "numero": 59,
@@ -4717,7 +8728,7 @@
     "tipo": "Elétrico",
     "png": "",
     "descricao": "Um pequeno gato elétrico extremamente rápido e ágil.",
-    "habilidade": "",
+    "habilidade": "H109",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -4775,6 +8786,70 @@
       {
         "codigo": "G116",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G137",
+        "nivel": 18
+      },
+      {
+        "codigo": "G136",
+        "nivel": 1
+      },
+      {
+        "codigo": "G140",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G202",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G138",
+        "nivel": 32
+      },
+      {
+        "codigo": "G139",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G231",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -4787,10 +8862,20 @@
     },
     "evolucao": {
       "evoluiDe": "",
-      "evoluiPara": "60 ou 61"
+      "evoluiPara": "",
+      "evolucoesPossiveis": [
+        60,
+        61
+      ],
+      "chanceCada": 0.5
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "25",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H109",
+      "H110"
+    ]
   },
   {
     "numero": 60,
@@ -4856,6 +8941,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G137",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G136",
+        "nivel": 1
+      },
+      {
+        "codigo": "G140",
+        "nivel": 18
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4868,11 +9017,17 @@
     },
     "evolucao": {
       "evoluiDe": 59,
-      "evoluiPara": 61
+      "evoluiPara": ""
     },
     "habilidadeInfo": "Aumenta o Ataque em 50% quando derrota um inimigo.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H011",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 61,
@@ -4938,6 +9093,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G137",
+        "nivel": 18
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G136",
+        "nivel": 1
+      },
+      {
+        "codigo": "G140",
+        "nivel": 18
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -4949,12 +9168,17 @@
       "velocidade": 100
     },
     "evolucao": {
-      "evoluiDe": 60,
+      "evoluiDe": 59,
       "evoluiPara": ""
     },
     "habilidadeInfo": "50% de chance de voltar com 1 HP quando seria derrotado, até 9 vezes.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H014",
+      "H072"
+    ]
   },
   {
     "numero": 62,
@@ -4962,7 +9186,7 @@
     "tipo": "Normal",
     "png": "",
     "descricao": "Um pequeno gorila de espécie rara que começa a descobrir sua força.",
-    "habilidade": "",
+    "habilidade": "H089",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5020,6 +9244,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
+      },
+      {
+        "codigo": "G247",
+        "nivel": 18
+      },
+      {
+        "codigo": "G249",
+        "nivel": 18
+      },
+      {
+        "codigo": "G260",
+        "nivel": 18
+      },
+      {
+        "codigo": "G264",
+        "nivel": 18
+      },
+      {
+        "codigo": "G297",
+        "nivel": 1
+      },
+      {
+        "codigo": "G220",
+        "nivel": 42
       }
     ],
     "statusBase": {
@@ -5035,7 +9323,12 @@
       "evoluiPara": 63
     },
     "levelevo": 25,
-    "raridade": "Comum"
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H089",
+      "H090"
+    ]
   },
   {
     "numero": 63,
@@ -5043,7 +9336,7 @@
     "tipo": "Lutador",
     "png": "",
     "descricao": "Um gorila enorme e poderoso que usa punhos e peito para intimidar.",
-    "habilidade": "",
+    "habilidade": "H096",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5101,6 +9394,70 @@
       {
         "codigo": "GA004",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G156",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5113,10 +9470,21 @@
     },
     "evolucao": {
       "evoluiDe": 62,
-      "evoluiPara": "64 ou 65"
+      "evoluiPara": "",
+      "evolucoesPossiveis": [
+        64,
+        65
+      ],
+      "chanceCada": 0.5
     },
     "levelevo": 45,
-    "raridade": "Comum"
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H096",
+      "H097",
+      "H098"
+    ]
   },
   {
     "numero": 64,
@@ -5182,6 +9550,70 @@
       {
         "codigo": "GA004",
         "nivel": 45
+      },
+      {
+        "codigo": "G150",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G206",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -5194,11 +9626,16 @@
     },
     "evolucao": {
       "evoluiDe": 63,
-      "evoluiPara": 65
+      "evoluiPara": ""
     },
     "habilidadeInfo": "Quanto menor o HP, maior o Ataque; o bônus é limitado a 100%.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H015",
+      "H112"
+    ]
   },
   {
     "numero": 65,
@@ -5264,6 +9701,70 @@
       {
         "codigo": "GA002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5275,12 +9776,17 @@
       "velocidade": 105
     },
     "evolucao": {
-      "evoluiDe": 64,
+      "evoluiDe": 63,
       "evoluiPara": ""
     },
     "habilidadeInfo": "Fúria Colossal; quanto menor o HP, maior o Ataque, limitada a 100%. Rajada Dark tem 120 de Poder.",
-    "levelevo": null,
-    "raridade": "Épico"
+    "levelevo": "Nil",
+    "raridade": "Épico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H015",
+      "H072"
+    ]
   },
   {
     "numero": 66,
@@ -5288,7 +9794,7 @@
     "tipo": "Pedra/Psíquico",
     "png": "",
     "descricao": "Uma pedra vinda da Lua que ganhou consciência e poderes psíquicos.",
-    "habilidade": "",
+    "habilidade": "H076",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5346,6 +9852,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G146",
+        "nivel": 1
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G147",
+        "nivel": 18
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G213",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5360,8 +9930,14 @@
       "evoluiDe": "",
       "evoluiPara": 67
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "30",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H076",
+      "H077",
+      "H078"
+    ]
   },
   {
     "numero": 67,
@@ -5427,6 +10003,70 @@
       {
         "codigo": "G007",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G146",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G147",
+        "nivel": 18
+      },
+      {
+        "codigo": "G213",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5442,8 +10082,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Transforma o campo em Noite e deixa golpes Dark 50% mais fortes.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H016",
+      "H072"
+    ]
   },
   {
     "numero": 68,
@@ -5451,7 +10096,7 @@
     "tipo": "Gelo",
     "png": "",
     "descricao": "Uma pequena coruja branca que se esconde na neve.",
-    "habilidade": "",
+    "habilidade": "H090",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5509,6 +10154,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5524,7 +10233,12 @@
       "evoluiPara": 69
     },
     "levelevo": 25,
-    "raridade": "Comum"
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H090",
+      "H091"
+    ]
   },
   {
     "numero": 69,
@@ -5532,7 +10246,7 @@
     "tipo": "Gelo/Voador",
     "png": "",
     "descricao": "Uma coruja cujas asas cresceram e cujas penas começaram a formar gelo.",
-    "habilidade": "",
+    "habilidade": "H097",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5590,6 +10304,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5605,7 +10383,13 @@
       "evoluiPara": 70
     },
     "levelevo": 42,
-    "raridade": "Comum"
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H097",
+      "H098",
+      "H099"
+    ]
   },
   {
     "numero": 70,
@@ -5671,6 +10455,70 @@
       {
         "codigo": "G002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G142",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G175",
+        "nivel": 18
+      },
+      {
+        "codigo": "G141",
+        "nivel": 1
+      },
+      {
+        "codigo": "G174",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G145",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G203",
+        "nivel": 18
+      },
+      {
+        "codigo": "G143",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5686,8 +10534,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Ao entrar em batalha, cria neve por alguns turnos.",
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "Nil",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H017",
+      "H072"
+    ]
   },
   {
     "numero": 71,
@@ -5695,7 +10548,7 @@
     "tipo": "Planta",
     "png": "",
     "descricao": "Um pequeno guardião da mata que protege animais menores.",
-    "habilidade": "",
+    "habilidade": "H111",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5753,6 +10606,70 @@
       {
         "codigo": "G049",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G125",
+        "nivel": 18
+      },
+      {
+        "codigo": "G210",
+        "nivel": 18
+      },
+      {
+        "codigo": "G123",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5767,8 +10684,13 @@
       "evoluiDe": "",
       "evoluiPara": 72
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "30",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H111",
+      "H112"
+    ]
   },
   {
     "numero": 72,
@@ -5834,6 +10756,70 @@
       {
         "codigo": "G074",
         "nivel": 45
+      },
+      {
+        "codigo": "G121",
+        "nivel": 18
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G122",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5848,8 +10834,14 @@
       "evoluiDe": 71,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H004",
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 73,
@@ -5857,7 +10849,7 @@
     "tipo": "Fogo",
     "png": "",
     "descricao": "Uma pequena serpente flamejante que mantém uma chama constante ao redor do corpo.",
-    "habilidade": "",
+    "habilidade": "H084",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -5915,6 +10907,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
+      },
+      {
+        "codigo": "G128",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -5929,8 +10985,12 @@
       "evoluiDe": "",
       "evoluiPara": 74
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "32",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H084"
+    ]
   },
   {
     "numero": 74,
@@ -5996,6 +11056,70 @@
       {
         "codigo": "G032",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G166",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G167",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -6011,8 +11135,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Golpes têm chance de queimar o adversário.",
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H018",
+      "H072"
+    ]
   },
   {
     "numero": 75,
@@ -6020,7 +11149,7 @@
     "tipo": "Fogo",
     "png": "",
     "descricao": "Um pequeno potro amaldiçoado cujos cascos produzem brasas.",
-    "habilidade": "",
+    "habilidade": "H098",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6078,6 +11207,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G130",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G201",
+        "nivel": 32
+      },
+      {
+        "codigo": "G128",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6092,8 +11285,14 @@
       "evoluiDe": "",
       "evoluiPara": 76
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "32",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H098",
+      "H099",
+      "H100"
+    ]
   },
   {
     "numero": 76,
@@ -6159,6 +11358,70 @@
       {
         "codigo": "G074",
         "nivel": 45
+      },
+      {
+        "codigo": "G162",
+        "nivel": 18
+      },
+      {
+        "codigo": "G279",
+        "nivel": 1
+      },
+      {
+        "codigo": "G283",
+        "nivel": 1
+      },
+      {
+        "codigo": "G278",
+        "nivel": 1
+      },
+      {
+        "codigo": "G280",
+        "nivel": 1
+      },
+      {
+        "codigo": "G281",
+        "nivel": 1
+      },
+      {
+        "codigo": "G286",
+        "nivel": 1
+      },
+      {
+        "codigo": "G288",
+        "nivel": 1
+      },
+      {
+        "codigo": "G127",
+        "nivel": 18
+      },
+      {
+        "codigo": "G276",
+        "nivel": 1
+      },
+      {
+        "codigo": "G277",
+        "nivel": 1
+      },
+      {
+        "codigo": "G282",
+        "nivel": 1
+      },
+      {
+        "codigo": "G291",
+        "nivel": 18
+      },
+      {
+        "codigo": "G275",
+        "nivel": 1
+      },
+      {
+        "codigo": "G293",
+        "nivel": 18
+      },
+      {
+        "codigo": "G126",
+        "nivel": 1
       }
     ],
     "statusBase": {
@@ -6174,8 +11437,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Se atacar primeiro e o adversário estiver com menos de 50% de HP, aumenta o poder de ataque.",
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H019",
+      "H072"
+    ]
   },
   {
     "numero": 77,
@@ -6183,7 +11451,7 @@
     "tipo": "Dark",
     "png": "",
     "descricao": "Um jovem lobo que fica mais agressivo durante a noite.",
-    "habilidade": "",
+    "habilidade": "H072",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6241,6 +11509,70 @@
       {
         "codigo": "G037",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G215",
+        "nivel": 32
+      },
+      {
+        "codigo": "G160",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6255,8 +11587,13 @@
       "evoluiDe": "",
       "evoluiPara": 78
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "35",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 78,
@@ -6322,6 +11659,70 @@
       {
         "codigo": "GA006",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6337,8 +11738,14 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Abaixo de 25% de HP, entra no Estado Lunar: +100% de Ataque e -90% de Defesa.",
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H020",
+      "H112",
+      "H072"
+    ]
   },
   {
     "numero": 79,
@@ -6346,7 +11753,7 @@
     "tipo": "Água",
     "png": "",
     "descricao": "Um pequeno boto curioso que vive nos rios e segue barcos.",
-    "habilidade": "",
+    "habilidade": "H085",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6404,6 +11811,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G135",
+        "nivel": 18
+      },
+      {
+        "codigo": "G216",
+        "nivel": 18
       }
     ],
     "statusBase": {
@@ -6418,8 +11889,12 @@
       "evoluiDe": "",
       "evoluiPara": 80
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "35",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H085"
+    ]
   },
   {
     "numero": 80,
@@ -6485,6 +11960,70 @@
       {
         "codigo": "GA005",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G132",
+        "nivel": 18
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G131",
+        "nivel": 1
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G199",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6500,8 +12039,13 @@
       "evoluiPara": ""
     },
     "habilidadeInfo": "Ao derrotar um adversário, transforma-se nele, herdando aparência e tipagem, mas mantém seus próprios golpes.",
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H029",
+      "H072"
+    ]
   },
   {
     "numero": 81,
@@ -6509,7 +12053,7 @@
     "tipo": "Psíquico/Dark",
     "png": "Cuca.jpeg",
     "descricao": "Uma criatura mítica envolta em mistério, capaz de dominar a mente e as sombras.",
-    "habilidade": "",
+    "habilidade": "H099",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6567,6 +12111,70 @@
       {
         "codigo": "GA002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6581,8 +12189,14 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H099",
+      "H100",
+      "H101"
+    ]
   },
   {
     "numero": 82,
@@ -6590,7 +12204,7 @@
     "tipo": "Vento/Lutador",
     "png": "Saci.jpeg",
     "descricao": "Um espírito mítico veloz e travesso que domina os ventos e luta com força surpreendente.",
-    "habilidade": "",
+    "habilidade": "H106",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6648,6 +12262,70 @@
       {
         "codigo": "G001",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
+      },
+      {
+        "codigo": "G156",
+        "nivel": 32
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6662,8 +12340,12 @@
       "evoluiDe": "",
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Mítico"
+    "levelevo": "Nil",
+    "raridade": "Mítico",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H106"
+    ]
   },
   {
     "numero": 83,
@@ -6671,7 +12353,7 @@
     "tipo": "Normal",
     "png": "Cabrito.jpeg",
     "descricao": "Um cabrito comum que pode seguir um de dois caminhos de evolução diferentes.",
-    "habilidade": "",
+    "habilidade": "H072",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6729,6 +12411,70 @@
       {
         "codigo": "G055",
         "nivel": 45
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G198",
+        "nivel": 32
+      },
+      {
+        "codigo": "G207",
+        "nivel": 32
+      },
+      {
+        "codigo": "G221",
+        "nivel": 18
+      },
+      {
+        "codigo": "G225",
+        "nivel": 18
+      },
+      {
+        "codigo": "G239",
+        "nivel": 18
+      },
+      {
+        "codigo": "G247",
+        "nivel": 18
+      },
+      {
+        "codigo": "G249",
+        "nivel": 18
+      },
+      {
+        "codigo": "G260",
+        "nivel": 18
+      },
+      {
+        "codigo": "G264",
+        "nivel": 18
+      },
+      {
+        "codigo": "G297",
+        "nivel": 1
+      },
+      {
+        "codigo": "G220",
+        "nivel": 42
       }
     ],
     "statusBase": {
@@ -6748,8 +12494,13 @@
       ],
       "chanceCada": 0.5
     },
-    "levelevo": null,
-    "raridade": "Comum"
+    "levelevo": "30",
+    "raridade": "Comum",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H072",
+      "H073"
+    ]
   },
   {
     "numero": 84,
@@ -6757,7 +12508,7 @@
     "tipo": "Psíquico/Dark",
     "png": "La Pulga.jpeg",
     "descricao": "A forma final psíquica e sombria de Cabrito, extremamente poderosa e veloz.",
-    "habilidade": "",
+    "habilidade": "H079",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6815,6 +12566,70 @@
       {
         "codigo": "GA002",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G158",
+        "nivel": 1
+      },
+      {
+        "codigo": "G170",
+        "nivel": 1
+      },
+      {
+        "codigo": "G200",
+        "nivel": 18
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G159",
+        "nivel": 18
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G171",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G273",
+        "nivel": 32
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6829,8 +12644,14 @@
       "evoluiDe": 83,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H079",
+      "H080",
+      "H081"
+    ]
   },
   {
     "numero": 85,
@@ -6838,7 +12659,7 @@
     "tipo": "Lutador/Aço",
     "png": "El Bicho.jpeg",
     "descricao": "Uma forma final brutal de Cabrito que concentra seu poder no ataque físico.",
-    "habilidade": "",
+    "habilidade": "H086",
     "golpeAssinatura": "Nil",
     "golpes": [
       {
@@ -6896,6 +12717,70 @@
       {
         "codigo": "G073",
         "nivel": 45
+      },
+      {
+        "codigo": "G003",
+        "nivel": 18
+      },
+      {
+        "codigo": "G004",
+        "nivel": 18
+      },
+      {
+        "codigo": "G294",
+        "nivel": 1
+      },
+      {
+        "codigo": "G296",
+        "nivel": 1
+      },
+      {
+        "codigo": "G154",
+        "nivel": 1
+      },
+      {
+        "codigo": "G190",
+        "nivel": 1
+      },
+      {
+        "codigo": "G295",
+        "nivel": 1
+      },
+      {
+        "codigo": "G001",
+        "nivel": 1
+      },
+      {
+        "codigo": "G002",
+        "nivel": 1
+      },
+      {
+        "codigo": "G155",
+        "nivel": 18
+      },
+      {
+        "codigo": "G195",
+        "nivel": 18
+      },
+      {
+        "codigo": "G218",
+        "nivel": 18
+      },
+      {
+        "codigo": "G191",
+        "nivel": 18
+      },
+      {
+        "codigo": "G212",
+        "nivel": 18
+      },
+      {
+        "codigo": "G005",
+        "nivel": 32
+      },
+      {
+        "codigo": "G006",
+        "nivel": 32
       }
     ],
     "statusBase": {
@@ -6910,7 +12795,11 @@
       "evoluiDe": 83,
       "evoluiPara": ""
     },
-    "levelevo": null,
-    "raridade": "Raro"
+    "levelevo": "Nil",
+    "raridade": "Raro",
+    "metodoEvolucao": "",
+    "habilidades": [
+      "H086"
+    ]
   }
 ]

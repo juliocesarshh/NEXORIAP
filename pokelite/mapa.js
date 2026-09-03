@@ -33,8 +33,8 @@ const PARTES_ROGUELIKE = [
 ];
 
 const PESOS_TIPO = [
-  ["captura", 22], ["matinho", 26], ["itens", 14], ["treinador", 16],
-  ["casinha", 10], ["evento", 10], ["capturaRara", 2],
+  ["captura", 23], ["matinho", 27], ["itens", 14], ["treinador", 16],
+  ["casinha", 8], ["evento", 11], ["capturaRara", 1],
 ];
 
 function sortearTipoNo() {

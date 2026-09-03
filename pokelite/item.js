@@ -222,7 +222,8 @@ function evoluirMonstroComItem(monstro, itemCodigo) {
   monstro.nome = destino.nome;
   monstro.tipo = destino.tipo;
   monstro.png = destino.png;
-  monstro.habilidade = destino.habilidade || null;
+  monstro.habilidadesDisponiveis = Array.isArray(destino.habilidades) ? [...destino.habilidades] : (destino.habilidade ? [destino.habilidade] : []);
+  monstro.habilidade = typeof escolherHabilidadeAleatoria === "function" ? escolherHabilidadeAleatoria(destino) : (destino.habilidade || null);
   monstro.statusBase = destino.statusBase;
   monstro.golpesConhecidos = selecionarQuatroGolpes((destino.golpes || []).filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo), destino);
   monstro.item = null;

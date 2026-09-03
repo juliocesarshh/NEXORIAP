@@ -10,8 +10,8 @@
     },
     "evolucoes": [
       {
-        "de": "Lingard",
-        "para": "Sharlong"
+        "de": "Lobosselva",
+        "para": "Loflame"
       }
     ],
     "png": "Pedra Do Desejo.png"
@@ -40,6 +40,10 @@
       {
         "de": "Lutaranha",
         "para": "Venaranha"
+      },
+      {
+        "de": "Manbi",
+        "para": "Black-Manbi"
       }
     ],
     "png": "Coração Sombrio.png"

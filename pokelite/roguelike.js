@@ -56,22 +56,26 @@ function selecionarQuatroGolpes(codigos, base) {
   return escolhidos.slice(0,4).map(x=>x.codigo);
 }
 window.selecionarQuatroGolpes=selecionarQuatroGolpes;
+function escolherHabilidadeAleatoria(base) {
+  const pool = Array.isArray(base?.habilidades) && base.habilidades.length ? base.habilidades : (base?.habilidade ? [base.habilidade] : []);
+  if (!pool.length) return null;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+window.escolherHabilidadeAleatoria = escolherHabilidadeAleatoria;
 
-// Evolução automática por nível. Quando o arquivo de dados não informa um
-// nível específico, usamos a progressão padrão da NEXORIA: primeira evolução
-// no Lv.20 e segunda/final no Lv.40. Evoluções alternativas (ex.: Cabrito)
-// continuam sendo sorteadas entre as formas possíveis.
-const NIVEL_EVOLUCAO_PADRAO_PRIMEIRA = 20;
-const NIVEL_EVOLUCAO_PADRAO_SEGUNDA = 40;
 
+// Evolução automática por nível. O nível precisa estar explicitamente
+// definido no MonsterPedia. Evoluções por item/condição especial não acontecem
+// automaticamente por nível. Assim, nenhum nível é inventado pelo código.
 function numeroProximaEvolucaoPorNivel(base, nivel) {
   const evo = base?.evolucao || {};
+  if (base?.metodoEvolucao && base.metodoEvolucao !== 'nivel') return null;
+  const nivelEvo = Number(base?.levelevo);
+  if (!Number.isFinite(nivelEvo) || nivelEvo <= 0) return null;
   if (Array.isArray(evo.evolucoesPossiveis) && evo.evolucoesPossiveis.length) {
-    const nivelEvo = Number(base.levelevo) || NIVEL_EVOLUCAO_PADRAO_PRIMEIRA;
     return nivel >= nivelEvo ? evo.evolucoesPossiveis[Math.floor(Math.random() * evo.evolucoesPossiveis.length)] : null;
   }
   if (!evo.evoluiPara) return null;
-  const nivelEvo = Number(base.levelevo) || (evo.evoluiDe ? NIVEL_EVOLUCAO_PADRAO_SEGUNDA : NIVEL_EVOLUCAO_PADRAO_PRIMEIRA);
   return nivel >= nivelEvo ? Number(evo.evoluiPara) : null;
 }
 
@@ -91,7 +95,8 @@ function aplicarEvolucaoDeNivel(monstro) {
   monstro.nome = destino.nome;
   monstro.tipo = destino.tipo;
   monstro.png = destino.png;
-  monstro.habilidade = destino.habilidade || null;
+  monstro.habilidadesDisponiveis = Array.isArray(destino.habilidades) ? [...destino.habilidades] : (destino.habilidade ? [destino.habilidade] : []);
+  monstro.habilidade = escolherHabilidadeAleatoria(destino);
   monstro.statusBase = destino.statusBase;
   monstro.golpesConhecidos = selecionarQuatroGolpes((destino.golpes || [])
     .filter((g) => g.nivel <= monstro.nivel)
@@ -166,7 +171,7 @@ function prepararTimeParaNovaBatalha() {
     monstro.nome = base.nome;
     monstro.tipo = base.tipo;
     monstro.png = base.png;
-    monstro.habilidade = base.habilidade || null;
+    monstro.habilidade = monstro.habilidade || escolherHabilidadeAleatoria(base);
     monstro.statusBase = base.statusBase;
     monstro.golpesConhecidos = selecionarQuatroGolpes((base.golpes || [])
       .filter((g) => g.nivel <= monstro.nivel).map((g) => g.codigo), base);
@@ -216,7 +221,8 @@ function criarInstanciaMonstro(numero, nivel, natureza = null) {
     nome: base.nome,
     tipo: base.tipo,
     png: base.png,
-    habilidade: base.habilidade || null,
+    habilidadesDisponiveis: Array.isArray(base.habilidades) ? [...base.habilidades] : (base.habilidade ? [base.habilidade] : []),
+    habilidade: escolherHabilidadeAleatoria(base),
     item: base.item || null,
     nivel: nivelFinal,
     natureza: naturezaFinal,

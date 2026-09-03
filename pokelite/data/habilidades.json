@@ -17,7 +17,7 @@
   {
     "codigo": "H004",
     "nome": "Mais que Nada",
-    "descricao": "Sem efeito definido."
+    "descricao": "Ao entrar, transforma o campo em Campo de Flores. Em Sabic, também concede +35% de Ataque e +35% de Ataque Especial."
   },
   {
     "codigo": "H005",
@@ -143,5 +143,420 @@
     "codigo": "H029",
     "nome": "Boto Rosa",
     "descricao": "Ao derrotar o adversário, transforma-se nele, herdando aparência e tipagem, mas mantém os próprios golpes."
+  },
+  {
+    "codigo": "H030",
+    "nome": "The World",
+    "descricao": "Ao entrar, paralisa o oponente por 1 turno."
+  },
+  {
+    "codigo": "H031",
+    "nome": "Made in Heaven",
+    "descricao": "Ao entrar, recebe +50% de Velocidade e acelera os efeitos de campo/clima."
+  },
+  {
+    "codigo": "H032",
+    "nome": "King Crimson",
+    "descricao": "20% de chance de ignorar completamente um ataque recebido."
+  },
+  {
+    "codigo": "H033",
+    "nome": "Crazy Diamond",
+    "descricao": "Ao ficar abaixo de 50% do HP, recupera 25% do HP máximo uma vez por batalha."
+  },
+  {
+    "codigo": "H034",
+    "nome": "Golden Experience",
+    "descricao": "Recupera 5% do HP máximo ao fim de cada turno."
+  },
+  {
+    "codigo": "H035",
+    "nome": "One For All",
+    "descricao": "Após derrotar um inimigo, recebe +20% de Ataque."
+  },
+  {
+    "codigo": "H036",
+    "nome": "All For One",
+    "descricao": "Ao derrotar um inimigo, rouba um bônus de atributo dele, se houver."
+  },
+  {
+    "codigo": "H037",
+    "nome": "Gear Fifth",
+    "descricao": "Abaixo de 30% do HP, recebe +50% em todos os atributos por 3 turnos."
+  },
+  {
+    "codigo": "H038",
+    "nome": "Haki do Rei",
+    "descricao": "20% de chance de fazer o alvo hesitar e perder o próximo turno ao acertar."
+  },
+  {
+    "codigo": "H039",
+    "nome": "Bankai",
+    "descricao": "Abaixo de 50% do HP, seus golpes recebem +50% de poder."
+  },
+  {
+    "codigo": "H040",
+    "nome": "Getsuga Tenshou",
+    "descricao": "Golpes Dark recebem +25% de dano."
+  },
+  {
+    "codigo": "H041",
+    "nome": "Sharingan",
+    "descricao": "25% de chance de copiar o último golpe usado pelo inimigo."
+  },
+  {
+    "codigo": "H042",
+    "nome": "Mangekyō",
+    "descricao": "Ignora proteção do alvo."
+  },
+  {
+    "codigo": "H043",
+    "nome": "Modo Sábio",
+    "descricao": "Recebe +25% de Ataque Especial e Defesa Especial ao entrar."
+  },
+  {
+    "codigo": "H044",
+    "nome": "Instinto Superior",
+    "descricao": "25% de chance de esquivar de um ataque recebido."
+  },
+  {
+    "codigo": "H045",
+    "nome": "Kaioken",
+    "descricao": "Recebe +50% de Ataque e Velocidade, mas perde 5% do HP máximo por turno."
+  },
+  {
+    "codigo": "H046",
+    "nome": "Super Saiyajin",
+    "descricao": "Abaixo de 50% do HP, recebe +40% de Ataque."
+  },
+  {
+    "codigo": "H047",
+    "nome": "Rinnegan",
+    "descricao": "25% de chance de aprender temporariamente um golpe do inimigo ao ser atingido."
+  },
+  {
+    "codigo": "H048",
+    "nome": "Hadouken",
+    "descricao": "Golpes Lutador recebem +25% de dano."
+  },
+  {
+    "codigo": "H049",
+    "nome": "Shoryuken",
+    "descricao": "Golpes com prioridade recebem +30% de dano."
+  },
+  {
+    "codigo": "H050",
+    "nome": "Fatality",
+    "descricao": "Quando o alvo fica com 10% ou menos do HP máximo, o próximo acerto garante o nocaute e exibe FATALITY."
+  },
+  {
+    "codigo": "H051",
+    "nome": "Flawless Victory",
+    "descricao": "Se terminar uma batalha sem perder HP, recebe +20% em todos os atributos."
+  },
+  {
+    "codigo": "H052",
+    "nome": "Varia Suit",
+    "descricao": "Reduz em 30% o dano recebido de Fogo, Gelo e Elétrico."
+  },
+  {
+    "codigo": "H053",
+    "nome": "Master Sword",
+    "descricao": "Com HP cheio, golpes Aço recebem +25% de dano."
+  },
+  {
+    "codigo": "H054",
+    "nome": "Triforce",
+    "descricao": "Ao entrar, recebe +50% em um atributo aleatório."
+  },
+  {
+    "codigo": "H055",
+    "nome": "Power of Friendship",
+    "descricao": "Recebe um bônus de dano de 10% para cada aliado vivo além de si, até +50%."
+  },
+  {
+    "codigo": "H056",
+    "nome": "Plot Armor",
+    "descricao": "10% de chance de sobreviver a um golpe que o derrotaria, ficando com 1 HP."
+  },
+  {
+    "codigo": "H057",
+    "nome": "Respawn",
+    "descricao": "Uma vez por batalha, ao ser derrotado, revive com 25% do HP máximo."
+  },
+  {
+    "codigo": "H058",
+    "nome": "Checkpoint",
+    "descricao": "Uma vez por batalha, ao ficar abaixo de 20% do HP, recupera até 40% do HP máximo."
+  },
+  {
+    "codigo": "H059",
+    "nome": "New Game+",
+    "descricao": "Após derrotar um inimigo, recebe +5% em um atributo aleatório."
+  },
+  {
+    "codigo": "H060",
+    "nome": "Lag Spike",
+    "descricao": "20% de chance de o oponente perder o próximo turno ao ser atingido."
+  },
+  {
+    "codigo": "H061",
+    "nome": "Critical Hit",
+    "descricao": "Recebe +15% de chance de acerto crítico."
+  },
+  {
+    "codigo": "H062",
+    "nome": "Save Point",
+    "descricao": "Recupera 10% do HP máximo ao fim da batalha."
+  },
+  {
+    "codigo": "H063",
+    "nome": "Konami Code",
+    "descricao": "Ao entrar, recebe +30% em todos os atributos por 2 turnos."
+  },
+  {
+    "codigo": "H064",
+    "nome": "Portal Gun",
+    "descricao": "20% de chance de redirecionar um golpe recebido de volta ao atacante."
+  },
+  {
+    "codigo": "H065",
+    "nome": "Nanomachines, Son!",
+    "descricao": "Abaixo de 25% do HP, recebe +75% de Defesa."
+  },
+  {
+    "codigo": "H066",
+    "nome": "I Am Iron Man",
+    "descricao": "Recebe +25% de Defesa e Ataque Especial ao entrar."
+  },
+  {
+    "codigo": "H067",
+    "nome": "Wakanda Forever",
+    "descricao": "Quando um aliado é derrotado, recebe +50% de Defesa por 3 turnos."
+  },
+  {
+    "codigo": "H068",
+    "nome": "Snyder Cut",
+    "descricao": "Efeitos negativos que recebe duram 50% menos tempo."
+  },
+  {
+    "codigo": "H069",
+    "nome": "Speed Force",
+    "descricao": "Recebe +40% de Velocidade e 10% de chance de agir duas vezes."
+  },
+  {
+    "codigo": "H070",
+    "nome": "Mighty Morphin",
+    "descricao": "Ao entrar, recebe +30% em um atributo aleatório."
+  },
+  {
+    "codigo": "H071",
+    "nome": "It's Morphin Time!",
+    "descricao": "Abaixo de 50% do HP, recebe +20% em todos os atributos."
+  },
+  {
+    "codigo": "H072",
+    "nome": "Firmeza",
+    "descricao": "Ao entrar, recebe +15% de Defesa."
+  },
+  {
+    "codigo": "H073",
+    "nome": "Agilidade",
+    "descricao": "Ao entrar, recebe +15% de Velocidade."
+  },
+  {
+    "codigo": "H074",
+    "nome": "Concentração",
+    "descricao": "Ao entrar, recebe +15% de Ataque Especial."
+  },
+  {
+    "codigo": "H075",
+    "nome": "Força Bruta",
+    "descricao": "Ao entrar, recebe +15% de Ataque."
+  },
+  {
+    "codigo": "H076",
+    "nome": "Casca Dura",
+    "descricao": "Recebe 10% menos dano de golpes físicos."
+  },
+  {
+    "codigo": "H077",
+    "nome": "Resistência",
+    "descricao": "Recebe 10% menos dano de golpes super efetivos."
+  },
+  {
+    "codigo": "H078",
+    "nome": "Foco",
+    "descricao": "Não perde o turno por Flinch na primeira vez que seria afetado."
+  },
+  {
+    "codigo": "H079",
+    "nome": "Regeneração",
+    "descricao": "Recupera 3% do HP máximo no fim de cada turno."
+  },
+  {
+    "codigo": "H080",
+    "nome": "Drenagem",
+    "descricao": "Ao causar dano, recupera 5% do dano causado."
+  },
+  {
+    "codigo": "H081",
+    "nome": "Vigor",
+    "descricao": "Ao ficar abaixo de 50% do HP, recebe +20% de Defesa uma vez."
+  },
+  {
+    "codigo": "H082",
+    "nome": "Instinto",
+    "descricao": "Abaixo de 50% do HP, recebe +15% de Velocidade."
+  },
+  {
+    "codigo": "H083",
+    "nome": "Precaução",
+    "descricao": "No primeiro turno, recebe 20% menos dano."
+  },
+  {
+    "codigo": "H084",
+    "nome": "Persistência",
+    "descricao": "Abaixo de 25% do HP, recebe +20% de Defesa Especial."
+  },
+  {
+    "codigo": "H085",
+    "nome": "Fôlego",
+    "descricao": "Abaixo de 50% do HP, recupera 5% do HP uma vez."
+  },
+  {
+    "codigo": "H086",
+    "nome": "Equilíbrio",
+    "descricao": "Ao entrar, se um atributo estiver muito abaixo dos outros, recebe +15% nele."
+  },
+  {
+    "codigo": "H087",
+    "nome": "Olho Vivo",
+    "descricao": "Recebe +10 pontos de Precisão nos golpes."
+  },
+  {
+    "codigo": "H088",
+    "nome": "Impulso",
+    "descricao": "Após acertar um golpe, recebe +10% de Velocidade."
+  },
+  {
+    "codigo": "H089",
+    "nome": "Impacto",
+    "descricao": "Após acertar um golpe físico, recebe +10% de Ataque."
+  },
+  {
+    "codigo": "H090",
+    "nome": "Calma",
+    "descricao": "Após receber dano, recebe +10% de Defesa Especial."
+  },
+  {
+    "codigo": "H091",
+    "nome": "Retaliação",
+    "descricao": "Após receber dano, seu próximo golpe causa 15% a mais de dano."
+  },
+  {
+    "codigo": "H092",
+    "nome": "Barreira",
+    "descricao": "Uma vez por batalha, reduz pela metade o dano de um golpe."
+  },
+  {
+    "codigo": "H093",
+    "nome": "Sorte",
+    "descricao": "Tem 10% de chance de evitar completamente um golpe."
+  },
+  {
+    "codigo": "H094",
+    "nome": "Atenção",
+    "descricao": "Recebe +10 pontos de Precisão nos golpes."
+  },
+  {
+    "codigo": "H095",
+    "nome": "Passos Leves",
+    "descricao": "Não ativa armadilhas ao entrar em campo."
+  },
+  {
+    "codigo": "H096",
+    "nome": "Pele Seca",
+    "descricao": "Recupera 4% do HP máximo quando recebe golpe de Água."
+  },
+  {
+    "codigo": "H097",
+    "nome": "Absorção",
+    "descricao": "Ao receber golpe de Planta, recupera 8% do HP máximo."
+  },
+  {
+    "codigo": "H098",
+    "nome": "Faísca",
+    "descricao": "Ao receber golpe de Elétrico, recebe +10% de Velocidade."
+  },
+  {
+    "codigo": "H099",
+    "nome": "Calor",
+    "descricao": "Recebe 20% menos dano de Fogo."
+  },
+  {
+    "codigo": "H100",
+    "nome": "Frieza",
+    "descricao": "Recebe 20% menos dano de Gelo."
+  },
+  {
+    "codigo": "H101",
+    "nome": "Coragem",
+    "descricao": "Não pode ficar com medo ou ser impedido de agir por efeitos de intimidação."
+  },
+  {
+    "codigo": "H102",
+    "nome": "Vontade",
+    "descricao": "Uma vez por batalha, ao ser derrotado, sobrevive com 1 HP."
+  },
+  {
+    "codigo": "H103",
+    "nome": "Pressa",
+    "descricao": "No primeiro turno, sua Velocidade é considerada 20% maior."
+  },
+  {
+    "codigo": "H104",
+    "nome": "Armadura",
+    "descricao": "Golpes críticos contra este monstro causam dano normal."
+  },
+  {
+    "codigo": "H105",
+    "nome": "Apoio",
+    "descricao": "Enquanto houver outro aliado vivo, recebe +10% de Defesa."
+  },
+  {
+    "codigo": "H106",
+    "nome": "Caçador",
+    "descricao": "Causa 15% a mais de dano contra inimigos abaixo de 50% do HP."
+  },
+  {
+    "codigo": "H107",
+    "nome": "Renovação",
+    "descricao": "Ao derrotar um inimigo, recupera 8% do HP máximo."
+  },
+  {
+    "codigo": "H108",
+    "nome": "Reserva",
+    "descricao": "Abaixo de 30% do HP, recebe +15% de Ataque Especial."
+  },
+  {
+    "codigo": "H109",
+    "nome": "Sintonia",
+    "descricao": "Se estiver com HP cheio, seus golpes causam 10% a mais de dano."
+  },
+  {
+    "codigo": "H110",
+    "nome": "Reflexo",
+    "descricao": "10% de chance de devolver 25% do dano recebido ao atacante."
+  },
+  {
+    "codigo": "H111",
+    "nome": "Fortuna",
+    "descricao": "Ao entrar, recebe um bônus aleatório de +10% em um atributo."
+  },
+  {
+    "codigo": "H112",
+    "nome": "Troca Equivalente",
+    "descricao": "Troca o maior valor de atributo de cada lado. Se houver empate no maior atributo, todos os atributos empatados participam da troca."
   }
 ]

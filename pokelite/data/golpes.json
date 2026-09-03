@@ -1318,5 +1318,2243 @@
     "precisao": 90,
     "pp": 10,
     "efeito": ""
+  },
+  {
+    "codigo": "G121",
+    "nome": "Folha Cortante",
+    "tipo": "Planta",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G122",
+    "nome": "Chicote Verde",
+    "tipo": "Planta",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 75,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G123",
+    "nome": "Lâmina da Floresta",
+    "tipo": "Planta",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 95,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G124",
+    "nome": "Tempestade de Pétalas",
+    "tipo": "Planta",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G125",
+    "nome": "Raiz Gigante",
+    "tipo": "Planta",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G126",
+    "nome": "Brasas",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G127",
+    "nome": "Chama Veloz",
+    "tipo": "Fogo",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G128",
+    "nome": "Explosão Vulcânica",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G129",
+    "nome": "Inferno Escarlate",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G130",
+    "nome": "Cauda Flamejante",
+    "tipo": "Fogo",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 85,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G131",
+    "nome": "Jato d’Água",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G132",
+    "nome": "Onda Marinha",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G133",
+    "nome": "Tsunami",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G134",
+    "nome": "Fúria Oceânica",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G135",
+    "nome": "Água Lunar",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G136",
+    "nome": "Faísca",
+    "tipo": "Elétrico",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G137",
+    "nome": "Raio",
+    "tipo": "Elétrico",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 75,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G138",
+    "nome": "Trovão",
+    "tipo": "Elétrico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G139",
+    "nome": "Tempestade Elétrica",
+    "tipo": "Elétrico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G140",
+    "nome": "Cauda Elétrica",
+    "tipo": "Elétrico",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G141",
+    "nome": "Estilhaço de Gelo",
+    "tipo": "Gelo",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G142",
+    "nome": "Vento Congelante",
+    "tipo": "Gelo",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G143",
+    "nome": "Nevasca",
+    "tipo": "Gelo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G144",
+    "nome": "Era Glacial",
+    "tipo": "Gelo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G145",
+    "nome": "Garra Congelante",
+    "tipo": "Gelo",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 85,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G146",
+    "nome": "Pedra Atirada",
+    "tipo": "Pedra",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G147",
+    "nome": "Avalanche",
+    "tipo": "Pedra",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G148",
+    "nome": "Meteoro",
+    "tipo": "Pedra",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G149",
+    "nome": "Rocha Lunar",
+    "tipo": "Pedra",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 95,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G150",
+    "nome": "Tremor",
+    "tipo": "Terra",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G151",
+    "nome": "Terremoto",
+    "tipo": "Terra",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G152",
+    "nome": "Fenda",
+    "tipo": "Terra",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G153",
+    "nome": "Ira da Terra",
+    "tipo": "Terra",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G154",
+    "nome": "Soco Forte",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G155",
+    "nome": "Golpe Giratório",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G156",
+    "nome": "Punho do Rei",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G157",
+    "nome": "Combo Supremo",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G158",
+    "nome": "Sombra",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G159",
+    "nome": "Mordida Sombria",
+    "tipo": "Dark",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 75,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G160",
+    "nome": "Eclipse",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G161",
+    "nome": "Abismo Negro",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G162",
+    "nome": "Assombração",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G163",
+    "nome": "Toque Fantasma",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G164",
+    "nome": "Espírito Perdido",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G165",
+    "nome": "Maldição Suprema",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G166",
+    "nome": "Garra Dracônica",
+    "tipo": "Dragão",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G167",
+    "nome": "Sopro Dracônico",
+    "tipo": "Dragão",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G168",
+    "nome": "Fúria do Dragão",
+    "tipo": "Dragão",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G169",
+    "nome": "Meteoro do Dragão",
+    "tipo": "Dragão",
+    "categoria": "Especial",
+    "tier": 4,
+    "poder": 130,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G170",
+    "nome": "Confusão",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G171",
+    "nome": "Raio Mental",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G172",
+    "nome": "Ilusão",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G173",
+    "nome": "Colapso Mental",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G174",
+    "nome": "Vento",
+    "tipo": "Voador",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G175",
+    "nome": "Asa Cortante",
+    "tipo": "Voador",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 75,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G176",
+    "nome": "Tornado",
+    "tipo": "Voador",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G177",
+    "nome": "Furacão",
+    "tipo": "Voador",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G178",
+    "nome": "Picada",
+    "tipo": "Inseto",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G179",
+    "nome": "Mordida de Inseto",
+    "tipo": "Inseto",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G180",
+    "nome": "Enxame",
+    "tipo": "Inseto",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G181",
+    "nome": "Apocalipse dos Insetos",
+    "tipo": "Inseto",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G182",
+    "nome": "Brilho",
+    "tipo": "Fada",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G183",
+    "nome": "Luz Encantada",
+    "tipo": "Fada",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G184",
+    "nome": "Lua Cheia",
+    "tipo": "Fada",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G185",
+    "nome": "Julgamento Lunar",
+    "tipo": "Fada",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G186",
+    "nome": "Veneno",
+    "tipo": "Veneno",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G187",
+    "nome": "Ácido",
+    "tipo": "Veneno",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G188",
+    "nome": "Nuvem Tóxica",
+    "tipo": "Veneno",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 95,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G189",
+    "nome": "Veneno Mortal",
+    "tipo": "Veneno",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G190",
+    "nome": "Metal Garra",
+    "tipo": "Aço",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 25,
+    "efeito": ""
+  },
+  {
+    "codigo": "G191",
+    "nome": "Canhão de Ferro",
+    "tipo": "Aço",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 85,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G192",
+    "nome": "Impacto Metálico",
+    "tipo": "Aço",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G193",
+    "nome": "Tempestade de Aço",
+    "tipo": "Aço",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G194",
+    "nome": "Rajada Dark",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G195",
+    "nome": "Get Over Here",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G196",
+    "nome": "Chute Lunar",
+    "tipo": "Fada",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G197",
+    "nome": "Raio Kaiju",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G198",
+    "nome": "Investida Colossal",
+    "tipo": "Normal",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G199",
+    "nome": "Canto das Águas",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G200",
+    "nome": "Olhar Hipnótico",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G201",
+    "nome": "Chama da Floresta",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 95,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G202",
+    "nome": "Trovão Azul",
+    "tipo": "Elétrico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G203",
+    "nome": "Garra Celestial",
+    "tipo": "Voador",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G204",
+    "nome": "Explosão Psíquica",
+    "tipo": "Psíquico",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G205",
+    "nome": "Selo Fantasma",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 85,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G206",
+    "nome": "Tempestade de Areia",
+    "tipo": "Terra",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G207",
+    "nome": "Corte Supremo",
+    "tipo": "Normal",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G208",
+    "nome": "Impacto Sombrio",
+    "tipo": "Dark",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G209",
+    "nome": "Raio Lunar",
+    "tipo": "Fada",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G210",
+    "nome": "Canhão Floral",
+    "tipo": "Planta",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G211",
+    "nome": "Golpe do Guardião",
+    "tipo": "Lutador",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 100,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G212",
+    "nome": "Investida Selvagem",
+    "tipo": "Normal",
+    "categoria": "Físico",
+    "tier": 2,
+    "poder": 85,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G213",
+    "nome": "Poder Ancestral",
+    "tipo": "Pedra",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G214",
+    "nome": "Punho Kaiju",
+    "tipo": "Fogo",
+    "categoria": "Físico",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G215",
+    "nome": "Uivo da Lua",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 95,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G216",
+    "nome": "Água Encantada",
+    "tipo": "Água",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 90,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G217",
+    "nome": "Chama Sagrada",
+    "tipo": "Fogo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 110,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G218",
+    "nome": "Rugido do Rei",
+    "tipo": "Normal",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 80,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": ""
+  },
+  {
+    "codigo": "G219",
+    "nome": "Meteoro Sombrio",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 120,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G220",
+    "nome": "Julgamento Final",
+    "tipo": "Normal",
+    "categoria": "Especial",
+    "tier": 4,
+    "poder": 140,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": ""
+  },
+  {
+    "codigo": "G221",
+    "nome": "Dança das Espadas",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta o Ataque do usuário em 50%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "ataque",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G222",
+    "nome": "Meditação",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta o Ataque Especial do usuário em 50%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "ataqueEspecial",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G223",
+    "nome": "Muralha",
+    "tipo": "Aço",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta a Defesa do usuário em 50%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "defesa",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G224",
+    "nome": "Agilidade",
+    "tipo": "Voador",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta a Velocidade do usuário em 50%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "velocidade",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G225",
+    "nome": "Energia Total",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta todos os atributos de combate em 25%.",
+    "effect": {
+      "tipo": "buffTodos",
+      "valor": 0.25
+    }
+  },
+  {
+    "codigo": "G226",
+    "nome": "Intimidação",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz o Ataque do alvo em 25%.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "ataque",
+      "valor": -0.25
+    }
+  },
+  {
+    "codigo": "G227",
+    "nome": "Olhar Sombrio",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz a Defesa do alvo em 25%.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "defesa",
+      "valor": -0.25
+    }
+  },
+  {
+    "codigo": "G228",
+    "nome": "Névoa Mental",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz o Ataque Especial do alvo em 25%.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "ataqueEspecial",
+      "valor": -0.25
+    }
+  },
+  {
+    "codigo": "G229",
+    "nome": "Lama",
+    "tipo": "Terra",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz a Velocidade do alvo em 25%.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "velocidade",
+      "valor": -0.25
+    }
+  },
+  {
+    "codigo": "G230",
+    "nome": "Campo de Flores",
+    "tipo": "Planta",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Abre o Campo de Flores.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "florido"
+    }
+  },
+  {
+    "codigo": "G231",
+    "nome": "Campo Elétrico",
+    "tipo": "Elétrico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Abre o Campo Elétrico.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "eletrico"
+    }
+  },
+  {
+    "codigo": "G232",
+    "nome": "Campo Glacial",
+    "tipo": "Gelo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Abre o Campo Glacial.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "glacial"
+    }
+  },
+  {
+    "codigo": "G233",
+    "nome": "Campo Sombrio",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Abre o Campo Sombrio.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "sombrio"
+    }
+  },
+  {
+    "codigo": "G234",
+    "nome": "Campo Rochoso",
+    "tipo": "Pedra",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Abre o Campo Rochoso.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "rochoso"
+    }
+  },
+  {
+    "codigo": "G235",
+    "nome": "Chuva",
+    "tipo": "Água",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Invoca chuva.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "chuva"
+    }
+  },
+  {
+    "codigo": "G236",
+    "nome": "Sol Forte",
+    "tipo": "Fogo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Invoca sol forte.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "sol"
+    }
+  },
+  {
+    "codigo": "G237",
+    "nome": "Neve",
+    "tipo": "Gelo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Invoca neve.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "neve"
+    }
+  },
+  {
+    "codigo": "G238",
+    "nome": "Tempestade de Areia",
+    "tipo": "Terra",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Invoca uma tempestade de areia.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "areia"
+    }
+  },
+  {
+    "codigo": "G239",
+    "nome": "Recuperação",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Recupera 50% do HP máximo.",
+    "effect": {
+      "tipo": "cura",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G240",
+    "nome": "Drenar Vida",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Recupera 35% do HP máximo.",
+    "effect": {
+      "tipo": "cura",
+      "valor": 0.35
+    }
+  },
+  {
+    "codigo": "G241",
+    "nome": "Escudo",
+    "tipo": "Aço",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Protege o usuário contra o próximo golpe recebido.",
+    "effect": {
+      "tipo": "protecao"
+    }
+  },
+  {
+    "codigo": "G242",
+    "nome": "Barreira",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta a Defesa em 50%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "defesa",
+      "valor": 0.5
+    }
+  },
+  {
+    "codigo": "G243",
+    "nome": "Hipnose",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Coloca o alvo para dormir por 1 turno.",
+    "effect": {
+      "tipo": "status",
+      "status": "dormindo",
+      "duracao": 1
+    }
+  },
+  {
+    "codigo": "G244",
+    "nome": "Ilusão Mental",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "O alvo fica iludido e perde o próximo turno.",
+    "effect": {
+      "tipo": "status",
+      "status": "iludido",
+      "duracao": 1
+    }
+  },
+  {
+    "codigo": "G245",
+    "nome": "Confusão",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Confunde o alvo.",
+    "effect": {
+      "tipo": "status",
+      "status": "confuso",
+      "duracao": 2
+    }
+  },
+  {
+    "codigo": "G246",
+    "nome": "Troca Rápida",
+    "tipo": "Voador",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Permite ao usuário trocar após usar o golpe.",
+    "effect": {
+      "tipo": "troca"
+    }
+  },
+  {
+    "codigo": "G247",
+    "nome": "Último Esforço",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta o Ataque conforme o HP diminui.",
+    "effect": {
+      "tipo": "buffHpBaixo"
+    }
+  },
+  {
+    "codigo": "G248",
+    "nome": "Vingança",
+    "tipo": "Lutador",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta o próximo dano após sofrer um ataque.",
+    "effect": {
+      "tipo": "vinganca"
+    }
+  },
+  {
+    "codigo": "G249",
+    "nome": "Rugido do Rei",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz o Ataque do alvo em 35%.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "ataque",
+      "valor": -0.35
+    }
+  },
+  {
+    "codigo": "G250",
+    "nome": "Rugido Kaiju",
+    "tipo": "Fogo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Causa um pequeno terremoto, retirando 10% do HP do alvo.",
+    "effect": {
+      "tipo": "danoPercentual",
+      "valor": 0.1
+    }
+  },
+  {
+    "codigo": "G251",
+    "nome": "Lua Cheia",
+    "tipo": "Fada",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa a Noite Lunar.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "noturno"
+    }
+  },
+  {
+    "codigo": "G252",
+    "nome": "Chuva Eterna",
+    "tipo": "Água",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa chuva e fortalece ataques de Água.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "chuva"
+    }
+  },
+  {
+    "codigo": "G253",
+    "nome": "Reino Glacial",
+    "tipo": "Gelo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa neve e o Reino Glacial.",
+    "effect": {
+      "tipo": "clima",
+      "clima": "neve"
+    }
+  },
+  {
+    "codigo": "G254",
+    "nome": "Invocação Floral",
+    "tipo": "Planta",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa Campo de Flores.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "florido"
+    }
+  },
+  {
+    "codigo": "G255",
+    "nome": "Eclipse",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa o Campo Sombrio.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "sombrio"
+    }
+  },
+  {
+    "codigo": "G256",
+    "nome": "Espinhos",
+    "tipo": "Planta",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Coloca espinhos no lado adversário.",
+    "effect": {
+      "tipo": "armadilha",
+      "armadilha": "espinhos"
+    }
+  },
+  {
+    "codigo": "G257",
+    "nome": "Rochas",
+    "tipo": "Pedra",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Coloca rochas no lado adversário.",
+    "effect": {
+      "tipo": "armadilha",
+      "armadilha": "rochas"
+    }
+  },
+  {
+    "codigo": "G258",
+    "nome": "Veneno no Chão",
+    "tipo": "Veneno",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Envenena o próximo monstro que entrar.",
+    "effect": {
+      "tipo": "armadilha",
+      "armadilha": "veneno"
+    }
+  },
+  {
+    "codigo": "G259",
+    "nome": "Aposta Brutal",
+    "tipo": "Dark",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta o Ataque em 100%, mas reduz a Defesa em 90%.",
+    "effect": {
+      "tipo": "buffDebuff",
+      "buff": {
+        "status": "ataque",
+        "valor": 1
+      },
+      "debuff": {
+        "status": "defesa",
+        "valor": -0.9
+      }
+    }
+  },
+  {
+    "codigo": "G260",
+    "nome": "Tudo ou Nada",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Tem 50% de chance de falhar e 50% de aumentar o Ataque em 150%.",
+    "effect": {
+      "tipo": "chanceBuff",
+      "chance": 0.5,
+      "status": "ataque",
+      "valor": 1.5
+    }
+  },
+  {
+    "codigo": "G261",
+    "nome": "Reflexo",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta Defesa e Defesa Especial em 25%.",
+    "effect": {
+      "tipo": "buffMult",
+      "statusList": [
+        "defesa",
+        "defesaEspecial"
+      ],
+      "valor": 0.25
+    }
+  },
+  {
+    "codigo": "G262",
+    "nome": "Eco Mental",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz Ataque e Ataque Especial do alvo em 20%.",
+    "effect": {
+      "tipo": "debuffMult",
+      "statusList": [
+        "ataque",
+        "ataqueEspecial"
+      ],
+      "valor": -0.2
+    }
+  },
+  {
+    "codigo": "G263",
+    "nome": "Fortificar",
+    "tipo": "Aço",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta Defesa e Defesa Especial em 35%.",
+    "effect": {
+      "tipo": "buffMult",
+      "statusList": [
+        "defesa",
+        "defesaEspecial"
+      ],
+      "valor": 0.35
+    }
+  },
+  {
+    "codigo": "G264",
+    "nome": "Pressão",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Reduz a Velocidade do alvo em 15% e a própria Velocidade em 15%.",
+    "effect": {
+      "tipo": "pressao"
+    }
+  },
+  {
+    "codigo": "G265",
+    "nome": "Armadura de Ferro",
+    "tipo": "Aço",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta a Defesa em 75%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "defesa",
+      "valor": 0.75
+    }
+  },
+  {
+    "codigo": "G266",
+    "nome": "Ritual Lunar",
+    "tipo": "Fada",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Ativa a noite e recupera 25% do HP.",
+    "effect": {
+      "tipo": "ritualLunar"
+    }
+  },
+  {
+    "codigo": "G267",
+    "nome": "Névoa",
+    "tipo": "Gelo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Remove alterações de atributos dos dois monstros.",
+    "effect": {
+      "tipo": "limparStats"
+    }
+  },
+  {
+    "codigo": "G268",
+    "nome": "Vento Favorável",
+    "tipo": "Voador",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta a Velocidade do usuário e do aliado em 25%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "velocidade",
+      "valor": 0.25
+    }
+  },
+  {
+    "codigo": "G269",
+    "nome": "Invocar Kaiju",
+    "tipo": "Fogo",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Causa 10% do HP máximo do alvo em dano.",
+    "effect": {
+      "tipo": "danoPercentual",
+      "valor": 0.1
+    }
+  },
+  {
+    "codigo": "G270",
+    "nome": "Despertar Lendário",
+    "tipo": "Dragão",
+    "categoria": "Status",
+    "tier": 2,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Aumenta Ataque, Defesa, Ataque Especial, Defesa Especial e Velocidade em 30%.",
+    "effect": {
+      "tipo": "buffTodos",
+      "valor": 0.3
+    }
+  },
+  {
+    "codigo": "G271",
+    "nome": "Reverse",
+    "tipo": "Psíquico",
+    "categoria": "Status",
+    "tier": 4,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 5,
+    "efeito": "Inverte a ordem de Velocidade por 5 turnos: o Monstro mais lento age primeiro.",
+    "effect": {
+      "tipo": "reverse",
+      "duracao": 5
+    }
+  },
+  {
+    "codigo": "G272",
+    "nome": "Canção do Sol",
+    "tipo": "Fofo",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "O canto deixa o adversário em Flinch por 3 turnos, impedindo-o de atacar.",
+    "effect": {
+      "tipo": "flinch",
+      "duracao": 3
+    }
+  },
+  {
+    "codigo": "G273",
+    "nome": "Respiração da Noite",
+    "tipo": "Dark",
+    "categoria": "Especial",
+    "tier": 3,
+    "poder": 40,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Transforma o campo em Noite Estrelada. O adversário perde 1/6 do HP máximo a cada turno.",
+    "effect": {
+      "tipo": "noiteEstreladaDreno",
+      "valor": 0.1666666667
+    }
+  },
+  {
+    "codigo": "GA007",
+    "nome": "Desejo do Dragão",
+    "tipo": "Dragão",
+    "categoria": "Especial",
+    "tier": 4,
+    "poder": 200,
+    "precisao": 100,
+    "pp": 1,
+    "efeito": "Golpe assinatura de Sharlong. Só pode ser usado no primeiro turno; no turno seguinte, o próximo ataque de Sharlong causa apenas 50% do dano.",
+    "effect": {
+      "tipo": "desejoDragao"
+    }
+  },
+  {
+    "codigo": "G275",
+    "nome": "Sussurro Sombrio",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 45,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G276",
+    "nome": "Passo Espectral",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G277",
+    "nome": "Névoa Fantasma",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G278",
+    "nome": "Toque Etéreo",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 55,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G279",
+    "nome": "Vulto Rápido",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G280",
+    "nome": "Lamento",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 55,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G281",
+    "nome": "Ecos do Além",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 65,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G282",
+    "nome": "Sombra Rasteira",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G283",
+    "nome": "Olhar do Além",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 60,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G284",
+    "nome": "Manto Fantasma",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "defesaEspecial",
+      "valor": 0.15
+    }
+  },
+  {
+    "codigo": "G285",
+    "nome": "Marca Espectral",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "debuff",
+      "alvo": "alvo",
+      "status": "ataqueEspecial",
+      "valor": -0.15
+    }
+  },
+  {
+    "codigo": "G286",
+    "nome": "Presa Sombria",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 65,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G287",
+    "nome": "Véu da Noite",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "campo",
+      "campo": "noturno"
+    }
+  },
+  {
+    "codigo": "G288",
+    "nome": "Rastro Fantasma",
+    "tipo": "Fantasma",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 55,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G289",
+    "nome": "Laço Etéreo",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "cura",
+      "valor": 0.15
+    }
+  },
+  {
+    "codigo": "G290",
+    "nome": "Bruma Assombrada",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "protecao"
+    }
+  },
+  {
+    "codigo": "G291",
+    "nome": "Toque do Vazio",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 70,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G292",
+    "nome": "Dança Espectral",
+    "tipo": "Fantasma",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 10,
+    "efeito": "Golpe Fantasma de efeito leve.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "velocidade",
+      "valor": 0.15
+    }
+  },
+  {
+    "codigo": "G293",
+    "nome": "Último Sopro",
+    "tipo": "Fantasma",
+    "categoria": "Especial",
+    "tier": 2,
+    "poder": 75,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque do tipo Fantasma."
+  },
+  {
+    "codigo": "G294",
+    "nome": "Empurrão",
+    "tipo": "Normal",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 55,
+    "precisao": 100,
+    "pp": 20,
+    "efeito": "Ataque Normal simples e confiável."
+  },
+  {
+    "codigo": "G295",
+    "nome": "Investida Direta",
+    "tipo": "Normal",
+    "categoria": "Físico",
+    "tier": 1,
+    "poder": 50,
+    "precisao": 100,
+    "pp": 20,
+    "efeito": "Ataque Normal simples."
+  },
+  {
+    "codigo": "G296",
+    "nome": "Pulso Comum",
+    "tipo": "Normal",
+    "categoria": "Especial",
+    "tier": 1,
+    "poder": 55,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Ataque Normal de energia."
+  },
+  {
+    "codigo": "G297",
+    "nome": "Defesa Instintiva",
+    "tipo": "Normal",
+    "categoria": "Status",
+    "tier": 1,
+    "poder": 0,
+    "precisao": 100,
+    "pp": 15,
+    "efeito": "Aumenta a Defesa em 15%.",
+    "effect": {
+      "tipo": "buff",
+      "alvo": "proprio",
+      "status": "defesa",
+      "valor": 0.15
+    }
   }
 ]
